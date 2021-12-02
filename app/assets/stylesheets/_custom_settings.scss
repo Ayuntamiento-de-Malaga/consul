@@ -3,3 +3,9 @@
 //
 // To override existing variables, use the file named
 // `_consul_custom_overrides.scss` instead
+
+$brand: #005e7d;
+$brand-secondary: darken($brand, 10%);
+$dark: $brand;
+
+$hover-white: darken($white, 20%);

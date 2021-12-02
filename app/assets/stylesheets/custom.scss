@@ -2,3 +2,40 @@
 //
 // You can also create SCSS files in the app/assets/stylesheets/custom/
 // folder and they will be loaded automatically.
+
+// Home
+
+// Home > header
+
+header {
+  .top-links {
+    background: $dark;
+    padding: 8px 0;
+  }
+  .top-bar {
+    background-color: $white !important;
+    .menu-button {
+      color: $brand;
+    }
+    .top-bar-right {
+      color: $brand;
+      .button {
+        background: $white;
+        color: $brand;
+        @include breakpoint(medium) {
+          background: $brand;
+          color: $white;
+        }
+      }
+    }
+  }
+  #navigation_bar {
+    background: $dark;
+    a {
+      color: $white;
+    }
+    a:hover {
+      color: $white;
+    }
+  }
+}

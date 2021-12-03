@@ -1,0 +1,76 @@
+<footer>
+  <div class="row">
+    <div class="small-12 large-6 column">
+      <h1 class="logo">
+        <%= t("layouts.footer.title") %>
+      </h1>
+
+      <div class="info-list">
+        <p>
+          <i class="fas fa-map-marker-alt fa-md"></i>
+          <span><%= t("layouts.footer.address") %></span>
+        </p>
+        <p>
+          <i class="fas fa-phone-alt fa-md"></i>
+          <span><%= t("layouts.footer.phone") %></span>
+        </p>
+        <p>
+          <i class="fas fa-envelope fa-md"></i>
+          <span><%= t("layouts.footer.email") %></span>
+        </p>
+      </div>
+      <ul class="info-rrss">
+        <li>
+        <%= link_to 'https://www.facebook.com/AyuntamientodeMalaga', accesskey: "0" do %>
+          <i class="fab fa-facebook fa-lg fa-inverse"></i>
+        <% end %>
+        </li>
+        <li>
+        <%= link_to 'https://twitter.com/malaga', accesskey: "0" do %>
+        <i class="fab fa-twitter fa-lg fa-inverse"></i>
+        <% end %>
+        </li>
+        <li>
+        <%= link_to 'https://www.youtube.com/user/AytodeMalaga', accesskey: "0" do %>
+        <i class="fab fa-youtube fa-lg fa-inverse"></i>
+        <% end %>
+        </li>
+        <li>
+        <%= link_to 'https://www.instagram.com/ayuntamientomalaga/?hl=es', accesskey: "0" do %>
+        <i class="fab fa-instagram fa-lg fa-inverse"></i>
+        <% end %>
+        </li>
+        <li>
+        <%= link_to 'https://www.linkedin.com/company/ayuntamientodemalaga/', accesskey: "0" do %>
+        <i class="fab fa-linkedin fa-lg fa-inverse"></i>
+        <% end %>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-logo small-12 large-6 column">
+      <%= link_to 'https://www.malaga.eu/', accesskey: "0" do %>
+        <%= image_tag(image_path_for("icon-footer-w.png"), alt: setting["org_name"]) %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="footer-subfooter">
+    <div class="row">
+    <ul class="no-bullet inline-block">
+      <li class="inline-block"><%= link_to t("layouts.footer.legal"), 'https://www.malaga.eu/informacion-general/aviso-legal/' %>&nbsp;|</li>
+      <li class="inline-block"><%= link_to t("layouts.footer.privacy"), 'https://www.malaga.eu/informacion-general/politica-de-privacidad/' %>&nbsp;|</li>
+      <li class="inline-block"><%= link_to t("layouts.footer.accessibility"), 'https://www.malaga.eu/informacion-general/accesibilidad/' %>&nbsp;|</li>
+      <li class="inline-block"><%= link_to t("layouts.footer.availability"), 'https://www.malaga.eu/informacion-general/disponibilidad/' %>&nbsp;|</li>
+      <li class="inline-block"><%= link_to t("layouts.footer.map"), 'https://www.malaga.eu/informacion-general/mapa-web/' %>&nbsp;|</li>
+      <li class="inline-block"><%= link_to t("layouts.footer.themes"), 'https://www.malaga.eu/webs-tematicas/' %></li>
+    </ul>
+    </div>
+    <div class="row">
+    <ul class="no-bullet inline-block">
+      <li class="inline-block"><%= link_to t("layouts.footer.copyright"), 'https://www.malaga.eu/' %>&nbsp;|</li>
+      <li class="inline-block"><%= link_to t("layouts.footer.support"), 'https://cemi.malaga.eu/' %></li>
+    </ul>
+    </div>
+  </div>
+</footer>

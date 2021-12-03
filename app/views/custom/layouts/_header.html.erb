@@ -4,10 +4,9 @@
   <% end %>
 
   <div class="top-links">
-    <%= render "shared/locale_switcher" %>
-    <div class="hide-for-small-only">
-      <%= render "shared/top_links" %>
-    </div>
+    <%= link_to 'https://www.malaga.eu/', accesskey: "0" do %>
+        <%= image_tag(image_path_for("icon-w.png"), alt: setting["org_name"]) %>
+      <% end %>
   </div>
 
   <div class="top-bar">
@@ -20,7 +19,7 @@
 
     <h1 class="top-bar-title">
       <%= link_to root_path, accesskey: "0" do %>
-        <%= image_tag(image_path_for("logo_header.png"), alt: setting["org_name"]) %>
+        <%= image_tag(image_path_for("logo-blue.svg"), alt: setting["org_name"]) %>
       <% end %>
     </h1>
 

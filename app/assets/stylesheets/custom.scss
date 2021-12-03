@@ -28,6 +28,13 @@ header {
         }
       }
     }
+    .top-bar-title {
+      width: auto;
+      img {
+        margin: 15px 0;
+        max-height: 50px;
+      }
+    }
   }
   #navigation_bar {
     background: $dark;
@@ -36,6 +43,78 @@ header {
     }
     a:hover {
       color: $white;
+    }
+  }
+}
+
+.footer {
+  background: $brand;
+  h1 {
+    font-size: 34px;
+    margin: 30px 0;
+    color: $white;
+  }
+  .info-list {
+    color: $white;
+    p {
+      font-size: 16px;
+      i {
+        width: 15px;
+        height: auto;
+        margin-right: 8px;
+      }
+    }
+  }
+  .info-rrss {
+    margin-top: 30px;
+    list-style: none;
+    margin-left: 0;
+
+    li {
+      display: inline;
+      padding: 10px;
+      &:first-of-type {
+        padding-left: 0;
+      }
+    }
+  }
+  .footer-logo {
+    margin: 30px 0;
+    text-align: right;
+  }
+  .footer-subfooter {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: $white;
+    text-align: center;
+    ul {
+      margin-bottom: 0.5rem;
+      li {
+        font-size: 14px;
+        a {
+          text-decoration: none;
+          padding-left: 10px;
+          padding-right: 10px;
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+// AUTH
+.auth-page {
+  .auth-image {
+    background-image: none;
+    background: $brand;
+    .logo {
+      width: auto;
+      img {
+        margin: 15px 0;
+        max-height: 50px;
+      }
     }
   }
 }

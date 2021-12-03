@@ -241,7 +241,7 @@ es:
       valuation: Evaluación
       officing: Presidentes de mesa
       help: Ayuda
-      contact: Comunícate ⧉
+      contact: Comunícate
       my_account_link: Mi cuenta
       my_activity_link: Mi contenido
       open_gov: Gobierno abierto
@@ -890,7 +890,7 @@ es:
       process_label: Proceso
       see_process: Ver proceso
     cards:
-      title: Destacados
+      title: Propuestas de Gobierno
     recommended:
       title: Recomendaciones que te pueden interesar
       help: "Estas recomendaciones se generan por las etiquetas de las Propuestas Ciudadanas y Iniciativas Populares que estás siguiendo."

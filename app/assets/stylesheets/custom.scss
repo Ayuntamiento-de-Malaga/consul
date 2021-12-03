@@ -3,10 +3,9 @@
 // You can also create SCSS files in the app/assets/stylesheets/custom/
 // folder and they will be loaded automatically.
 
-// Home
+// HOME
 
 // Home > header
-
 header {
   .top-links {
     background: $dark;
@@ -16,6 +15,7 @@ header {
     background-color: $white !important;
     .menu-button {
       color: $brand;
+      margin-right: 20px;
     }
     .top-bar-right {
       color: $brand;
@@ -29,10 +29,13 @@ header {
       }
     }
     .top-bar-title {
-      width: auto;
-      img {
-        margin: 15px 0;
-        max-height: 50px;
+      flex: 1 0 50%;
+      a {
+        display: inline;
+        img {
+          margin: 15px 0;
+          max-height: 50px;
+        }
       }
     }
   }
@@ -47,6 +50,7 @@ header {
   }
 }
 
+// Home > footer
 .footer {
   background: $brand;
   h1 {

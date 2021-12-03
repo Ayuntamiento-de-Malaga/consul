@@ -11,10 +11,10 @@ es:
       save_changes_submit: Guardar cambios
       recommendations: Recomendaciones
       title: Mi cuenta
-      user_permission_debates: Participar en debates
+      user_permission_debates: Participar en Propuestas Ciudadanas
       user_permission_info: Con tu cuenta ya puedes...
-      user_permission_proposal: Crear nuevas propuestas ciudadanas
-      user_permission_support_proposal: Apoyar propuestas ciudadanas*
+      user_permission_proposal: Crear nuevas Iniciativas Populares
+      user_permission_support_proposal: Apoyar Iniciativas Populares*
       user_permission_title: Participación
       user_permission_verify: Para poder realizar todas las acciones, verifica tu cuenta.
       user_permission_verify_info: "* Sólo usuarios empadronados."
@@ -72,7 +72,7 @@ es:
   debates:
     create:
       form:
-        submit_button: Empieza un debate
+        submit_button: Empieza una Propuesta Ciudadana
     debate:
       comments:
         zero: Sin comentarios
@@ -83,12 +83,12 @@ es:
         one: 1 voto
         other: "%{count} votos"
     edit:
-      editing: Editar debate
+      editing: Editar Propuesta Ciudadana
       form:
         submit_button: Guardar cambios
-      show_link: Ver debate
+      show_link: Ver Propuesta Ciudadana
     form:
-      tags_instructions: Etiqueta este debate.
+      tags_instructions: Etiqueta esta Propuesta Ciudadana.
       tags_placeholder: "Escribe las etiquetas que desees separadas por coma (',')"
     index:
       featured_debates: Destacar
@@ -100,40 +100,40 @@ es:
         relevance: Más relevantes
         recommendations: Recomendaciones
       recommendations:
-        without_results: No existen debates relacionados con tus intereses
-        without_interests: Sigue propuestas ciudadanas para que podamos darte recomendaciones
-        disable: "Si ocultas las recomendaciones para debates, no se volverán a mostrar. Puedes volver a activarlas en 'Mi cuenta'"
+        without_results: No existen Propuestas Ciudadanas relacionadas con tus intereses
+        without_interests: Sigue Iniciativas Populares para que podamos darte recomendaciones
+        disable: "Si ocultas las recomendaciones para Propuestas Ciudadanas, no se volverán a mostrar. Puedes volver a activarlas en 'Mi cuenta'"
         actions:
-          success: "Las recomendaciones de debates han sido desactivadas"
+          success: "Las recomendaciones de Propuestas Ciudadanas han sido desactivadas"
           error: "Ha ocurrido un error. Por favor dirígete al apartado 'Mi cuenta' para desactivar las recomendaciones manualmente"
       search_form:
         button: Buscar
-        placeholder: Buscar debates...
+        placeholder: Buscar Propuestas Ciudadanas...
         title: Buscar
       search_results:
         one: " que contiene <strong>'%{search_term}'</strong>"
         other: " que contienen <strong>'%{search_term}'</strong>"
-      start_debate: Empieza un debate
-      title: Debates
+      start_debate: Empieza una Propuesta Ciudadana
+      title: Propuestas Ciudadanas
       section_header:
-        icon_alt: Icono de Debates
-        title: Debates
-        help: Ayuda sobre los debates
+        icon_alt: Icono de Propuestas Ciudadanas
+        title: Propuestas Ciudadanas
+        help: Ayuda sobre las Propuestas Ciudadanas
       section_footer:
-        title: Ayuda sobre los debates
-        description: Inicia un debate para compartir puntos de vista con otras personas sobre los temas que te preocupan.
-        help_text_1: "El espacio de debates ciudadanos está dirigido a que cualquier persona pueda exponer temas que le preocupan y sobre los que quiera compartir puntos de vista con otras personas."
-        help_text_2: 'Para abrir un debate es necesario registrarse en %{org}. Los usuarios ya registrados también pueden comentar los debates abiertos y valorarlos con los botones de "Estoy de acuerdo" o "No estoy de acuerdo" que se encuentran en cada uno de ellos.'
+        title: Ayuda sobre las Propuestas Ciudadanas
+        description: Inicia una Propuesta Ciudadana para compartir puntos de vista con otras personas sobre los temas que te preocupan.
+        help_text_1: "El espacio de Propuestas Ciudadanas está dirigido a que cualquier persona pueda exponer temas que le preocupan y sobre los que quiera compartir puntos de vista con otras personas."
+        help_text_2: 'Para abrir una Propuesta Ciudadana es necesario registrarse en %{org}. Los usuarios ya registrados también pueden comentar las Propuestas Ciudadanas abiertas y valorarlos con los botones de "Estoy de acuerdo" o "No estoy de acuerdo" que se encuentran en cada uno de ellos.'
     new:
       form:
-        submit_button: Empieza un debate
-      more_info: "¿Cómo funcionan los debates?"
+        submit_button: Empieza una Propuesta Ciudadana
+      more_info: "¿Cómo funcionan las Propuestas Ciudadanas?"
       recommendation_four: Disfruta de este espacio, de las voces que lo llenan, también es tuyo.
-      recommendation_one: No escribas el título del debate o frases enteras en mayúsculas. En internet eso se considera gritar. Y a nadie le gusta que le griten.
+      recommendation_one: No escribas el título de la Propuesta Ciudadana o frases enteras en mayúsculas. En internet eso se considera gritar. Y a nadie le gusta que le griten.
       recommendation_three: Las críticas despiadadas son muy bienvenidas. Este es un espacio de pensamiento. Pero te recomendamos conservar la elegancia y la inteligencia. El mundo es mejor con ellas presentes.
-      recommendation_two: Cualquier debate o comentario que implique una acción ilegal será eliminado, también los que tengan la intención de sabotear los espacios de debate, todo lo demás está permitido.
-      recommendations_title: Recomendaciones para crear un debate
-      start_new: Empezar un debate
+      recommendation_two: Cualquier Propuesta Ciudadana o comentario que implique una acción ilegal será eliminado, también los que tengan la intención de sabotear los espacios de Propuestas Ciudadanas, todo lo demás está permitido.
+      recommendations_title: Recomendaciones para crear una Propuesta Ciudadana
+      start_new: Empezar una Propuesta Ciudadana
     show:
       author_deleted: Usuario eliminado
       comments:
@@ -141,8 +141,8 @@ es:
         one: 1 Comentario
         other: "%{count} Comentarios"
       comments_title: Comentarios
-      edit_debate_link: Editar debate
-      flag: Este debate ha sido marcado como inapropiado por varios usuarios.
+      edit_debate_link: Editar Propuesta Ciudadana
+      flag: Esta Propuesta Ciudadanaha sido marcada como inapropiada por varios usuarios.
       share: Compartir
       author: Autor
     update:
@@ -156,14 +156,14 @@ es:
     accept_terms: Acepto la %{policy} y las %{conditions}
     accept_terms_title: Acepto la Política de privacidad y las Condiciones de uso
     conditions: Condiciones de uso
-    debate: el debate
+    debate: la Propuesta Ciudadana
     direct_message: el mensaje privado
     error: error
     errors: errores
     not_saved: "impidieron guardar %{resource}. <br>Por favor revisa los campos marcados para saber cómo corregirlos:"
     policy: Política de privacidad
     banner: el banner
-    proposal: la propuesta ciudadana
+    proposal: la Iniciativa Popular
     proposal_notification: "la notificación"
     budget/investment: el proyecto de gasto
     budget/group: el grupo de partidas presupuestarias
@@ -201,8 +201,8 @@ es:
       proposal_totals:
         active_resources: Recursos activos
         community: Participantes en tu comunidad
-        show_proposal: Ver propuesta ciudadana
-        preview_proposal: Previsualizar propuesta ciudadana
+        show_proposal: Ver Iniciativa Popular
+        preview_proposal: Previsualizar Iniciativa Popular
         current_goal: Meta actual
         supports:
           zero: Sin apoyos
@@ -234,7 +234,7 @@ es:
       administration_menu: Menú
       administration: Administración
       collaborative_legislation: Propuestas de Gobierno
-      debates: Debates
+      debates: Propuestas Ciudadanas
       locale: "Idioma:"
       management: Gestión
       moderation: Moderar
@@ -245,7 +245,7 @@ es:
       my_account_link: Mi cuenta
       my_activity_link: Mi contenido
       open_gov: Gobierno abierto
-      proposals: Propuestas Ciudadanas
+      proposals: Iniciativas Populares
       poll_questions: Votaciones
       budgets: Presupuestos participativos
       notification_item:
@@ -278,8 +278,8 @@ es:
       notifiable_hidden: Este elemento ya no está disponible.
   map:
     title: "Distritos"
-    proposal_for_district: "Crea una propuesta ciudadana para tu distrito"
-    start_proposal: Crea una propuesta ciudadana
+    proposal_for_district: "Crea una Iniciativa Popular para tu distrito"
+    start_proposal: Crea una Iniciativa Popular
   omniauth:
     facebook:
       sign_in: Entra con Facebook
@@ -307,29 +307,29 @@ es:
   proposals:
     create:
       form:
-        submit_button: Crear propuesta ciudadana
+        submit_button: Crear Iniciativa Popular
     created:
       title: "¡Enhorabuena! Has dado el primer paso."
-      motivation: "Es importante preparar la campaña de lanzamiento de tu propuesta ciudadana para que tenga éxito. Los primeros días son decisivos."
-      motivation_2: "<strong>Si quieres recomendaciones para preparar la publicación deja tu propuesta ciudadana como borrador y te guiaremos.</strong>"
-      publish: No, quiero publicar la propuesta ciudadana ya
+      motivation: "Es importante preparar la campaña de lanzamiento de tu Iniciativa Popular para que tenga éxito. Los primeros días son decisivos."
+      motivation_2: "<strong>Si quieres recomendaciones para preparar la publicación deja tu Iniciativa Popular como borrador y te guiaremos.</strong>"
+      publish: No, quiero publicar la Iniciativa Popular ya
       dashboard: Si, quiero ayuda y publicaré mas tarde
-      preview_title: Así es como quedará tu propuesta ciudadana cuando la publiques
+      preview_title: Así es como quedará tu Iniciativa Popular cuando la publiques
     share:
       improve_it: Mejora tu campaña y consigue mas apoyos.
       dashboard: Ver mas información
-      message: "He apoyado la propuesta ciudadana %{title} en %{handle}. Si te interesa, ¡apoya tú también!"
+      message: "He apoyado la Iniciativa Popular %{title} en %{handle}. Si te interesa, ¡apoya tú también!"
     edit:
-      editing: Editar propuesta ciudadana
+      editing: Editar Iniciativa Popular
       form:
         submit_button: Guardar cambios
-      show_link: Ver propuesta ciudadana
+      show_link: Ver Iniciativa Popular
     retire_form:
-      title: Retirar propuesta ciudadana
-      warning: "Si sigues adelante tu propuesta ciudadana podrá seguir recibiendo apoyos, pero dejará de ser listada en la lista principal, y aparecerá un mensaje para todos los usuarios avisándoles de que el autor considera que esta propuesta ciudadana no debe seguir recogiendo apoyos."
+      title: Retirar Iniciativa Popular
+      warning: "Si sigues adelante tu Iniciativa Popular podrá seguir recibiendo apoyos, pero dejará de ser listada en la lista principal, y aparecerá un mensaje para todos los usuarios avisándoles de que el autor considera que esta Iniciativa Popular no debe seguir recogiendo apoyos."
       retired_reason_blank: Selecciona una opción
-      retired_explanation_placeholder: Explica brevemente por que consideras que esta propuesta ciudadana no debe recoger más apoyos
-      submit_button: Retirar propuesta ciudadana
+      retired_explanation_placeholder: Explica brevemente por que consideras que esta Iniciativa Popular no debe recoger más apoyos
+      submit_button: Retirar Iniciativa Popular
     retire_options:
       duplicated: Duplicada
       started: En ejecución
@@ -341,7 +341,7 @@ es:
       proposal_summary_note: "(máximo 200 caracteres)"
       proposal_video_url_note: Puedes añadir un enlace a YouTube o Vimeo
       tag_category_label: "Categorías"
-      tags_instructions: "Etiqueta esta propuesta ciudadana. Puedes elegir entre las categorías propuestas ciudadanas o introducir las que desees"
+      tags_instructions: "Etiqueta esta Iniciativa Popular. Puedes elegir entre las categorías Iniciativas Populares o introducir las que desees"
       tags_label: Etiquetas
       tags_placeholder: "Escribe las etiquetas que desees separadas por coma (',')"
       map_location: "Ubicación en el mapa"
@@ -358,18 +358,18 @@ es:
         archival_date: Archivadas
         recommendations: Recomendaciones
       recommendations:
-        without_results: No existen propuestas ciudadanas relacionadas con tus intereses
-        without_interests: Sigue propuestas ciudadanas para que podamos darte recomendaciones
-        disable: "Si ocultas las recomendaciones para propuestas ciudadanas, no se volverán a mostrar. Puedes volver a activarlas en 'Mi cuenta'"
+        without_results: No existen Iniciativas Populares relacionadas con tus intereses
+        without_interests: Sigue Iniciativas Populares para que podamos darte recomendaciones
+        disable: "Si ocultas las recomendaciones para Iniciativas Populares, no se volverán a mostrar. Puedes volver a activarlas en 'Mi cuenta'"
         actions:
-          success: "Las recomendaciones de propuestas ciudadanas han sido desactivadas"
+          success: "Las recomendaciones de Iniciativas Populares han sido desactivadas"
           error: "Ha ocurrido un error. Por favor dirígete al apartado 'Mi cuenta' para desactivar las recomendaciones manualmente"
-      retired_proposals: Propuestas Ciudadanas retiradas
-      retired_proposals_link: "Propuestas Ciudadanas retiradas por sus autores"
-      selected_proposals: Propuestas Ciudadanas seleccionadas
-      selected_proposals_link: Ver propuestas ciudadanas seleccionadas
-      archived_proposals: Propuestas Ciudadanas archivadas
-      proposals_lists: Listas de propuestas ciudadanas
+      retired_proposals: Iniciativas Populares retiradas
+      retired_proposals_link: "Iniciativas Populares retiradas por sus autores"
+      selected_proposals: Iniciativas Populares seleccionadas
+      selected_proposals_link: Ver Iniciativas Populares seleccionadas
+      archived_proposals: Iniciativas Populares archivadas
+      proposals_lists: Listas de Iniciativas Populares
       retired_links:
         all: Todas
         duplicated: Duplicadas
@@ -379,48 +379,48 @@ es:
         other: Otras
       search_form:
         button: Buscar
-        placeholder: Buscar propuestas ciudadanas...
+        placeholder: Buscar Iniciativas Populares...
         title: Buscar
       search_results:
         one: " que contiene <strong>'%{search_term}'</strong>"
         other: " que contienen <strong>'%{search_term}'</strong>"
-      select_order_long: "Estas viendo las propuestas ciudadanas"
-      start_proposal: Crea una propuesta ciudadana
-      title: Propuestas Ciudadanas
+      select_order_long: "Estas viendo las Iniciativas Populares"
+      start_proposal: Crea una Iniciativa Popular
+      title: Iniciativas Populares
       top: Top semanal
-      top_link_proposals: Propuestas Ciudadanas más apoyadas por categoría
+      top_link_proposals: Iniciativas Populares más apoyadas por categoría
       section_header:
-        icon_alt: Icono de Propuestas Ciudadanas
-        title: Propuestas Ciudadanas
-        help: Ayuda sobre las propuestas ciudadanas
+        icon_alt: Icono de Iniciativas Populares
+        title: Iniciativas Populares
+        help: Ayuda sobre las Iniciativas Populares
       section_footer:
-        title: Ayuda sobre las propuestas ciudadanas
-        description: Las propuestas ciudadanas son una oportunidad para que los vecinos y colectivos decidan directamente cómo quieren que sea su ciudad, después de conseguir los apoyos suficientes y de someterse a votación ciudadana.
+        title: Ayuda sobre las Iniciativas Populares
+        description: Las Iniciativas Populares son una oportunidad para que los vecinos y colectivos decidan directamente cómo quieren que sea su ciudad, después de conseguir los apoyos suficientes y de someterse a votación ciudadana.
     new:
       form:
-        submit_button: Crear propuesta ciudadana
-      more_info: "¿Cómo funcionan las propuestas ciudadanas?"
-      recommendation_one: No escribas el título de la propuesta ciudadana o frases enteras en mayúsculas. En internet eso se considera gritar. Y a nadie le gusta que le griten.
+        submit_button: Crear Iniciativa Popular
+      more_info: "¿Cómo funcionan las Iniciativas Populares?"
+      recommendation_one: No escribas el título de la Iniciativa Popular o frases enteras en mayúsculas. En internet eso se considera gritar. Y a nadie le gusta que le griten.
       recommendation_three: Disfruta de este espacio, de las voces que lo llenan, también es tuyo.
-      recommendation_two: Cualquier propuesta ciudadana o comentario que implique una acción ilegal será eliminada, también las que tengan la intención de sabotear los espacios de propuesta ciudadana, todo lo demás está permitido.
-      recommendations_title: Recomendaciones para crear una propuesta ciudadana
-      start_new: Crear una propuesta ciudadana
+      recommendation_two: Cualquier Iniciativa Popular o comentario que implique una acción ilegal será eliminada, también las que tengan la intención de sabotear los espacios de Iniciativa Popular, todo lo demás está permitido.
+      recommendations_title: Recomendaciones para crear una Iniciativa Popular
+      start_new: Crear una Iniciativa Popular
     notice:
-      retired: Propuesta ciudadana retirada
-      published: La propuesta ciudadana ha sido publicada
+      retired: Iniciativa Popular retirada
+      published: La Iniciativa Popular ha sido publicada
     proposal:
-      created: "¡Has creado una propuesta ciudadana!"
+      created: "¡Has creado una Iniciativa Popular!"
       share:
         guide: "Compártela para que la gente empiece a apoyarla."
         edit: "Antes de que se publique podrás modificar el texto a tu gusto."
-        view_proposal: Ahora no, ir a mi propuesta ciudadana
-      already_supported: "¡Ya has apoyado esta propuesta ciudadana, compártela!"
+        view_proposal: Ahora no, ir a mi Iniciativa Popular
+      already_supported: "¡Ya has apoyado esta Iniciativa Popular, compártela!"
       comments:
         zero: Sin comentarios
         one: 1 Comentario
         other: "%{count} Comentarios"
       support: Apoyar
-      support_title: Apoyar esta propuesta ciudadana
+      support_title: Apoyar esta Iniciativa Popular
       supports:
         zero: Sin apoyos
         one: 1 apoyo
@@ -432,36 +432,36 @@ es:
       supports_necessary: "%{number} apoyos necesarios"
       reason_for_supports_necessary: ""
       total_percent: 100%
-      archived: "Esta propuesta ciudadana ha sido archivada y ya no puede recoger apoyos."
-      successful: "Esta propuesta ciudadana ha alcanzado los apoyos necesarios."
-      selected: "Propuesta ciudadana seleccionada"
+      archived: "Esta Iniciativa Popular ha sido archivada y ya no puede recoger apoyos."
+      successful: "Esta Iniciativa Popular ha alcanzado los apoyos necesarios."
+      selected: "Iniciativa Popular seleccionada"
     show:
       author_deleted: Usuario eliminado
-      code: "Código de la propuesta ciudadana:"
+      code: "Código de la Iniciativa Popular:"
       comments:
         zero: Sin comentarios
         one: 1 Comentario
         other: "%{count} Comentarios"
       comments_tab: Comentarios
       dashboard_proposal_link: Panel de control
-      flag: Esta propuesta ciudadana ha sido marcada como inapropiada por varios usuarios.
+      flag: Esta Iniciativa Popular ha sido marcada como inapropiada por varios usuarios.
       notifications_tab: Notificaciones
       milestones_tab: Seguimiento
-      retired_warning: "El autor de esta propuesta ciudadana considera que ya no debe seguir recogiendo apoyos."
+      retired_warning: "El autor de esta Iniciativa Popular considera que ya no debe seguir recogiendo apoyos."
       retired_warning_link_to_explanation: Revisa su explicación antes de apoyarla.
-      retired: Propuesta ciudadana retirada por el autor
+      retired: Iniciativa Popular retirada por el autor
       share: Compartir
-      no_notifications: "Esta propuesta ciudadana no tiene notificaciones."
+      no_notifications: "Esta Iniciativa Popular no tiene notificaciones."
       embed_video_title: "Vídeo en %{proposal}"
       title_video_url: "Vídeo externo"
       author: Autor
-      draft: Propuesta ciudadana en borrador. Todavía no puede recoger apoyos, ni aparece en la lista de propuestas ciudadanas.
+      draft: Iniciativa Popular en borrador. Todavía no puede recoger apoyos, ni aparece en la lista de Iniciativas Populares.
     update:
       form:
         submit_button: Guardar cambios
   dashboard:
     menu:
-      my_proposal: Editar mi propuesta ciudadana
+      my_proposal: Editar mi Iniciativa Popular
       progress: Progreso
       resources: Recursos
       community: Comunidad
@@ -475,7 +475,7 @@ es:
       request: Solicitar
     create_request:
       success: La petición ha sido correctamente enviada. Te contactaremos lo antes posible para informarte al respecto.
-      archived: Esta propuesta ciudadana está archivada y no puede solicitar recursos.
+      archived: Esta Iniciativa Popular está archivada y no puede solicitar recursos.
     progress:
       title: Gráfico
       group_by_month: Mensual
@@ -487,9 +487,9 @@ es:
       new_action: Nuevo
     index:
       title: Edición
-      edit_proposal_link: Editar propuesta ciudadana
-      publish: Publicar propuesta ciudadana
-      retire: Retirar propuesta ciudadana
+      edit_proposal_link: Editar Iniciativa Popular
+      publish: Publicar Iniciativa Popular
+      retire: Retirar Iniciativa Popular
     new_request:
       links: Enlaces
     resources:
@@ -518,8 +518,8 @@ es:
       hide_course: Ocultar ruta
     goal:
       target_supports:
-        one: Consigue %{count} apoyo para tu propuesta ciudadana
-        other: Consigue %{count} apoyos para tu propuesta ciudadana
+        one: Consigue %{count} apoyo para tu Iniciativa Popular
+        other: Consigue %{count} apoyos para tu Iniciativa Popular
       days:
         one: "%{count} día"
         other: "%{count} días"
@@ -529,11 +529,11 @@ es:
       access_community: Acceder a la comunidad
       latest_activity: "Última actividad de la comunidad: %{at}"
       participants: Participantes
-      debates: Debates
+      debates: Propuestas Ciudadanas
       comments: Comentarios
       latest_comments: Últimos mensajes
     messages:
-      send_notification: Enviar notificación a los que siguen la propuesta ciudadana
+      send_notification: Enviar notificación a los que siguen la Iniciativa Popular
       previous_notifications: Ver notificaciones anteriores
     polls:
       index:
@@ -573,12 +573,12 @@ es:
         title: Previsualización del poster
         poster_title: "No te quedes mirando,"
         poster_subtitle: "¡apóyame! ;)"
-        intro_text: "<strong>Estoy participando en %{org}</strong> con mi propia propuesta ciudadana y sólo si tú también te sumas podré lograr el apoyo necesario para hacer la ciudad que todos queremos."
-        proposal_code: "Código de la propuesta ciudadana: %{code}"
-        support: Apoya mi propuesta ciudadana
-        footer: "<strong>Entra en %{link} y apoya esta propuesta ciudadana.</strong> Necesitamos ser muchos. Decide tu también. ¡Gracias!"
+        intro_text: "<strong>Estoy participando en %{org}</strong> con mi propia Iniciativa Popular y sólo si tú también te sumas podré lograr el apoyo necesario para hacer la ciudad que todos queremos."
+        proposal_code: "Código de la Iniciativa Popular: %{code}"
+        support: Apoya mi Iniciativa Popular
+        footer: "<strong>Entra en %{link} y apoya esta Iniciativa Popular.</strong> Necesitamos ser muchos. Decide tu también. ¡Gracias!"
       new:
-        title: Póster de tu propuesta ciudadana
+        title: Póster de tu Iniciativa Popular
       options:
         preview: Previsualizar
         download: Descargar
@@ -595,12 +595,12 @@ es:
     mailer:
       forward:
         subtitle: "Si me apoyas, <br>lo conseguiremos."
-        support_button: Apoyar esta propuesta ciudadana
+        support_button: Apoyar esta Iniciativa Popular
         share_in: Compartir en
         hi: "¡Hola!"
-        introduction: Te escribo para comunicarte que estoy participando en %{org}, la plataforma para que podamos decidir qué ciudad queremos. Y para ello, he creado mi propia propuesta ciudadana y ahora, ¡voy a necesitar tu apoyo! Pero no te preocupes porque es muy sencillo.
-        support: "Tan sólo tienes que hacer clic en el botón que verás a continuación 'Apoyar esta propuesta ciudadana' y directamente podrás informarte acerca de ella antes de impulsarla. Sólo las propuestas ciudadanas que consigan el máximo apoyo se llevarán a cabo por parte del Ayuntamiento, y he pensado que tú ¡seguro que me ayudas a lograrlo!"
-        share: "Y si además, me haces el gran favor de compartir mi propuesta ciudadana con tus amigos, familiares y contactos ¡sería perfecto!"
+        introduction: Te escribo para comunicarte que estoy participando en %{org}, la plataforma para que podamos decidir qué ciudad queremos. Y para ello, he creado mi propia Iniciativa Popular y ahora, ¡voy a necesitar tu apoyo! Pero no te preocupes porque es muy sencillo.
+        support: "Tan sólo tienes que hacer clic en el botón que verás a continuación 'Apoyar esta Iniciativa Popular' y directamente podrás informarte acerca de ella antes de impulsarla. Sólo las Iniciativas Populares que consigan el máximo apoyo se llevarán a cabo por parte del Ayuntamiento, y he pensado que tú ¡seguro que me ayudas a lograrlo!"
+        share: "Y si además, me haces el gran favor de compartir mi Iniciativa Popular con tus amigos, familiares y contactos ¡sería perfecto!"
   polls:
     all: "Todas"
     no_dates: "sin fecha asignada"
@@ -661,7 +661,7 @@ es:
         title: "Preguntas"
         most_voted_answer: "Respuesta más votada: "
     poll_header:
-      back_to_proposal: Volver a la propuesta ciudadana
+      back_to_proposal: Volver a la Iniciativa Popular
   poll_questions:
     show:
       vote_answer: "Votar %{answer}"
@@ -670,8 +670,8 @@ es:
     new:
       title: "Enviar notificación"
       submit_button: "Enviar notificación"
-      info_about_receivers: "Esta notificación se enviará a <strong>%{count} usuarios</strong> y se publicará en %{proposal_page}.<br> Las notificaciones no se enviarán inmediatamente, los usuarios recibirán periódicamente un email con todas las notificaciones de propuestas ciudadanas."
-      proposal_page: "la página de la propuesta ciudadana"
+      info_about_receivers: "Esta notificación se enviará a <strong>%{count} usuarios</strong> y se publicará en %{proposal_page}.<br> Las notificaciones no se enviarán inmediatamente, los usuarios recibirán periódicamente un email con todas las notificaciones de Iniciativas Populares."
+      proposal_page: "la página de la Iniciativa Popular"
     show:
       back: "Volver a mi contenido"
   shared:
@@ -720,9 +720,9 @@ es:
           notice: "¡Has dejado de seguir este proyecto de gasto! <br> Ya no recibirás más notificaciones relacionadas con este proyecto."
       proposal:
         create:
-          notice: "¡Ahora estás siguiendo esta propuesta ciudadana! <br> Te notificaremos los cambios a medida que se produzcan para que estés al día."
+          notice: "¡Ahora estás siguiendo esta Iniciativa Popular! <br> Te notificaremos los cambios a medida que se produzcan para que estés al día."
         destroy:
-          notice: "¡Has dejado de seguir esta propuesta ciudadana! <br> Ya no recibirás más notificaciones relacionadas con esta propuesta ciudadana."
+          notice: "¡Has dejado de seguir esta Iniciativa Popular! <br> Ya no recibirás más notificaciones relacionadas con esta Iniciativa Popular."
     print:
       print_button: Imprimir esta información
     search: Buscar
@@ -730,9 +730,9 @@ es:
     suggest:
       debate:
         found:
-          one: "Existe un debate con el término '%{query}', puedes participar en él en vez de abrir uno nuevo."
-          other: "Existen debates con el término '%{query}', puedes participar en ellos en vez de abrir uno nuevo."
-        message: "Estás viendo %{limit} de %{count} debates que contienen el término '%{query}'"
+          one: "Existe una Propuesta Ciudadanacon el término '%{query}', puedes participar en ella en vez de abrir uno nuevo."
+          other: "Existen Propuestas Ciudadanas con el término '%{query}', puedes participar en ellas en vez de abrir uno nuevo."
+        message: "Estás viendo %{limit} de %{count} Propuestas Ciudadanas que contienen el término '%{query}'"
         see_all: "Ver todos"
       budget_investment:
         found:
@@ -742,9 +742,9 @@ es:
         see_all: "Ver todos"
       proposal:
         found:
-          one: "Existe una propuesta ciudadana con el término '%{query}', puedes participar en ella en vez de abrir uno nuevo."
-          other: "Existen propuestas ciudadanas con el término '%{query}', puedes participar en ellas en vez de abrir uno nuevo."
-        message: "Estás viendo %{limit} de %{count} propuestas ciudadanas que contienen el término '%{query}'"
+          one: "Existe una Iniciativa Popular con el término '%{query}', puedes participar en ella en vez de abrir uno nuevo."
+          other: "Existen Iniciativas Populares con el término '%{query}', puedes participar en ellas en vez de abrir uno nuevo."
+        message: "Estás viendo %{limit} de %{count} Iniciativas Populares que contienen el término '%{query}'"
         see_all: "Ver todas"
     tags_cloud:
       tags: Tendencias
@@ -790,11 +790,11 @@ es:
   stats:
     index:
       visits: Visitas
-      debates: Debates
-      proposals: Propuestas Ciudadanas
+      debates: Propuestas Ciudadanas
+      proposals: Iniciativas Populares
       comments: Comentarios
-      proposal_votes: Votos en propuestas ciudadanas
-      debate_votes: Votos en debates
+      proposal_votes: Votos en Iniciativas Populares
+      debate_votes: Votos en Propuestas Ciudadanas
       comment_votes: Votos en comentarios
       votes: Votos
       verified_users: Usuarios verificados
@@ -819,12 +819,12 @@ es:
         receiver: Mensaje enviado a %{receiver}
     show:
       deleted: Eliminado
-      deleted_debate: Este debate ha sido eliminado
-      deleted_proposal: Esta propuesta ciudadana ha sido eliminada
+      deleted_debate: Esta Propuesta Ciudadana ha sido eliminada
+      deleted_proposal: Esta Iniciativa Popular ha sido eliminada
       deleted_budget_investment: Este proyecto de gasto ha sido eliminado
-      proposals: Propuestas Ciudadanas
+      proposals: Iniciativas Populares
       proposals_status: Estado
-      debates: Debates
+      debates: Propuestas Ciudadanas
       budget_investments: Proyectos de presupuestos participativos
       comments: Comentarios
       actions: Acciones
@@ -833,11 +833,11 @@ es:
           one: 1 Comentario
           other: "%{count} Comentarios"
         debates:
-          one: 1 Debate
-          other: "%{count} Debates"
-        proposals:
-          one: 1 Propuesta ciudadana
+          one: 1 Propuesta Ciudadana
           other: "%{count} Propuestas Ciudadanas"
+        proposals:
+          one: 1 Iniciativa Popular
+          other: "%{count} Iniciativas Populares"
         budget_investments:
           one: 1 Proyecto de presupuestos participativos
           other: "%{count} Proyectos de presupuestos participativos"
@@ -850,12 +850,12 @@ es:
       send_private_message: "Enviar un mensaje privado"
       delete_alert: "¿Estás seguro de que deseas borrar tu proyecto de gasto? Esta acción no se puede deshacer"
     proposals:
-      retired: "Propuesta ciudadana retirada"
+      retired: "Iniciativa Popular retirada"
       draft: Borrador
       published: Publicada
-      see: "Ver propuesta ciudadana"
+      see: "Ver Iniciativa Popular"
       actions: Acciones
-      retired_help_text: Dashboard no disponible para propuestas ciudadanas retiradas
+      retired_help_text: Dashboard no disponible para Iniciativas Populares retiradas
   votes:
     agree: Estoy de acuerdo
     anonymous: Demasiados votos anónimos, para poder votar %{verify_account}.
@@ -863,12 +863,12 @@ es:
     disagree: No estoy de acuerdo
     organizations: Las organizaciones no pueden votar.
     supports: Apoyos
-    verified_only: Las propuestas ciudadanas sólo pueden ser votadas por usuarios verificados, %{verify_account}.
+    verified_only: Las Iniciativas Populares sólo pueden ser votadas por usuarios verificados, %{verify_account}.
     budget_investments:
       not_logged_in: Necesitas %{signin} o %{signup} para continuar.
       not_verified: Los proyectos de gasto sólo pueden ser apoyadas por usuarios verificados, %{verify_account}.
       organization: Las organizaciones no pueden votar.
-      unfeasible: No se pueden votar propuestas ciudadanas inviables.
+      unfeasible: No se pueden votar Iniciativas Populares inviables.
       not_voting_allowed: El periodo de votación está cerrado.
       different_heading_assigned:
         one: "Sólo puedes apoyar proyectos de gasto de %{count} distrito. Ya has apoyado en %{supported_headings}."
@@ -876,16 +876,16 @@ es:
   welcome:
     feed:
       most_active:
-        debates: "Debates más activos"
-        proposals: "Propuestas Ciudadanas más activas"
+        debates: "Propuestas Ciudadanas más activas"
+        proposals: "Iniciativas Populares más activas"
         processes: "Procesos abiertos"
       see_all:
-        debates: Ver todos los debates
-        proposals: Ver todas las propuestas ciudadanas
+        debates: Ver todos las Propuestas Ciudadanas
+        proposals: Ver todas las Iniciativas Populares
         processes: Ver todos los procesos
       no_items:
-        debates: Ahora mismo no hay debates
-        proposals: Ahora mismo no hay propuestas ciudadanas
+        debates: Ahora mismo no hay Propuestas Ciudadanas
+        proposals: Ahora mismo no hay Iniciativas Populares
         processes: Ahora mismo no hay procesos abiertos
       process_label: Proceso
       see_process: Ver proceso
@@ -893,13 +893,13 @@ es:
       title: Destacados
     recommended:
       title: Recomendaciones que te pueden interesar
-      help: "Estas recomendaciones se generan por las etiquetas de los debates y propuestas ciudadanas que estás siguiendo."
+      help: "Estas recomendaciones se generan por las etiquetas de las Propuestas Ciudadanas y Iniciativas Populares que estás siguiendo."
       debates:
-        title: Debates recomendados
-        btn_text_link: Todos los debates recomendados
-      proposals:
         title: Propuestas Ciudadanas recomendadas
-        btn_text_link: Todas las propuestas ciudadanas recomendadas
+        btn_text_link: Todas las Propuestas Ciudadanas recomendadas
+      proposals:
+        title: Iniciativas Populares recomendadas
+        btn_text_link: Todas las Iniciativas Populares recomendadas
       budget_investments:
         title: Presupuestos recomendados
       slide: "Ver %{title}"
@@ -912,10 +912,10 @@ es:
       go_to_index: Ahora no, ir a la página de inicio
       start_using_consul: Ir a la página de inicio
       title: Empieza a participar
-      user_permission_debates: Participar en debates
+      user_permission_debates: Participar en Propuestas Ciudadanas
       user_permission_info: Con tu cuenta ya puedes...
-      user_permission_proposal: Crear nuevas propuestas ciudadanas
-      user_permission_support_proposal: Apoyar propuestas ciudadanas*
+      user_permission_proposal: Crear nuevas Iniciativas Populares
+      user_permission_support_proposal: Apoyar Iniciativas Populares*
       user_permission_verify: "Para poder realizar las siguientes acciones, verifica tu cuenta."
       user_permission_verify_info: "* Sólo usuarios empadronados."
       user_permission_verify_my_account: Verificar mi cuenta
@@ -938,8 +938,8 @@ es:
     score_positive: "Sí"
     score_negative: "No"
     content_title:
-      proposal: "Propuesta ciudadana"
-      debate: "Debate"
+      proposal: "Iniciativa Popular"
+      debate: "Propuesta Ciudadana"
       budget_investment: "Proyecto de gasto"
   admin/widget:
     header:

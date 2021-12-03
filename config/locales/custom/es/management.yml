@@ -55,9 +55,9 @@ es:
       introduce_email: "Introduce el email con el que creó la cuenta:"
       send_email: Enviar email de verificación
     menu:
-      create_proposal: Crear propuesta ciudadana
-      print_proposals: Imprimir propuestas ciudadanas
-      support_proposals: Apoyar propuestas ciudadanas
+      create_proposal: Crear Iniciativa Popular
+      print_proposals: Imprimir Iniciativas Populares
+      support_proposals: Apoyar Iniciativas Populares
       create_budget_investment: Crear proyectos de gasto
       print_budget_investments: Imprimir proyectos de gasto
       support_budget_investments: Apoyar proyectos de gasto
@@ -65,23 +65,23 @@ es:
       user_invites: Enviar invitaciones
       select_user: Seleccionar usuario
     permissions:
-      create_proposals: Crear nuevas propuestas ciudadanas
-      debates: Participar en debates
-      support_proposals: Apoyar propuestas ciudadanas
+      create_proposals: Crear nuevas Iniciativas Populares
+      debates: Participar en Propuestas Ciudadanas
+      support_proposals: Apoyar Iniciativas Populares
       vote_proposals: Participar en las votaciones finales
     print:
-      proposals_info: Haz tu propuesta ciudadana en http://url.consul
-      proposals_title: "Propuestas Ciudadanas:"
+      proposals_info: Haz tu Iniciativa Popular en http://url.consul
+      proposals_title: "Iniciativas Populares:"
       budget_investments_info: Participa en http://url.consul
     print_info: Imprimir esta información
     proposals:
       alert:
         unverified_user: Usuario no verificado
-      create_proposal: Crear propuesta ciudadana
+      create_proposal: Crear Iniciativa Popular
       print:
         print_button: Imprimir
       index:
-        title: Apoyar propuestas ciudadanas
+        title: Apoyar Iniciativas Populares
     budgets:
       create_new_investment: Crear proyectos de gasto
       print_investments: Imprimir proyectos de gasto

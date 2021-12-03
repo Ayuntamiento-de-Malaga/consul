@@ -32,8 +32,8 @@ es:
         one: "Comentario"
         other: "Comentarios"
       debate:
-        one: "Debate"
-        other: "Debates"
+        one: "Propuesta Ciudadana"
+        other: "Propuestas Ciudadanas"
       tag:
         one: "Etiqueta"
         other: "Etiquetas"
@@ -74,8 +74,8 @@ es:
         one: Papeleta de votación
         other: Papeletas de votación
       proposal:
-        one: "Propuesta ciudadana"
-        other: "Propuestas Ciudadanas"
+        one: "Iniciativa Popular"
+        other: "Iniciativas Populares"
       sdg/goal:
         one: "objetivo"
         other: "objetivos"
@@ -104,8 +104,8 @@ es:
         one: "Proceso"
         other: "Procesos"
       legislation/proposal:
-        one: "Propuesta ciudadana"
-        other: "Propuestas Ciudadanas"
+        one: "Iniciativa Popular"
+        other: "Iniciativas Populares"
       legislation/draft_versions:
         one: "Versión del borrador"
         other: "Versiones del borrador"
@@ -131,11 +131,11 @@ es:
         one: "Votación"
         other: "Votaciones"
       proposal_notification:
-        one: "Notificación de propuesta ciudadana"
-        other: "Notificaciones de propuestas ciudadanas"
+        one: "Notificación de Iniciativa Popular"
+        other: "Notificaciones de Iniciativas Populares"
       dashboard/action:
-        one: Acción del panel de control de propuestas ciudadanas
-        other: Acciones del panel de control de propuestas ciudadanas
+        one: Acción del panel de control de Iniciativas Populares
+        other: Acciones del panel de control de Iniciativas Populares
       dashboard/administrator_task:
         one: Tarea
         other: Tareas
@@ -245,24 +245,24 @@ es:
         description: "Opinión"
         tag_list: "Temas"
         terms_of_service: "Términos de servicio"
-        title: "Título del debate"
+        title: "Título de la Propuesta Ciudadana"
       debate/translation:
-        title: "Título del debate"
-        description: "Texto inicial del debate"
+        title: "Título de la Propuesta Ciudadana"
+        description: "Texto inicial de la Propuesta Ciudadana"
       proposal:
         author: "Autor"
         title: "Título"
         question: "Pregunta"
         description: "Descripción"
-        responsible_name: "Nombre y apellidos de la persona que hace esta propuesta ciudadana"
-        retired_reason: "Razón por la que se retira la propuesta ciudadana"
+        responsible_name: "Nombre y apellidos de la persona que hace esta Iniciativa Popular"
+        retired_reason: "Razón por la que se retira la Iniciativa Popular"
         selected: "Marcar como seleccionada"
         terms_of_service: "Términos de servicio"
         video_url: "Enlace a vídeo externo"
       proposal/translation:
-        title: "Título de la propuesta ciudadana"
-        description: "Texto desarrollado de la propuesta ciudadana"
-        summary: "Resumen de la propuesta ciudadana"
+        title: "Título de la Iniciativa Popular"
+        description: "Texto desarrollado de la Iniciativa Popular"
+        summary: "Resumen de la Iniciativa Popular"
         retired_explanation: "Explicación"
       user:
         login: "Email o nombre de usuario"
@@ -271,8 +271,8 @@ es:
         password_confirmation: "Confirmación de contraseña"
         password: "Contraseña"
         current_password: "Contraseña actual"
-        email_digest: "Recibir resumen de notificaciones sobre propuestas ciudadanas"
-        email_on_comment: "Recibir un email cuando alguien comenta en mis propuestas ciudadanas o debates"
+        email_digest: "Recibir resumen de notificaciones sobre Iniciativas Populares"
+        email_on_comment: "Recibir un email cuando alguien comenta en mis Iniciativas Populares o Propuestas Ciudadanas"
         email_on_comment_reply: "Recibir un email cuando alguien contesta a mis comentarios"
         email_on_direct_message: "Recibir emails con mensajes privados"
         newsletter: "Recibir emails con información interesante sobre la web"
@@ -282,8 +282,8 @@ es:
         phone_number: "Teléfono"
         public_activity: "Mostrar públicamente mi lista de actividades"
         public_interests: "Mostrar públicamente los elementos que sigo"
-        recommended_debates: "Mostrar recomendaciones en el listado de debates"
-        recommended_proposals: "Mostrar recomendaciones en el listado de propuestas ciudadanas"
+        recommended_debates: "Mostrar recomendaciones en el listado de Propuestas Ciudadanas"
+        recommended_proposals: "Mostrar recomendaciones en el listado de Iniciativas Populares"
         redeemable_code: "Código de verificación por carta (opcional)"
       direct_message:
         title: "Título"
@@ -346,7 +346,7 @@ es:
       signature_sheet:
         title: "Título"
         signable_type: "Tipo de hoja de firmas"
-        signable_id: "ID Propuesta ciudadana/Proyecto de gasto"
+        signable_id: "ID Iniciativa Popular/Proyecto de gasto"
         document_numbers: "Números de documentos"
       site_customization/page:
         content: Contenido
@@ -414,9 +414,9 @@ es:
         homepage: "Descripción"
         milestones_summary: Seguimiento del proceso
       legislation/proposal:
-        description: "Texto desarrollado de la propuesta ciudadana"
-        summary: "Resumen de la propuesta ciudadana"
-        title: "Título de la propuesta ciudadana"
+        description: "Texto desarrollado de la Iniciativa Popular"
+        summary: "Resumen de la Iniciativa Popular"
+        title: "Título de la Iniciativa Popular"
         video_url: "Enlace a vídeo externo"
       legislation/draft_version:
         title: Título de la versión
@@ -487,14 +487,14 @@ es:
         description: Descripción
         link: Enlace externo
         request_to_administrators: Incluir en el recurso un botón para solicitar el recurso a los administradores
-        day_offset: "¿En cuántos días tras la creación de la propuesta ciudadana quieres que se active?"
-        required_supports: "¿Cuántos apoyos tiene que conseguir la propuesta ciudadana para que se active?"
+        day_offset: "¿En cuántos días tras la creación de la Iniciativa Popular quieres que se active?"
+        required_supports: "¿Cuántos apoyos tiene que conseguir la Iniciativa Popular para que se active?"
         order: Puedes introducir la posición en la que se mostrará al usuario esta acción en la lista de acciones
         active: Activa
         action_type: Tipo
-        action_type_proposed_action: "Acción propuesta ciudadana"
+        action_type_proposed_action: "Acción Iniciativa Popular"
         action_type_resource: "Recurso"
-        published_proposal: "¿Para propuestas ciudadanas publicadas?"
+        published_proposal: "¿Para Iniciativas Populares publicadas?"
       dashboard/administrator_task:
         source: Fuente
         user: Ejecutado por
@@ -551,7 +551,7 @@ es:
             end_date:
               invalid_date_range: tiene que ser igual o posterior a la fecha de inicio
             debate_end_date:
-              invalid_date_range: tiene que ser igual o posterior a la fecha de inicio del debate
+              invalid_date_range: tiene que ser igual o posterior a la fecha de inicio de la Propuesta Ciudadana
             draft_end_date:
               invalid_date_range: tiene que ser igual o posterior a la fecha de inicio del borrador
             allegations_end_date:
@@ -576,7 +576,7 @@ es:
           attributes:
             document_number:
               not_in_census: "No verificado por Padrón"
-              already_voted: "Ya ha votado esta propuesta ciudadana"
+              already_voted: "Ya ha votado esta Iniciativa Popular"
         site_customization/page:
           attributes:
             slug:

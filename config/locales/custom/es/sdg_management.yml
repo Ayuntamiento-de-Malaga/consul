@@ -14,11 +14,11 @@ es:
       no_cards: "No hay tarjetas para esta fase"
     menu:
       budget_investments: "Presupuestos participativos"
-      debates: "Debates"
+      debates: "Propuestas Ciudadanas"
       legislation_processes: "Procesos legislativos"
       legislation_proposals: "Propuestas legislativas"
       polls: "Votaciones"
-      proposals: "Propuestas Ciudadanas"
+      proposals: "Iniciativas Populares"
       sdg_content: "Objetivos y Metas"
       sdg_homepage: "Página de inicio ODS"
     local_targets:

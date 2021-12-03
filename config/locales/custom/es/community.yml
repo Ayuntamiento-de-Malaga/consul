@@ -3,15 +3,15 @@ es:
     sidebar:
       title: Comunidad
       description:
-        proposal: Participa en la comunidad de usuarios de esta propuesta ciudadana.
+        proposal: Participa en la comunidad de usuarios de esta Iniciativa Popular.
         investment: Participa en la comunidad de usuarios de este proyecto de gasto.
       button_to_access: Acceder a la comunidad
     show:
       title:
-        proposal: Comunidad de la propuesta ciudadana
+        proposal: Comunidad de la Iniciativa Popular
         investment: Comunidad del presupuesto participativo
       description:
-        proposal: Participa en la comunidad de esta propuesta ciudadana. Una comunidad activa puede ayudar a mejorar el contenido de la propuesta ciudadana así como a dinamizar su difusión para conseguir más apoyos.
+        proposal: Participa en la comunidad de esta Iniciativa Popular. Una comunidad activa puede ayudar a mejorar el contenido de la Iniciativa Popular así como a dinamizar su difusión para conseguir más apoyos.
         investment: Participa en la comunidad de este proyecto de gasto. Una comunidad activa puede ayudar a mejorar el contenido del proyecto de gasto así como a dinamizar su difusión para conseguir más apoyos.
       create_first_community_topic:
         first_theme_not_logged_in: No hay ningún tema disponible, participa creando el primero.

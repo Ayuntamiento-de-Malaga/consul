@@ -77,7 +77,7 @@ es:
         title: "Crear nuevo proyecto"
         subtitle: "%{heading} (%{price})"
         tag_category_label: "Categorías"
-        tags_instructions: "Etiqueta este proyecto. Puedes elegir entre las categorías propuestas ciudadanas o introducir las que desees"
+        tags_instructions: "Etiqueta este proyecto. Puedes elegir entre las categorías Iniciativas Populares o introducir las que desees"
         tags_label: Etiquetas
         tags_placeholder: "Escribe las etiquetas que desees separadas por coma (',')"
         map_location: "Ubicación en el mapa"

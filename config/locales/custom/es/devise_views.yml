@@ -39,7 +39,7 @@ es:
       registrations:
         new:
           password_confirmation_label: Repite la contraseña anterior
-          responsible_name_note: Será la persona representante de la asociación/colectivo en cuyo nombre se presenten las propuestas ciudadanas
+          responsible_name_note: Será la persona representante de la asociación/colectivo en cuyo nombre se presenten las Iniciativas Populares
           submit: Registrarse
           title: Registrarse como organización / colectivo
         success:

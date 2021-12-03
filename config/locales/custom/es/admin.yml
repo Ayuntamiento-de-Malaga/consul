@@ -32,8 +32,8 @@ es:
         sections_label: Secciones en las que aparece
         sections:
           homepage: Homepage
-          debates: Debates
-          proposals: Propuestas Ciudadanas
+          debates: Propuestas Ciudadanas
+          proposals: Iniciativas Populares
           budgets: Presupuestos participativos
           help_page: Página de ayuda
           sdg: ODS
@@ -60,8 +60,8 @@ es:
         filters:
           all: Todos
           on_comments: Comentarios
-          on_debates: Debates
-          on_proposals: Propuestas Ciudadanas
+          on_debates: Propuestas Ciudadanas
+          on_proposals: Iniciativas Populares
           on_users: Usuarios
           on_system_emails: Emails del sistema
         title: Actividad de moderadores
@@ -133,7 +133,7 @@ es:
         name_description: "Este es el nombre del presupuesto participativo usado en la cabecera y tarjetas cuando éste está activo"
         image_description: "Si se proporciona una imagen será usada como fondo del presupuesto, si no el fondo será del color por defecto para los presupuestos."
         main_call_to_action: "Enlace de acción principal (opcional)"
-        main_call_to_action_description: "Este enlace aparecerá en la cabecera de este presupuesto participativo y permite al usuario ejecutar una acción específica como crear una nueva propuesta ciudadana, votar las existentes, o leer más sobre el funcionamiento de los presupuestos participativos."
+        main_call_to_action_description: "Este enlace aparecerá en la cabecera de este presupuesto participativo y permite al usuario ejecutar una acción específica como crear una nueva Iniciativa Popular, votar las existentes, o leer más sobre el funcionamiento de los presupuestos participativos."
         info:
           budget_settings: "Configuración genérica del presupuesto participativo"
           staff_settings: "Administradores y Evaluadores asigandos al presupuesto"
@@ -145,7 +145,7 @@ es:
         title_multiple: Nuevo presupuesto de múltiples partidas
         title_single: Nuevo presupuesto de partida única
       help:
-        budgets: "Los presupuestos participativos permiten que los ciudadanos propongan y decidan de manera directa cómo gastar parte del presupuesto, con un seguimiento y evaluación riguroso de las propuestas ciudadanas por parte de la institución."
+        budgets: "Los presupuestos participativos permiten que los ciudadanos propongan y decidan de manera directa cómo gastar parte del presupuesto, con un seguimiento y evaluación riguroso de las Iniciativas Populares por parte de la institución."
         groups:
           multiple: "Los grupos sirven para organizar las partidas del presupuesto. Después de que un grupo sea creado y éste contenga partidas, es posible determinar el número de partidas a las que un usuario puede votar por grupo."
           single: "Los grupos sirven para organizar las partidas del presupuesto, como este presupuesto sólo contendrá una partida, se puede usar el mismo nombre y éste no aparecerá en ninguna parte. Puedes continuar con el siguiente paso."
@@ -217,7 +217,7 @@ es:
         enabled_help_text: Esta fase será pública en el calendario de fases del presupuesto y estará activa para otros propósitos
         image_description: "Si se proporciona una imagen se mostrará junto a la descripción de esta fase."
         main_call_to_action: "Enlace de acción principal (opcional)"
-        main_call_to_action_description: "Este enlace aparecerá en la cabecera de este presupuesto participativo cuando esta fase esté activa y permite al usuario ejecutar una acción específica como crear una nueva propuesta ciudadana, votar las existentes, o leer más sobre el funcionamiento de los presupuestos participativos."
+        main_call_to_action_description: "Este enlace aparecerá en la cabecera de este presupuesto participativo cuando esta fase esté activa y permite al usuario ejecutar una acción específica como crear una nueva Iniciativa Popular, votar las existentes, o leer más sobre el funcionamiento de los presupuestos participativos."
         name_help_text: "Este es el título de la fase que los usuarios leerán en el encabezado cuando la fase esté activa."
         save_changes: Guardar cambios
         title: "Editar fase"
@@ -277,7 +277,7 @@ es:
           incompatible: Incompatible
           price: Precio
           author: Autor
-        cannot_calculate_winners: El presupuesto debe estar en la fase "%{phase}" para poder calcular las propuestas ciudadanas ganadoras
+        cannot_calculate_winners: El presupuesto debe estar en la fase "%{phase}" para poder calcular las Iniciativas Populares ganadoras
         see_results: "Ver resultados"
         milestone_tags_filter_all: "Todas las etiquetas de seguimiento"
       show:
@@ -434,8 +434,8 @@ es:
           all: Todos
           with_confirmed_hide: Confirmados
           without_confirmed_hide: Pendientes
-        hidden_debate: Debate oculto
-        hidden_proposal: Propuesta ciudadana oculta
+        hidden_debate: Propuesta ciudadana oculta
+        hidden_proposal: Iniciativa Popular oculta
         title: Comentarios ocultos
         no_hidden_comments: No hay comentarios ocultos.
     dashboard:
@@ -445,7 +445,7 @@ es:
         description: Bienvenido al panel de administración de %{org}.
       actions:
         index:
-          description: "Cuando los usuarios crean propuestas ciudadanas pueden acceder a un panel de progreso de su propuesta ciudadana, donde se le puede proponer recursos y recomendaciones para conseguir apoyos a su idea."
+          description: "Cuando los usuarios crean Iniciativas Populares pueden acceder a un panel de progreso de su Iniciativa Popular, donde se le puede proponer recursos y recomendaciones para conseguir apoyos a su idea."
           create: Crear recurso o acción
           active: "Si"
           inactive: "No"
@@ -456,32 +456,32 @@ es:
           day_offset: Días necesarios
           action_active: Activo
           order: Orden
-          published_proposal: Propuesta ciudadana publicada
+          published_proposal: Iniciativa Popular publicada
           default:
             email: Correo electrónico
             polls: Encuestas
             poster: Póster
         new:
-          creating: Nueva acción para el dashboard de propuestas ciudadanas
+          creating: Nueva acción para el dashboard de Iniciativas Populares
           back: Volver a la lista
         create:
           notice: Acción creada con éxito
         edit:
-          editing: Editar acción para el dashboard de propuestas ciudadanas
+          editing: Editar acción para el dashboard de Iniciativas Populares
           back: Volver a la lista
         delete:
           success: Acción borrada con éxito
         form:
           submit_button: Guardar
           help_text: Introduce 0 para que este valor no se tenga en cuenta
-          published_proposal_help_text: Marca este checkbox para crear la acción solo para propuestas ciudadanas publicadas
+          published_proposal_help_text: Marca este checkbox para crear la acción solo para Iniciativas Populares publicadas
       administrator_tasks:
         index:
-          description: "Los recursos publicados en el panel de progreso de las propuestas ciudadanas pueden incluir un botón para ser solicitados a los administradores. A continuación se muestran las solicitudes de los usuarios."
+          description: "Los recursos publicados en el panel de progreso de las Iniciativas Populares pueden incluir un botón para ser solicitados a los administradores. A continuación se muestran las solicitudes de los usuarios."
           title: Recursos solicitados
           solve: Resolver
           no_records: No hay recursos solicitados
-          source: Propuesta ciudadana
+          source: Iniciativa Popular
           resource: Recurso solicitado
           filter: Filtro
           filters:
@@ -492,7 +492,7 @@ es:
           solving: Resolver tarea pendiente
         form:
           solve: Marcar como resuelta
-          proposal: Propuesta ciudadana
+          proposal: Iniciativa Popular
           request: Recurso solicitado
         update:
           success: La tarea ha sido marcada como resuelta
@@ -500,8 +500,8 @@ es:
       index:
         id: ID
         author: Autor
-        title: Debates
-        no_debates: No hay debates.
+        title: Propuestas Ciudadanas
+        no_debates: No hay Propuestas Ciudadanas.
     hidden_debates:
       index:
         filter: Filtro
@@ -509,8 +509,8 @@ es:
           all: Todos
           with_confirmed_hide: Confirmados
           without_confirmed_hide: Pendientes
-        title: Debates ocultos
-        no_hidden_debates: No hay debates ocultos.
+        title: Propuestas Ciudadanas ocultas
+        no_hidden_debates: No hay Propuestas Ciudadanas ocultas.
     documents:
       new:
         title: "Subir un documento"
@@ -603,8 +603,8 @@ es:
           info: Información
           homepage: Homepage
           draft_versions: Redacción
-          questions: Debate
-          proposals: Propuestas Ciudadanas
+          questions: Propuesta Ciudadana
+          proposals: Iniciativas Populares
           milestones: Seguimiento
       homepage:
         edit:
@@ -617,7 +617,7 @@ es:
           supports: Apoyos totales
         form:
           custom_categories: Categorías
-          custom_categories_description: Categorías que el usuario puede seleccionar al crear la propuesta ciudadana. Máximo 160 caracteres.
+          custom_categories_description: Categorías que el usuario puede seleccionar al crear la Iniciativa Popular. Máximo 160 caracteres.
           custom_categories_placeholder: Escribe las etiquetas que desees separadas por una coma (,) y entrecomilladas ("")
       draft_versions:
         create:
@@ -713,15 +713,15 @@ es:
       activity: Actividad de moderadores
       admin: Menú de administración
       banner: Gestionar banners
-      proposals: Propuestas Ciudadanas
-      proposals_topics: Temas de propuestas ciudadanas
+      proposals: Iniciativas Populares
+      proposals_topics: Temas de Iniciativas Populares
       budgets: Presupuestos participativos
       geozones: Gestionar zonas
       hidden_comments: Comentarios ocultos
-      hidden_debates: Debates ocultos
-      hidden_proposals: Propuestas Ciudadanas ocultas
+      hidden_debates: Propuestas Ciudadanas ocultas
+      hidden_proposals: Iniciativas Populares ocultas
       hidden_budget_investments: Proyectos de gasto ocultos
-      hidden_proposal_notifications: Notificationes de propuesta ciudadana ocultas
+      hidden_proposal_notifications: Notificationes de Iniciativa Popular ocultas
       hidden_users: Usuarios bloqueados
       administrators: Administradores
       managers: Gestores
@@ -752,9 +752,9 @@ es:
         information_texts: Personalizar textos
         information_texts_menu:
           basic: "Personalización básica"
-          debates: "Debates"
+          debates: "Propuestas Ciudadanas"
           community: "Comunidad"
-          proposals: "Propuestas Ciudadanas"
+          proposals: "Iniciativas Populares"
           polls: "Votaciones"
           layouts: "Plantillas"
           machine_learning: "IA / Machine Learning"
@@ -772,10 +772,10 @@ es:
       title_booths: Urnas de votación
       legislation: Propuestas de Gobierno
       users: Usuarios
-      dashboard: Panel de progreso de propuestas ciudadanas
+      dashboard: Panel de progreso de Iniciativas Populares
       administrator_tasks: Recursos solicitados
       dashboard_actions: Recursos y acciones
-      debates: "Debates"
+      debates: "Propuestas Ciudadanas"
       comments: "Comentarios"
       local_census_records: Gestionar censo local
       machine_learning: "IA / Machine learning"
@@ -803,8 +803,8 @@ es:
     segment_recipient:
       all_users: Todos los usuarios
       administrators: Administradores
-      all_proposal_authors: Usuarios autores de propuestas ciudadanas (incluyendo archivadas y retiradas)
-      proposal_authors: Usuarios autores de propuestas ciudadanas
+      all_proposal_authors: Usuarios autores de Iniciativas Populares (incluyendo archivadas y retiradas)
+      proposal_authors: Usuarios autores de Iniciativas Populares
       investment_authors: Usuarios autores de proyectos de gasto en los actuales presupuestos
       feasible_and_undecided_investment_authors: "Usuarios autores de algún proyecto de gasto en los actuales presupuestos que no cumpla: [evaluación finalizada inviable]"
       selected_investment_authors: Usuarios autores de proyectos de gasto seleccionadas en los actuales presupuestos
@@ -890,9 +890,9 @@ es:
         send_pending: Enviar pendientes
         send_pending_notification: Notificaciones pendientes enviadas correctamente
       proposal_notification_digest:
-        title: "Resumen de notificationes de propuestas ciudadanas"
-        description: "Reune todas las notificaciones de propuestas ciudadanas en un único mensaje, para evitar demasiados emails."
-        preview_detail: "Los usuarios sólo recibirán las notificaciones de aquellas propuestas ciudadanas que siguen."
+        title: "Resumen de notificationes de Iniciativas Populares"
+        description: "Reune todas las notificaciones de Iniciativas Populares en un único mensaje, para evitar demasiados emails."
+        preview_detail: "Los usuarios sólo recibirán las notificaciones de aquellas Iniciativas Populares que siguen."
       budget_investment_created:
         title: "Proyecto de gasto creado"
         description: "Enviado cuando un usuario crea un proyecto de presupuestos participativos."
@@ -1096,7 +1096,7 @@ es:
         questions_title: "Listado de preguntas asignadas"
         table_title: "Título"
         edit_answers: Editar respuestas
-        see_proposal: "(Ver propuesta ciudadana)"
+        see_proposal: "(Ver Iniciativa Popular)"
       flash:
         question_added: "Pregunta añadida a esta votación"
         error_on_question_added: "No se pudo asignar la pregunta"
@@ -1112,9 +1112,9 @@ es:
         filter_poll: Filtrar por votación
         select_poll: Seleccionar votación
         questions_tab: "Preguntas"
-        successful_proposals_tab: "Propuestas Ciudadanas que han superado el umbral"
+        successful_proposals_tab: "Iniciativas Populares que han superado el umbral"
         create_question: "Crear pregunta para votación"
-        table_proposal: "Propuesta ciudadana"
+        table_proposal: "Iniciativa Popular"
         table_question: "Pregunta"
         table_poll: "Votación"
         poll_not_assigned: "Votación no asignada"
@@ -1128,7 +1128,7 @@ es:
           add_image: "Añadir imagen"
           save_image: "Guardar imagen"
       show:
-        proposal: Propuesta ciudadana original
+        proposal: Iniciativa Popular original
         author: Autor
         question: Pregunta
         edit_question: Editar pregunta
@@ -1262,19 +1262,19 @@ es:
         no_results: No se han encontrado organizaciones.
     proposals:
       index:
-        title: Propuestas Ciudadanas
+        title: Iniciativas Populares
         id: ID
         author: Autor
         milestones: Hitos
         select: Seleccionar
         selected: Seleccionada
-        no_proposals: No hay propuestas ciudadanas.
+        no_proposals: No hay Iniciativas Populares.
       show:
-        create_question: Añadir esta propuesta ciudadana a una votación para ser votada
+        create_question: Añadir esta Iniciativa Popular a una votación para ser votada
       form:
-        update: Actualizar propuesta ciudadana
+        update: Actualizar Iniciativa Popular
       update:
-        notice: Propuesta ciudadana actualizada correctamente
+        notice: Iniciativa Popular actualizada correctamente
     hidden_proposals:
       index:
         filter: Filtro
@@ -1282,8 +1282,8 @@ es:
           all: Todas
           with_confirmed_hide: Confirmadas
           without_confirmed_hide: Pendientes
-        title: Propuestas Ciudadanas ocultas
-        no_hidden_proposals: No hay propuestas ciudadanas ocultas.
+        title: Iniciativas Populares ocultas
+        no_hidden_proposals: No hay Iniciativas Populares ocultas.
     hidden_proposal_notifications:
       index:
         filter: Filtro
@@ -1312,9 +1312,9 @@ es:
             update: La configuración del mapa se ha guardado correctamente.
           form:
             submit: Actualizar
-          how_to_enable: 'Para mostrar el mapa a los usuarios se debe de activar "Geolocalización de propuestas ciudadanas y proyectos de gasto" en la pestaña "Funcionalidades".'
+          how_to_enable: 'Para mostrar el mapa a los usuarios se debe de activar "Geolocalización de Iniciativas Populares y proyectos de gasto" en la pestaña "Funcionalidades".'
         dashboard:
-          title: Panel de progreso de propuestas ciudadanas
+          title: Panel de progreso de Iniciativas Populares
         remote_census:
           title: Configuración del Censo Remoto
           how_to_enable: 'Para configurar la conexión con el Censo Remoto (SOAP) se debe activar "Configurar la conexión al censo remoto (SOAP)" en la pestaña "Funcionalidades".'
@@ -1340,15 +1340,15 @@ es:
         label:
           booths: "Buscar urna por nombre"
           budget_investments: "Buscar proyectos por título, descripción o partida"
-          debates: "Buscar debates por título o descripción"
+          debates: "Buscar Propuestas Ciudadanas por título o descripción"
           legislation_processes: "Buscar procesos por título o descripción"
-          legislation_proposals: "Buscar propuestas ciudadanas por título o descripción"
+          legislation_proposals: "Buscar Iniciativas Populares por título o descripción"
           local_census_records: "Búsqueda por número de documento"
           organizations: "Nombre, email o teléfono"
           poll_officers: "Buscar presidentes de mesa"
           poll_questions: "Buscar preguntas"
           polls: "Buscar votaciones por nombre o descripción"
-          proposals: "Buscar propuestas ciudadanas por título, código, descripción o pregunta"
+          proposals: "Buscar Iniciativas Populares por título, código, descripción o pregunta"
           users: "Buscar usuario por nombre o email"
         search: "Buscar"
       search_results: "Resultados de la búsqueda"
@@ -1360,7 +1360,7 @@ es:
       show_image: Mostrar imagen
       moderated_content: "Revisa el contenido moderado por los moderadores, y confirma si la moderación se ha realizado correctamente."
       view: Ver
-      proposal: Propuesta ciudadana
+      proposal: Iniciativa Popular
       author: Autor
       content: Contenido
       created_at: Fecha de creación
@@ -1432,10 +1432,10 @@ es:
         summary:
           comment_votes: Votos en comentarios
           comments: Comentarios
-          debate_votes: Votos en debates
-          debates: Debates
-          proposal_votes: Votos en propuestas ciudadanas
-          proposals: Propuestas Ciudadanas
+          debate_votes: Votos en Propuestas Ciudadanas
+          debates: Propuestas Ciudadanas
+          proposal_votes: Votos en Iniciativas Populares
+          proposals: Iniciativas Populares
           budgets: Presupuestos abiertos
           budget_investments: Proyectos de gasto
           unverified_users: Usuarios sin verificar
@@ -1443,21 +1443,21 @@ es:
           user_level_two: Usuarios de nivel dos
           users: Usuarios
           verified_users: Usuarios verificados
-          verified_users_who_didnt_vote_proposals: Usuarios verificados que no han votado propuestas ciudadanas
+          verified_users_who_didnt_vote_proposals: Usuarios verificados que no han votado Iniciativas Populares
           visits: Visitas
           votes: Votos
         budgets_title: Presupuestos participativos
         participatory_budgets: Presupuestos Participativos
         direct_messages: Mensajes directos
-        proposal_notifications: Notificaciones de propuestas ciudadanas
+        proposal_notifications: Notificaciones de Iniciativas Populares
         incomplete_verifications: Verificaciones incompletas
         polls: Votaciones
         sdg: ODS
       graph:
-        debate_created: Debates
+        debate_created: Propuestas Ciudadanas
         visit: Visitas
         level_2_user: Usuarios nivel 2
-        proposal_created: Propuestas Ciudadanas
+        proposal_created: Iniciativas Populares
       budgets:
         no_data_before_balloting_phase: "No hay datos que mostrar hasta que la fase de votación no esté abierta."
         title: "Presupuestos participativos - Estadisticas de participación"
@@ -1480,10 +1480,10 @@ es:
         total: Total
         users_who_have_sent_message: Usuarios que han enviado un mensaje privado
       proposal_notifications:
-        title: Notificaciones de propuestas ciudadanas
+        title: Notificaciones de Iniciativas Populares
         total: Total
-        proposals_with_notifications: Propuestas Ciudadanas con notificaciones
-        not_available: "Esta propuesta ciudadana ya no está disponible"
+        proposals_with_notifications: Iniciativas Populares con notificaciones
+        not_available: "Esta Iniciativa Popular ya no está disponible"
       polls:
         title: Estadísticas de votaciones
         all: Votaciones
@@ -1500,17 +1500,17 @@ es:
           amount: "Presupuesto aprobado"
           winners: "Proyectos de inversión ganadores"
           sent: "Proyectos de inversión enviados"
-        debates: "Debates"
+        debates: "Propuestas Ciudadanas"
         polls: "Votaciones"
-        proposals: "Propuestas Ciudadanas"
+        proposals: "Iniciativas Populares"
         title: "Objetivos de Desarrollo Sostenible - Estadísticas"
     tags:
       create: Crear tema
       index:
-        add_tag: Añade un nuevo tema de propuesta ciudadana
-        title: Temas de propuesta ciudadana
+        add_tag: Añade un nuevo tema de Iniciativa Popular
+        title: Temas de Iniciativa Popular
         topic: Tema
-        help: "Cuando un usuario crea una propuesta ciudadana se le sugieren como etiquetas por defecto los siguientes temas."
+        help: "Cuando un usuario crea una Iniciativa Popular se le sugieren como etiquetas por defecto los siguientes temas."
     users:
       columns:
         id: ID
@@ -1625,8 +1625,8 @@ es:
       create_card: Crear tarjeta
       no_cards: No hay tarjetas.
       feeds:
-        proposals: Propuestas Ciudadanas
-        debates: Debates
+        proposals: Iniciativas Populares
+        debates: Propuestas Ciudadanas
         processes: Procesos
       new:
         header_title: Nuevo encabezado
@@ -1722,7 +1722,7 @@ es:
         delete_generated_content: "El contenido generado se ha borrado correctamente."
       output_files: "Ficheros de salida:"
       related_content: "Contenido relacionado"
-      related_content_description: "Añade contenido relacionado generado automáticamente a las propuestas ciudadanas y proyectos de presupuestos participativos."
+      related_content_description: "Añade contenido relacionado generado automáticamente a las Iniciativas Populares y proyectos de presupuestos participativos."
       script_info: "Recibirás un email en %{email} cuando el script termine de ejecutarse."
       script_name: "Nombre del script:"
       select_script: "Seleccione el script pyhton a ejecutar"

@@ -612,7 +612,7 @@ es:
             short_title: "Promoción de indicadores que vayan más allá del PIB"
       help:
         title: "Ayuda Objetivos de Desarrollo Sostenible"
-        description: "Puedes alinear tus aportaciones a la comunidad (debates, propuestas ciudadanas y proyectos de inversión) con los Objetivos de Desarrollo Sostenible de la Agenda 2030, esto nos permitirá tener una visión general de nuestra aportación en cada uno de los objetivos de desarrollo sostenible. A continuación puedes informarte de todos los objetivos, sus metas y las metas localizadas."
+        description: "Puedes alinear tus aportaciones a la comunidad (Propuestas Ciudadanas, Iniciativas Populares y proyectos de inversión) con los Objetivos de Desarrollo Sostenible de la Agenda 2030, esto nos permitirá tener una visión general de nuestra aportación en cada uno de los objetivos de desarrollo sostenible. A continuación puedes informarte de todos los objetivos, sus metas y las metas localizadas."
       show:
         read_more: "Leer más sobre %{goal}"
         read_less: "Leer menos sobre %{goal}"

@@ -12,20 +12,20 @@ es:
     official_level_4_name_description: "Etiqueta que aparecerá en los usuarios marcados como Nivel 4 de cargo público"
     official_level_5_name: "Cargos públicos de nivel 5"
     official_level_5_name_description: "Etiqueta que aparecerá en los usuarios marcados como Nivel 5 de cargo público"
-    max_ratio_anon_votes_on_debates: "Porcentaje máximo de votos anónimos por Debate"
+    max_ratio_anon_votes_on_debates: "Porcentaje máximo de votos anónimos por Propuesta Ciudadana"
     max_ratio_anon_votes_on_debates_description: "Se consideran votos anónimos los realizados por usuarios registrados con una cuenta sin verificar"
-    max_votes_for_proposal_edit: "Número de apoyos en que una Propuesta ciudadana deja de poderse editar"
-    max_votes_for_proposal_edit_description: "A partir de este número de apoyos el autor de una Propuesta ciudadana ya no podrá editarla"
-    max_votes_for_debate_edit: "Número de votos en que un Debate deja de poderse editar"
-    max_votes_for_debate_edit_description: "A partir de este número de votos el autor de un Debate ya no podrá editarlo"
-    proposal_code_prefix: "Prefijo para los códigos de Propuestas Ciudadanas"
-    proposal_code_prefix_description: "Este prefijo aparecerá en las Propuestas Ciudadanas delante de la fecha de creación y su ID"
-    featured_proposals_number: "Número de propuestas ciudadanas destacadas"
-    featured_proposals_number_description: "Número de propuestas ciudadanas destacadas que se mostrarán si la funcionalidad Propuestas Ciudadanas destacadas está activa"
-    votes_for_proposal_success: "Número de apoyos necesarios para aprobar una Propuesta ciudadana"
-    votes_for_proposal_success_description: "Cuando una propuesta ciudadana alcance este número de apoyos ya no podrá recibir más y se considera exitosa"
-    months_to_archive_proposals: "Meses para archivar las Propuestas Ciudadanas"
-    months_to_archive_proposals_description: "Pasado este número de meses las Propuestas Ciudadanas se archivarán y ya no podrán recoger apoyos"
+    max_votes_for_proposal_edit: "Número de apoyos en que una Iniciativa Popular deja de poderse editar"
+    max_votes_for_proposal_edit_description: "A partir de este número de apoyos el autor de una Iniciativa Popular ya no podrá editarla"
+    max_votes_for_debate_edit: "Número de votos en que una Propuesta Ciudadana deja de poderse editar"
+    max_votes_for_debate_edit_description: "A partir de este número de votos el autor de una Propuesta Ciudadana ya no podrá editarlo"
+    proposal_code_prefix: "Prefijo para los códigos de Iniciativas Populares"
+    proposal_code_prefix_description: "Este prefijo aparecerá en las Iniciativas Populares delante de la fecha de creación y su ID"
+    featured_proposals_number: "Número de Iniciativas Populares destacadas"
+    featured_proposals_number_description: "Número de Iniciativas Populares destacadas que se mostrarán si la funcionalidad Iniciativas Populares destacadas está activa"
+    votes_for_proposal_success: "Número de apoyos necesarios para aprobar una Iniciativa Popular"
+    votes_for_proposal_success_description: "Cuando una Iniciativa Popular alcance este número de apoyos ya no podrá recibir más y se considera exitosa"
+    months_to_archive_proposals: "Meses para archivar las Iniciativas Populares"
+    months_to_archive_proposals_description: "Pasado este número de meses las Iniciativas Populares se archivarán y ya no podrán recoger apoyos"
     email_domain_for_officials: "Dominio de email para cargos públicos"
     email_domain_for_officials_description: "Todos los usuarios registrados con este dominio tendrán su cuenta verificada al registrarse"
     twitter_handle: "Usuario de Twitter"
@@ -61,25 +61,25 @@ es:
     min_age_to_participate: Edad mínima para participar
     min_age_to_participate_description: "Los usuarios mayores de esta edad podrán participar en todos los procesos donde se necesite una cuenta verificada"
     proposals:
-      successful_proposal_id: Propuesta ciudadana exitosa
-      successful_proposal_id_description: Esta propuesta ciudadana se utiliza como referencia de una propuesta ciudadana exitosa en número de apoyos y se mostrará en el gráfico del panel de control
+      successful_proposal_id: Iniciativa Popular exitosa
+      successful_proposal_id_description: Esta Iniciativa Popular se utiliza como referencia de una Iniciativa Popular exitosa en número de apoyos y se mostrará en el gráfico del panel de control
       poll_short_title: Encuestas
-      poll_short_title_description: Breve descripción de la funcionalidad de encuestas. Permite a los usuarios crear encuestas sobre una propuesta ciudadana.
+      poll_short_title_description: Breve descripción de la funcionalidad de encuestas. Permite a los usuarios crear encuestas sobre una Iniciativa Popular.
       poll_description: Descripción encuestas
       poll_description_description: Descripción detallada de la funcionalidad de encuestas
       poll_link: Enlace de información adicional
       poll_link_description: Añade un enlace de información adicional a la funcionalidad de encuestas del panel de control
       email_short_title: Correo electrónico
-      email_short_title_description: 'Breve descripción de la funcionalidad de correo electrónico. Permite a los usuarios enviar un email para difundir su propuesta ciudadana. Puedes encontrar todo el contenido de este correo electrónico en "/app/views/dashboard/mailer/forward.html.erb"'
+      email_short_title_description: 'Breve descripción de la funcionalidad de correo electrónico. Permite a los usuarios enviar un email para difundir su Iniciativa Popular. Puedes encontrar todo el contenido de este correo electrónico en "/app/views/dashboard/mailer/forward.html.erb"'
       email_description: Descripción correo electrónico
       email_description_description: Descripción detallada de la funcionalidad de correo electrónico
       poster_short_title: Póster
-      poster_short_title_description: 'Breve descripción de la funcionalidad de póster. Permite a los usuarios descargar un póster en formato PDF para difundir su propuesta ciudadana. Puedes encontrar todo el contenido de este póster en "/app/views/dashboard/poster/index.pdf.erb"'
+      poster_short_title_description: 'Breve descripción de la funcionalidad de póster. Permite a los usuarios descargar un póster en formato PDF para difundir su Iniciativa Popular. Puedes encontrar todo el contenido de este póster en "/app/views/dashboard/poster/index.pdf.erb"'
       poster_description: Descripción póster
       poster_description_description: Descripción detallada de la funcionalidad de póster
     analytics_url: "URL de estadísticas externas"
-    proposal_notification_minimum_interval_in_days: "Intervalo mínimo (en días) para que los autores de propuestas ciudadanas puedan enviar nuevas notificaciones de propuesta ciudadana"
-    proposal_notification_minimum_interval_in_days_description: "El número de días en los que un usuario puede enviar una notificación a todos los que siguen su propuesta ciudadana"
+    proposal_notification_minimum_interval_in_days: "Intervalo mínimo (en días) para que los autores de Iniciativas Populares puedan enviar nuevas notificaciones de Iniciativa Popular"
+    proposal_notification_minimum_interval_in_days_description: "El número de días en los que un usuario puede enviar una notificación a todos los que siguen su Iniciativa Popular"
     direct_message_max_per_day: "Mensajes directos máximos por día"
     direct_message_max_per_day_description: "Número de mensajes directos máximos que un usuario puede enviar por día"
     feature:
@@ -91,31 +91,31 @@ es:
       google_login_description: "Permitir que los usuarios se registren con su cuenta de Google"
       wordpress_login: "Registro con Wordpress"
       wordpress_login_description: "Permitir que los usuarios se registren con su cuenta de Wordpress"
-      featured_proposals: "Propuestas Ciudadanas destacadas"
-      featured_proposals_description: "Muestra propuestas ciudadanas destacadas en la página principal de propuestas ciudadanas"
+      featured_proposals: "Iniciativas Populares destacadas"
+      featured_proposals_description: "Muestra Iniciativas Populares destacadas en la página principal de Iniciativas Populares"
       signature_sheets: "Hojas de firmas"
-      signature_sheets_description: "Permite añadir desde el panel de Administración firmas recogidas de forma presencial a Propuestas Ciudadanas y proyectos de gasto de los Presupuestos participativos"
+      signature_sheets_description: "Permite añadir desde el panel de Administración firmas recogidas de forma presencial a Iniciativas Populares y proyectos de gasto de los Presupuestos participativos"
       user:
         recommendations: "Recomendaciones"
         recommendations_description: "Muestra a los usuarios recomendaciones en la homepage basado en las etiquetas de los elementos que sigue"
         skip_verification: "Omitir verificación de usuarios"
         skip_verification_description: "Esto deshabilitará la verificación de usuarios y todos los usuarios registrados podrán participar en todos los procesos"
-        recommendations_on_debates: "Recomendaciones en debates"
-        recommendations_on_debates_description: "Muestra a los usuarios recomendaciones en la página de debates basado en las etiquetas de los elementos que sigue"
-        recommendations_on_proposals: "Recomendaciones en propuestas ciudadanas"
-        recommendations_on_proposals_description: "Muestra a los usuarios recomendaciones en la página de propuestas ciudadanas basado en las etiquetas de los elementos que sigue"
-      community: "Comunidad en propuestas ciudadanas y proyectos de gasto"
-      community_description: "Activa la sección de comunidad en las propuestas ciudadanas y en los proyectos de gasto de los Presupuestos participativos"
+        recommendations_on_debates: "Recomendaciones en Propuestas Ciudadanas"
+        recommendations_on_debates_description: "Muestra a los usuarios recomendaciones en la página de Propuestas Ciudadanas basado en las etiquetas de los elementos que sigue"
+        recommendations_on_proposals: "Recomendaciones en Iniciativas Populares"
+        recommendations_on_proposals_description: "Muestra a los usuarios recomendaciones en la página de Iniciativas Populares basado en las etiquetas de los elementos que sigue"
+      community: "Comunidad en Iniciativas Populares y proyectos de gasto"
+      community_description: "Activa la sección de comunidad en las Iniciativas Populares y en los proyectos de gasto de los Presupuestos participativos"
       machine_learning: "IA / Machine learning"
       machine_learning_description: "Habilita la sección de IA / Machine Learning para ejecutar scripts de python y enriquecer el contenido automáticamente."
-      map: "Geolocalización de propuestas ciudadanas y proyectos de gasto"
-      map_description: "Activa la geolocalización de propuestas ciudadanas y proyectos de gasto"
+      map: "Geolocalización de Iniciativas Populares y proyectos de gasto"
+      map_description: "Activa la geolocalización de Iniciativas Populares y proyectos de gasto"
       allow_images: "Permitir subir y mostrar imágenes"
-      allow_images_description: "Permite que los usuarios suban imágenes al crear propuestas ciudadanas y proyectos de gasto de los Presupuestos participativos"
+      allow_images_description: "Permite que los usuarios suban imágenes al crear Iniciativas Populares y proyectos de gasto de los Presupuestos participativos"
       allow_attached_documents: "Permitir creación de documentos adjuntos"
-      allow_attached_documents_description: "Permite que los usuarios suban documentos al crear propuestas ciudadanas y proyectos de gasto de los Presupuestos participativos"
-      guides: "Guías para crear propuestas ciudadanas o proyectos de inversión"
-      guides_description: "Muestra una guía de diferencias entre las propuestas ciudadanas y los proyectos de gasto si hay un presupuesto participativo activo"
+      allow_attached_documents_description: "Permite que los usuarios suban documentos al crear Iniciativas Populares y proyectos de gasto de los Presupuestos participativos"
+      guides: "Guías para crear Iniciativas Populares o proyectos de inversión"
+      guides_description: "Muestra una guía de diferencias entre las Iniciativas Populares y los proyectos de gasto si hay un presupuesto participativo activo"
       public_stats: "Estadísticas públicas"
       public_stats_description: "Muestra las estadísticas públicas en el panel de Administración"
       help_page: "Página de ayuda"
@@ -131,7 +131,7 @@ es:
       graphql_api: "API GraphQL"
       dashboard:
         notification_emails: "Emails del panel de progreso"
-        notification_emails_description: "Activar el envío de emails de notificaciones a los autores de las propuestas ciudadanas en la sección de panel de progreso"
+        notification_emails_description: "Activar el envío de emails de notificaciones a los autores de las Iniciativas Populares en la sección de panel de progreso"
       remove_investments_supports: "Permitir retirar los apoyos en los proyectos de gasto"
       remove_investments_supports_description: "Permite que los usuarios retiren su apoyo en los proyectos de gasto de los presupuestos participativos durante la fase de apoyos."
       sdg: ODS
@@ -176,10 +176,10 @@ es:
       zoom: "Zoom"
       zoom_description: "Zoom para mostrar la posición del mapa"
     process:
-      debates: "Debates"
-      debates_description: "El espacio de debates ciudadanos está dirigido a que cualquier persona pueda exponer temas que le preocupan y sobre los que quiera compartir puntos de vista con otras personas"
-      proposals: "Propuestas Ciudadanas"
-      proposals_description: "Las propuestas ciudadanas son una oportunidad para que los vecinos y colectivos decidan directamente cómo quieren que sea su sociedad, después de conseguir los apoyos suficientes y de someterse a votación ciudadana"
+      debates: "Propuestas Ciudadanas"
+      debates_description: "El espacio de Propuestas Ciudadanas está dirigido a que cualquier persona pueda exponer temas que le preocupan y sobre los que quiera compartir puntos de vista con otras personas"
+      proposals: "Iniciativas Populares"
+      proposals_description: "Las Iniciativas Populares son una oportunidad para que los vecinos y colectivos decidan directamente cómo quieren que sea su sociedad, después de conseguir los apoyos suficientes y de someterse a votación ciudadana"
       polls: "Votaciones"
       polls_description: "Las votaciones ciudadanas son un mecanismo de participación por el que la ciudadanía con derecho a voto puede tomar decisiones de forma directa"
       budgets: "Presupuestos participativos"
@@ -208,17 +208,17 @@ es:
           max_length_description: "El título es proporcionado por el usuario cuando se sube una imagen (usado como atributo HTML alt)"
       documents:
         max_amount: "Número máximo de documentos"
-        max_amount_description: "Número máximo de documentos que se pueden añadir a una propuesta ciudadana, proyecto de gasto..."
+        max_amount_description: "Número máximo de documentos que se pueden añadir a una Iniciativa Popular, proyecto de gasto..."
         max_size: "Tamaño máximo de documento"
         max_size_description: "Tamaño máximo permitido al subir un documento (en Megabytes/MB)"
         content_types: "Tipos de documentos permitidos"
         content_types_description: "Selecciona todos los tipos permitidos para los documentos subidos"
     sdg:
       process:
-        debates: Alineamiento ODS en debates
-        debates_description: Permitir alineamiento de los Objetivos de Desarrollo Sostenible en debates
-        proposals: Alineamiento ODS en propuestas ciudadanas
-        proposals_description: Permitir alineamiento de los Objetivos de Desarrollo Sostenible en propuestas ciudadanas
+        debates: Alineamiento ODS en Propuestas Ciudadanas
+        debates_description: Permitir alineamiento de los Objetivos de Desarrollo Sostenible en Propuestas Ciudadanas
+        proposals: Alineamiento ODS en Iniciativas Populares
+        proposals_description: Permitir alineamiento de los Objetivos de Desarrollo Sostenible en Iniciativas Populares
         polls: Alineamiento ODS en votaciones
         polls_description: Permitir alineamiento de los Objetivos de Desarrollo Sostenible en votaciones
         budgets: Alineamiento ODS en presupuestos participativos

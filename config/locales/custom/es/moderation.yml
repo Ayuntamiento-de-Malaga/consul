@@ -31,22 +31,22 @@ es:
           pending_flag_review: Pendientes
           with_ignored_flag: Marcados como revisados
         headers:
-          debate: Debate
+          debate: Propuesta Ciudadana
           moderate: Moderar
-        hide: Ocultar debates
+        hide: Ocultar Propuestas Ciudadanas
         ignore_flags: Marcar como revisados
         orders:
           created_at: Más nuevos
           flags: Más denunciados
-        title: Debates
+        title: Propuestas Ciudadanas
     header:
       title: Moderación
     menu:
       flagged_comments: Comentarios
-      flagged_debates: Debates
+      flagged_debates: Propuestas Ciudadanas
       flagged_investments: Proyectos de gasto
-      proposals: Propuestas Ciudadanas
-      proposal_notifications: Notificaciones de propuestas ciudadanas
+      proposals: Iniciativas Populares
+      proposal_notifications: Notificaciones de Iniciativas Populares
       users: Bloquear usuarios
     proposals:
       index:
@@ -59,13 +59,13 @@ es:
           with_ignored_flag: Marcadas como revisadas
         headers:
           moderate: Moderar
-          proposal: Propuesta ciudadana
-        hide: Ocultar Propuestas Ciudadanas
+          proposal: Iniciativa Popular
+        hide: Ocultar Iniciativas Populares
         ignore_flags: Marcar como revisadas
         orders:
           created_at: Más recientes
           flags: Más denunciadas
-        title: Propuestas Ciudadanas
+        title: Iniciativas Populares
     budget_investments:
       index:
         block_authors: Bloquear autores
@@ -95,17 +95,17 @@ es:
           ignored: Marcadas como revisadas
         headers:
           moderate: Moderar
-          proposal_notification: Notificación de propuesta ciudadana
+          proposal_notification: Notificación de Iniciativa Popular
         hide: Ocultar notificaciones
         ignore_flags: Marcar como revisadas
         orders:
           created_at: Más recientes
           moderated: Moderadas
-        title: Notificaciones de propuestas ciudadanas
+        title: Notificaciones de Iniciativas Populares
     users:
       index:
         hidden: Bloqueado
         hide: Bloquear
         search_placeholder: email o nombre de usuario
         title: Bloquear usuarios
-      notice_hide: Usuario bloqueado. Se han ocultado todos sus debates y comentarios.
+      notice_hide: Usuario bloqueado. Se han ocultado todas sus Propuestas Ciudadanas y comentarios.

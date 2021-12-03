@@ -54,7 +54,7 @@ es:
           winners: Seleccionadas
       debate:
         empty_questions: No hay preguntas
-        participate: Realiza tus aportaciones al debate previo participando en los siguientes temas.
+        participate: Realiza tus aportaciones a la Propuesta Ciudadana previa participando en los siguientes temas.
       index:
         filter: Filtro
         filters:
@@ -68,7 +68,7 @@ es:
           help: Ayuda sobre Propuestas de Gobierno
         section_footer:
           title: Ayuda sobre Propuestas de Gobierno
-          description: Participa en los debates y procesos previos a la aprobación de nuevas normas o planes. Tu opinión será tenida en cuenta.
+          description: Participa en las Propuestas Ciudadanas y procesos previos a la aprobación de nuevas normas o planes. Tu opinión será tenida en cuenta.
       phase_not_open:
         not_open: Esta fase del proceso todavía no está abierta
       phase_empty:
@@ -79,7 +79,7 @@ es:
       shared:
         key_dates: Fases de participación
         homepage: Inicio
-        debate_dates: Debate previo
+        debate_dates: Propuesta Ciudadana previa
         draft_publication_date: Publicación borrador
         allegations_dates: Comentarios
         result_publication_date: Publicación resultados
@@ -97,7 +97,7 @@ es:
           zero: Sin comentarios
           one: "%{count} comentario"
           other: "%{count} comentarios"
-        debate: Debate
+        debate: Propuesta Ciudadana
       show:
         answer_question: Enviar respuesta
         next_question: Siguiente pregunta
@@ -106,10 +106,10 @@ es:
         title: Proceso de Propuestas de Gobierno
       participation:
         phase_not_open: Esta fase no está abierta
-        organizations: Las organizaciones no pueden participar en el debate
-        unauthenticated: Necesitas %{signin} o %{signup} para participar en el debate.
-        verified_only: Solo los usuarios verificados pueden participar en el debate, %{verify_account}.
-        debate_phase_not_open: La fase de debate previo ya ha finalizado y en este momento no se aceptan respuestas
+        organizations: Las organizaciones no pueden participar en la Propuesta Ciudadana
+        unauthenticated: Necesitas %{signin} o %{signup} para participar en la Propuesta Ciudadana.
+        verified_only: Solo los usuarios verificados pueden participar en la Propuesta Ciudadana, %{verify_account}.
+        debate_phase_not_open: La fase de Propuesta Ciudadana previa ya ha finalizado y en este momento no se aceptan respuestas
     shared:
       share: Compartir
       share_comment: Comentario sobre la %{version_name} del borrador del proceso %{process_name}
@@ -124,13 +124,13 @@ es:
         zero: "%{count} votos"
         one: "%{count} voto"
         other: "%{count} votos"
-      debate_phase: "Fase de debate"
+      debate_phase: "Fase de Propuesta Ciudadana"
       proposals_phase: "Fase de aportaciones"
       allegations_phase: "Fase de comentarios"
       debates:
-        zero: "No hay debates"
-        one: "%{count} debate"
-        other: "%{count} debates"
+        zero: "No hay Propuestas Ciudadanas"
+        one: "%{count} Propuesta Ciudadana"
+        other: "%{count} Propuestas Ciudadanas"
       proposals:
         zero: "No hay aportaciones"
         one: "%{count} aportación"

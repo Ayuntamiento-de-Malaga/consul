@@ -8,26 +8,26 @@ es:
       title: "%{org} es una plataforma de participación ciudadana"
       guide: "Esta guía explica para qué sirven y cómo funcionan cada una de las secciones de %{org}."
       menu:
-        debates: "Debates"
-        proposals: "Propuestas Ciudadanas"
+        debates: "Propuestas Ciudadanas"
+        proposals: "Iniciativas Populares"
         budgets: "Presupuestos participativos"
         polls: "Votaciones"
         other: "Otra información de interés"
         processes: "Propuestas de Gobierno"
       debates:
-        title: "Debates"
-        description: "En la sección de %{link} puedes exponer y compartir tu opinión con otras personas sobre temas que te preocupan relacionados con la ciudad. También es un espacio donde generar ideas que a través de las otras secciones de %{org} lleven a actuaciones concretas por parte del Ayuntamiento."
-        link: "debates ciudadanos"
-        feature: "Puedes abrir debates, comentarlos y valorarlos con los botones de <strong>Estoy de acuerdo</strong> o <strong>No estoy de acuerdo</strong>. Para ello tienes que %{link}."
-        feature_link: "registrarte en %{org}"
-        image_alt: "Botones para valorar los debates"
-        figcaption: 'Botones "Estoy de acuerdo" y "No estoy de acuerdo" para valorar los debates.'
-      proposals:
         title: "Propuestas Ciudadanas"
-        description: "En la sección de %{link} puedes plantear propuestas ciudadanas para que el Ayuntamiento las lleve a cabo. Las propuestas ciudadanas recaban apoyos, y si alcanzan los apoyos suficientes se someten a votación ciudadana. Las propuestas ciudadanas aprobadas en estas votaciones ciudadanas son asumidas por el Ayuntamiento y se llevan a cabo."
-        link: "propuestas ciudadanas"
-        image_alt: "Botón para apoyar una propuesta ciudadana"
-        figcaption: 'Botón para "Apoyar" una propuesta ciudadana.'
+        description: "En la sección de %{link} puedes exponer y compartir tu opinión con otras personas sobre temas que te preocupan relacionados con la ciudad. También es un espacio donde generar ideas que a través de las otras secciones de %{org} lleven a actuaciones concretas por parte del Ayuntamiento."
+        link: "Propuestas Ciudadanas ciudadanas"
+        feature: "Puedes abrir Propuestas Ciudadanas, comentarlas y valorarlas con los botones de <strong>Estoy de acuerdo</strong> o <strong>No estoy de acuerdo</strong>. Para ello tienes que %{link}."
+        feature_link: "registrarte en %{org}"
+        image_alt: "Botones para valorar las Propuestas Ciudadanas"
+        figcaption: 'Botones "Estoy de acuerdo" y "No estoy de acuerdo" para valorar las Propuestas Ciudadanas.'
+      proposals:
+        title: "Iniciativas Populares"
+        description: "En la sección de %{link} puedes plantear Iniciativas Populares para que el Ayuntamiento las lleve a cabo. Las Iniciativas Populares recaban apoyos, y si alcanzan los apoyos suficientes se someten a votación ciudadana. Las Iniciativas Populares aprobadas en estas votaciones ciudadanas son asumidas por el Ayuntamiento y se llevan a cabo."
+        link: "Iniciativas Populares"
+        image_alt: "Botón para apoyar una Iniciativa Popular"
+        figcaption: 'Botón para "Apoyar" una Iniciativa Popular.'
       budgets:
         title: "Presupuestos participativos"
         description: "La sección de %{link} sirve para que la gente decida de manera directa a qué se destina una parte del presupuesto municipal."
@@ -36,13 +36,13 @@ es:
         figcaption: 'Fase de "Apoyos" y fase de "Votación" de los presupuestos participativos.'
       polls:
         title: "Votaciones"
-        description: "La sección de %{link} se activa cada vez que una propuesta ciudadana alcanza el 1% de apoyos y pasa a votación o cuando el Ayuntamiento propone un tema para que la gente decida sobre él."
+        description: "La sección de %{link} se activa cada vez que una Iniciativa Popular alcanza el 1% de apoyos y pasa a votación o cuando el Ayuntamiento propone un tema para que la gente decida sobre él."
         link: "votaciones ciudadanas"
         feature_1: "Para participar en las votaciones tienes que %{link} y verificar tu cuenta."
         feature_1_link: "registrarte en %{org_name}"
       processes:
         title: "Propuestas de Gobierno"
-        description: "En la sección de %{link} la ciudadanía participa en la elaboración y modificación de normativa que afecta a la ciudad y puede dar su opinión sobre las políticas municipales en debates previos."
+        description: "En la sección de %{link} la ciudadanía participa en la elaboración y modificación de normativa que afecta a la ciudad y puede dar su opinión sobre las políticas municipales en Propuestas Ciudadanas previas."
         link: "Propuestas de Gobierno"
         feature: "Para participar en la Propuestas de Gobierno tienes que %{link} y verificar tu cuenta."
         feature_link: "registrarte en %{org_name}"
@@ -91,9 +91,9 @@ es:
             - key_column: 0
               page_column: Inicio
             - key_column: 1
-              page_column: Debates
-            - key_column: 2
               page_column: Propuestas Ciudadanas
+            - key_column: 2
+              page_column: Iniciativas Populares
             - key_column: 3
               page_column: Votaciones
             - key_column: 4

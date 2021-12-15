@@ -300,11 +300,19 @@ class Admin::MenuComponent < ApplicationComponent
       ]
     end
 
+    # def tags_link
+    #   [
+    #     t("admin.menu.proposals_topics"),
+    #     admin_proposals_tags_path,
+    #     controller_name == "proposals_tags"
+    #   ]
+    # end
+
     def tags_link
       [
-        t("admin.menu.proposals_topics"),
-        admin_tags_path,
-        controller_name == "tags"
+        t("admin.menu.debates_topics"),
+        admin_debates_tags_path,
+        controller_name == "debates_tags"
       ]
     end
 

@@ -105,6 +105,9 @@ namespace :admin do
 
   resources :tags, only: [:index, :create, :update, :destroy]
 
+  resources :proposals_tags, only: [:index, :create, :update, :destroy]
+  resources :debates_tags, only: [:index, :create, :update, :destroy]
+
   resources :officials, only: [:index, :edit, :update, :destroy] do
     get :search, on: :collection
   end

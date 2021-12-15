@@ -28,11 +28,30 @@
     <legend><%= t("shared.optional") %></legend>
 
     <div>
+      <%= f.label :tag_list, t("proposals.form.tags_label") %>
+      <p class="help-text" id="tag-list-help-text"><%= t("proposals.form.tags_instructions") %></p>
+
+      <div id="category_tags" class="tags">
+        <%= f.label :area_tag_list, 'Area' %>
+        <% areas.each do |tag| %>
+          <a class="js-add-tag-link"><%= tag.name %></a>
+        <% end %>
+      </div>
+
+      <div id="category_tags" class="tags">
+        <%= f.label :district_tag_list, 'Distrito' %>
+        <% districts.each do |tag| %>
+          <a class="js-add-tag-link"><%= tag.name %></a>
+        <% end %>
+      </div>
+
+      <br>
       <%= f.text_field :tag_list, value: debate.tag_list.to_s,
+                        label: false,
                         hint: t("debates.form.tags_instructions"),
                         placeholder: t("debates.form.tags_placeholder"),
                         data: { js_url: suggest_tags_path },
-                        class: "tag-autocomplete" %>
+                        class: "js-tag-list tag-autocomplete" %>
     </div>
 
     <%= render SDG::RelatedListSelectorComponent.new(f) %>

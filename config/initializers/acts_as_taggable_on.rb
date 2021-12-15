@@ -27,6 +27,9 @@ module ActsAsTaggableOn
 
   Tag.class_eval do
     scope :category, -> { where(kind: "category") }
+    scope :area, -> { where(kind: "area") }
+    scope :district, -> { where(kind: "district") }
+    scope :area_or_district, -> { where(kind: ["area", "district"]) }
 
     def category?
       kind == "category"

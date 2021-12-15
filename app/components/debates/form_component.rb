@@ -7,4 +7,12 @@ class Debates::FormComponent < ApplicationComponent
   def initialize(debate)
     @debate = debate
   end
+
+  private
+    def areas
+      Tag.area.order(:name)
+    end
+    def districts
+      Tag.district.order(:name)
+    end
 end

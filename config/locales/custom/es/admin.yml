@@ -715,6 +715,7 @@ es:
       banner: Gestionar banners
       proposals: Iniciativas Populares
       proposals_topics: Temas de Iniciativas Populares
+      debates_topics: Temas de Propuestas Ciudadanas
       budgets: Presupuestos participativos
       geozones: Gestionar zonas
       hidden_comments: Comentarios ocultos
@@ -1511,6 +1512,18 @@ es:
         title: Temas de Iniciativa Popular
         topic: Tema
         help: "Cuando un usuario crea una Iniciativa Popular se le sugieren como etiquetas por defecto los siguientes temas."
+      proposals:
+        add_tag: Añade un nuevo tema de Iniciativa Popular
+        title: Temas de Iniciativa Popular
+        topic: Tema
+        help: "Cuando un usuario crea una Iniciativa Popular se le sugieren como etiquetas por defecto los siguientes temas."
+
+      debates:
+        add_tag: Añade un nuevo tema de Propuesta Ciudadana
+        title: Temas de Propuesta Ciudadana
+        topic: Tema
+        help: "Cuando un usuario crea una Propuesta Ciudadana se le sugieren como etiquetas por defecto los siguientes temas."
+
     users:
       columns:
         id: ID

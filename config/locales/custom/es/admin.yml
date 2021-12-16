@@ -1522,6 +1522,10 @@ es:
         add_tag: Añade un nuevo tema de Propuesta Ciudadana
         title: Temas de Propuesta Ciudadana
         topic: Tema
+        kind:
+          title: Tipo
+          district: Distrito
+          area: Area
         help: "Cuando un usuario crea una Propuesta Ciudadana se le sugieren como etiquetas por defecto los siguientes temas."
 
     users:

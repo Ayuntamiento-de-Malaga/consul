@@ -17,6 +17,7 @@
 <table>
   <thead>
     <th scope="col" class="small-9"><%= t("admin.tags.debates.topic") %></th>
+    <th scope="col"><%= t("admin.tags.debates.kind.title") %></th>
     <th scope="col"><%= t("admin.actions.actions") %></th>
   </thead>
   <tbody>
@@ -30,6 +31,9 @@
 
             <strong><%= tag.name %></strong>
         <% end %>
+      </td>
+      <td>
+        <strong><%= t("admin.tags.debates.kind.#{tag.kind}") %></strong>
       </td>
       <td id="tag_<%= tag.id %>">
         <%= render Admin::TableActionsComponent.new(tag, actions: [:destroy]) %>

@@ -2,6 +2,14 @@
   <ul>
     <%= raw content_block("subnavigation_left") %>
 
+    <% if feature?(:legislation) %>
+      <li>
+        <%= layout_menu_link_to t("layouts.header.collaborative_legislation"),
+                                legislation_processes_path,
+                                controller.class.parent == Legislation,
+                                accesskey: "4" %>
+      </li>
+    <% end %>
     <% if feature?(:debates) %>
       <li>
         <%= layout_menu_link_to t("layouts.header.debates"),
@@ -24,14 +32,6 @@
                                   polls_path,
                                   controller_name == "polls" || (controller_name == "questions" && controller.class.parent == Polls),
                                   accesskey: "3" %>
-      </li>
-    <% end %>
-    <% if feature?(:legislation) %>
-      <li>
-        <%= layout_menu_link_to t("layouts.header.collaborative_legislation"),
-                                legislation_processes_path,
-                                controller.class.parent == Legislation,
-                                accesskey: "4" %>
       </li>
     <% end %>
     <% if feature?(:budgets) %>
@@ -58,6 +58,12 @@
                                 accesskey: "7" %>
       </li>
     <% end %>
+    <li>
+        <%= link_to(t("layouts.header.open_gov"),
+                                'https://www.malaga.eu/gobierno-abierto/que-es-gobierno-abierto/',
+                                title: t("shared.target_blank"),
+                                                      target: "_blank") %>
+      </li>
     <li>
         <%= link_to(t("layouts.header.contact"),
                                 'https://www.malaga.eu/malaga24h/comunicate/',

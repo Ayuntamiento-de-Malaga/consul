@@ -48,6 +48,18 @@ header {
       color: $white;
     }
   }
+  .subnavigation {
+    a {
+      &.is-active {
+        color: $brand;
+        text-decoration: underline;
+        @include breakpoint(medium) {
+          color: $white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
 
 // Home > footer

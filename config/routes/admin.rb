@@ -236,6 +236,7 @@ namespace :admin do
       resources :progress_bars, except: :show
       resource :homepage, only: [:edit, :update]
     end
+    resources :files, only: [:show]
   end
 
   namespace :api do

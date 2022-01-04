@@ -43,7 +43,7 @@
           <td><%= render Admin::TableActionsComponent.new(process) do |actions| %>
               <%= actions.action(:download,
                                  text: t("admin.actions.download"),
-                                 path: admin_legislation_file_path(process, format: :pdf)) %>
+                                 path: predownload_admin_legislation_process_path(process)) %>
             <% end %></td>
         </tr>
       <% end %>

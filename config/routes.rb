@@ -31,6 +31,7 @@ Rails.application.routes.draw do
   root "welcome#index"
   get "/welcome", to: "welcome#welcome"
   get "/consul.json", to: "installation#details"
+  get "/admin/legislation/processes/:id/predownload", to: "admin/legislation/processes#predownload", as: "predownload_admin_legislation_process"
 
   resources :stats, only: [:index]
   resources :images, only: [:destroy]

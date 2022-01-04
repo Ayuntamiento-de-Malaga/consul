@@ -1,0 +1,35 @@
+<% provide :title do %>
+  <%= t("admin.header.title") %> - <%= t("admin.menu.legislation") %> - <%= t("admin.legislation.processes.index.filters.#{@current_filter}") %>
+<% end %>
+
+<h2 class="inline-block">Paso Previo a la Descarga</h2>
+
+<%= form_with url: admin_legislation_file_path(@process), method: :get do |form| %>
+  <%= form.label :conclusions, "Exponga las conclusiones finales que aparecerán en el documento:" %>
+  <%= form.text_area :conclusions, rows: 5, label: false %>
+  <% select_options = [
+      ["Ciencia y Tecnologia", "Ciencia y Tecnologia"],
+      ["Comercio", "Comercio"],
+      ["Cultura y Ocio", "Cultura y Ocio"],
+      ["Demografía", "Demografía"],
+      ["Deporte", "Deporte"],
+      ["Economía", "Economía"],
+      ["Educación", "Educación"],
+      ["Empleo", "Empleo"],
+      ["Energía", "Energía"],
+      ["Hacienda", "Hacienda"],
+      ["Industria", "Industria"],
+      ["Legislación y Justicia", "Legislación y Justicia"],
+      ["Medio Ambiente", "Medio Ambiente"],
+      ["Sector Público", "Sector Público"],
+      ["Seguridad", "Seguridad"],
+      ["Sociedad y Bienestar", "Sociedad y Bienestar"],
+      ["Transporte", "Transporte"],
+      ["Turismo", "Turismo"],
+      ["Urbanismo e Infraestructuras", "Urbanismo e Infraestructuras"],
+      ["Vivienda", "Vivienda"]
+    ] %>
+  <%= form.select :area, options_for_select(select_options), label: 'Selecciona el area a la que pertenece el proceso', include_blank: '-------------' %>
+  <%= form.submit "Generar documento" %>
+
+<% end %>

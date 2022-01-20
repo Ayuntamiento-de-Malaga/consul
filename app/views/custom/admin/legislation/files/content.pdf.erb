@@ -38,13 +38,14 @@
         <ol>
           <li>
             <% info_text = "#{doc.humanized_content_type} | #{number_to_human_size(doc.attachment_file_size)}" %>
-            <a href="<%= root_url %><%= doc.attachment.url %>"><%= doc.title %> (<%= info_text %>)</a>
+            <a href="<%= root_url %><%= doc.attachment.url %>"><%= doc.title %> (<%= info_text %>)</a><br>
+            <small>Disponible en la siguiente URL: <%= root_url %><%= doc.attachment.url %></small>
           </li>
         </ol>
       <% end %>
     </p>
     <p class="text">
-      Durante el proceso se ha producido <%= @process.total_comments %> comentarios, y se han alcanzado las siguientes conclusiones: <%= @conclusions.blank? ? 'Sin conclusiones' : @conclusions %>
+      Durante el proceso se ha producido <%= @process.total_comments_and_proposals %> comentarios, y se han alcanzado las siguientes conclusiones: <%= @conclusions.blank? ? 'Sin conclusiones' : @conclusions %>
     </p>
   </div>
 </body>

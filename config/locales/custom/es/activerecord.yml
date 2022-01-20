@@ -104,8 +104,8 @@ es:
         one: "Proceso"
         other: "Procesos"
       legislation/proposal:
-        one: "Iniciativa Popular"
-        other: "Iniciativas Populares"
+        one: "Aportación"
+        other: "Aportaciones"
       legislation/draft_versions:
         one: "Versión del borrador"
         other: "Versiones del borrador"
@@ -414,9 +414,9 @@ es:
         homepage: "Descripción"
         milestones_summary: Seguimiento del proceso
       legislation/proposal:
-        description: "Texto desarrollado de la Iniciativa Popular"
-        summary: "Resumen de la Iniciativa Popular"
-        title: "Título de la Iniciativa Popular"
+        description: "Texto desarrollado de la Aportación"
+        summary: "Resumen de la Aportación"
+        title: "Título de la Aportación"
         video_url: "Enlace a vídeo externo"
       legislation/draft_version:
         title: Título de la versión

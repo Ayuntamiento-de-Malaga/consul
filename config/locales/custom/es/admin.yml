@@ -604,8 +604,8 @@ es:
           info: Información
           homepage: Homepage
           draft_versions: Redacción
-          questions: Propuesta Ciudadana
-          proposals: Iniciativas Populares
+          questions: Fase previa
+          proposals: Fase de aportaciones
           milestones: Seguimiento
       homepage:
         edit:
@@ -618,7 +618,7 @@ es:
           supports: Apoyos totales
         form:
           custom_categories: Categorías
-          custom_categories_description: Categorías que el usuario puede seleccionar al crear la Iniciativa Popular. Máximo 160 caracteres.
+          custom_categories_description: Categorías que el usuario puede seleccionar al crear la aportación. Máximo 160 caracteres.
           custom_categories_placeholder: Escribe las etiquetas que desees separadas por una coma (,) y entrecomilladas ("")
       draft_versions:
         create:

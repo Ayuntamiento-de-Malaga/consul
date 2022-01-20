@@ -48,6 +48,7 @@ es:
         description: En qué consiste
         more_info: Más información y contexto
       proposals:
+        create: Crea una Aportación
         empty_proposals: No hay aportaciones
         filters:
           random: Aleatorias

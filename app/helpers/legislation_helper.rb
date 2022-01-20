@@ -4,7 +4,7 @@ module LegislationHelper
   end
 
   def new_legislation_proposal_link_text(process)
-    t("proposals.index.start_proposal")
+    t("legislation.processes.proposals.create")
   end
 
   def legislation_process_tabs(process)

@@ -18,9 +18,57 @@ class Verification::Residence
     end
   end
 
+  def save
+    return false unless valid?
+
+    user.take_votes_if_erased_document(document_number, document_type)
+
+    user.update(document_number:       document_number,
+                document_type:         document_type,
+                geozone:               geozone,
+                date_of_birth:         date_of_birth.in_time_zone.to_datetime,
+                gender:                gender,
+                residence_verified_at: Time.current,
+                verified_at:           Time.current)
+  end
+
   private
 
     def valid_postal_code?
-      postal_code =~ /^280/
+      postal_code =~ /^290/
+    end
+
+    def residency_valid?
+      @census_data.valid? &&
+        @census_data.estado == 1
+    end
+
+    def retrieve_census_data
+      @census_data = CensusCaller.new.call(document_type, base64_document(document_number), formated_date(date_of_birth), postal_code)
+    end
+
+    def clean_document_number
+      self.document_number = document_number.gsub(/[^a-z0-9]+/i, "").upcase if document_number.present?
+    end
+
+    def base64_document(document)
+      begin
+        #for create
+        encoded_document = Base64.encode64(document)
+        encoded_document
+      rescue Exception => e
+        puts e
+      end
+    end
+
+    def formated_date(date)
+      begin
+        day = date.day < 10 ? "0#{date.day}" : date.day
+        month = date.month < 10 ? "0#{date.month}" : date.month
+        date = "#{day}#{month}#{date.year}000000"
+        date
+      rescue Exception => e
+        puts e
+      end
     end
 end

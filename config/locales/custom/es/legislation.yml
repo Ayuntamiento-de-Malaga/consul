@@ -116,9 +116,15 @@ es:
       share_comment: Comentario sobre la %{version_name} del borrador del proceso %{process_name}
     proposals:
       form:
+        tags_instructions: "Etiqueta esta aportación. Puedes elegir entre las categorías sugeridas o introducir las que desees"
         tags_label: "Categorías"
+        new:
+          submit_button: Crear Aportación
+        edit:
+          edit_button: Editar Aportación
       not_verified: "Para votar aportaciones %{verify_account}."
       process_title: Proceso de Propuestas de Gobierno
+
     summary:
       title: "Resumen"
       votes:

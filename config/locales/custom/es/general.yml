@@ -342,7 +342,7 @@ es:
       proposal_summary_note: "(máximo 200 caracteres)"
       proposal_video_url_note: Puedes añadir un enlace a YouTube o Vimeo
       tag_category_label: "Categorías"
-      tags_instructions: "Etiqueta esta Iniciativa Popular. Puedes elegir entre las categorías Iniciativas Populares o introducir las que desees"
+      tags_instructions: "Etiqueta esta Iniciativa Popular. Puedes elegir entre las categorías sugeridas o introducir las que desees"
       tags_label: Etiquetas
       tags_placeholder: "Escribe las etiquetas que desees separadas por coma (',')"
       map_location: "Ubicación en el mapa"

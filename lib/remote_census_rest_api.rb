@@ -82,7 +82,7 @@ class RemoteCensusRestApi
       if end_point_defined?
         request = request(document_type, document_number, date_of_birth, postal_code)
         response = RestClient::Request.execute(method: :post, url: Setting["remote_census.general.endpoint"],
-                            payload: request)
+                            payload: request.to_json)
         body = JSON.parse(response.body, :symbolize_names => true)
         body
       else

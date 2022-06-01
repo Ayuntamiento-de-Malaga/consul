@@ -83,7 +83,7 @@ class RemoteCensusRestApi
         request = request(document_type, document_number, date_of_birth, postal_code).to_json
         headers = {'Content-Type' => 'application/json; charset=utf-8'},
         response = RestClient::Request.execute(method: :post, headers: headers, url: Setting["remote_census.general.endpoint"],
-                            payload: request)
+                            payload: "#{request.to_json}")
         body = JSON.parse(response.body, :symbolize_names => true)
         body
       else

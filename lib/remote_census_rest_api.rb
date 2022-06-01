@@ -81,16 +81,9 @@ class RemoteCensusRestApi
     def get_response_body(document_type, document_number, date_of_birth, postal_code)
       if end_point_defined?
         request = request(document_type, document_number, date_of_birth, postal_code).to_json
-        Rails.logger.info 'REQUEST'
-        Rails.logger.info request
         headers = {'Content-Type' => 'application/json; charset=utf-8'},
-        Rails.logger.info 'HEADERS'
-        Rails.logger.info headers
         response = RestClient::Request.execute(method: :post, headers: headers, url: Setting["remote_census.general.endpoint"],
                             payload: request)
-        Rails.logger.info 'RESPONSE'
-        Rails.logger.info response
-        Rails.logger.info response.to_json
         body = JSON.parse(response.body, :symbolize_names => true)
         body
       else

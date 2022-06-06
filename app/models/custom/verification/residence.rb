@@ -54,8 +54,7 @@ class Verification::Residence
     def base64_document(document)
       begin
         #for create
-        encoded_document = Base64.encode64(document)
-        encoded_document
+        Base64.encode64(document).gsub(/\n/,"")
       rescue Exception => e
         puts e
       end
@@ -65,7 +64,7 @@ class Verification::Residence
       begin
         day = date.day < 10 ? "0#{date.day}" : date.day
         month = date.month < 10 ? "0#{date.month}" : date.month
-        date = "#{day}#{month}#{date.year}000000"
+        date = "#{date.year}#{month}#{day}000000"
         date
       rescue Exception => e
         puts e

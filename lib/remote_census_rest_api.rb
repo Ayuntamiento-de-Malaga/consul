@@ -3,10 +3,7 @@ include DocumentParser
 class RemoteCensusRestApi
   def call(document_type, document_number, date_of_birth, postal_code)
     response = nil
-    get_document_number_variants(document_type, document_number).each do |variant|
-      response = Response.new(get_response_body(document_type, variant, date_of_birth, postal_code))
-      return response if response.valid?
-    end
+    response = Response.new(get_response_body(document_type, document_number, date_of_birth, postal_code))
     response
   end
 
@@ -82,8 +79,10 @@ class RemoteCensusRestApi
       if end_point_defined?
         request = request(document_type, document_number, date_of_birth, postal_code)
         headers = {'Content-Type' => 'application/json; charset=utf-8'}
-        newheaders = headers
-        response = RestClient::Request.execute(method: :post, headers: newheaders, url: Setting["remote_census.general.endpoint"],
+        puts 'REQUEST!'
+        puts request
+        puts request.to_json
+        response = RestClient::Request.execute(method: :post, headers: headers, url: Setting["remote_census.general.endpoint"],
                             payload: "#{request.to_json}")
         body = JSON.parse(response.body, :symbolize_names => true)
         body

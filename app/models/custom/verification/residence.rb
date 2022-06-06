@@ -44,6 +44,10 @@ class Verification::Residence
     end
 
     def retrieve_census_data
+      logger = Rails.logger
+      logger.info 'RETRIEVE!'
+      logger.info document_number
+      logger.info base64_document(document_number)
       @census_data = CensusCaller.new.call(document_type, base64_document(document_number), formated_date(date_of_birth), postal_code)
     end
 

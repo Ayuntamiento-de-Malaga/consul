@@ -90,6 +90,9 @@ header {
     li {
       display: inline;
       padding: 10px;
+      a {
+        text-decoration: none;
+      }
       &:first-of-type {
         padding-left: 0;
       }

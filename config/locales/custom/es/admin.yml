@@ -736,7 +736,7 @@ es:
       emails_download: Descarga de emails
       valuators: Evaluadores
       poll_officers: Presidentes de mesa
-      polls: Votaciones
+      polls: Sondeos
       poll_booths: Ubicación de urnas
       poll_booth_assignments: Asignación de urnas
       poll_shifts: Asignar turnos
@@ -757,7 +757,7 @@ es:
           debates: "Propuestas Ciudadanas"
           community: "Comunidad"
           proposals: "Iniciativas Populares"
-          polls: "Votaciones"
+          polls: "Sondeos"
           layouts: "Plantillas"
           machine_learning: "IA / Machine Learning"
           mailers: "Correos"
@@ -1063,67 +1063,67 @@ es:
         total_system: Votos totales acumulados(automático)
       index:
         booths_title: "Listado de urnas asignadas"
-        no_booths: "No hay urnas asignadas a esta votación."
+        no_booths: "No hay urnas asignadas a este sondeo."
         table_name: "Nombre"
         table_location: "Ubicación"
     active_polls:
       edit:
-        title: "Descripción general de votaciones"
+        title: "Descripción general de sondeos"
       form:
         description:
-          help_text: "Este texto aparecerá en la cabecera de la página de votaciones. Puedes usarlo para añadir un contexto a las votaciones abiertas"
+          help_text: "Este texto aparecerá en la cabecera de la página de sondeos. Puedes usarlo para añadir un contexto a los sondeos abiertos"
     polls:
       index:
-        title: "Listado de votaciones"
-        no_polls: "No hay votaciones."
-        create: "Crear votación"
+        title: "Listado de sondeos"
+        no_polls: "No hay sondeos."
+        create: "Crear sondeo"
         name: "Nombre"
         dates: "Fechas"
         start_date: "Fecha de apertura"
         closing_date: "Fecha de cierre"
         geozone_restricted: "Restringida a los distritos"
       new:
-        title: "Nueva votación"
-        submit_button: "Crear votación"
+        title: "Nuevo sondeo"
+        submit_button: "Crear sondeo"
       edit:
-        title: "Editar votación"
-        submit_button: "Actualizar votación"
+        title: "Editar sondeo"
+        submit_button: "Actualizar sondeo"
       show:
         questions_tab: Preguntas
         booths_tab: Urnas
         officers_tab: Presidentes de mesa
         recounts_tab: Recuentos
         results_tab: Resultados
-        no_questions: "No hay preguntas asignadas a esta votación."
+        no_questions: "No hay preguntas asignadas a este sondeo."
         questions_title: "Listado de preguntas asignadas"
         table_title: "Título"
         edit_answers: Editar respuestas
         see_proposal: "(Ver Iniciativa Popular)"
       flash:
-        question_added: "Pregunta añadida a esta votación"
+        question_added: "Pregunta añadida a este sondeo"
         error_on_question_added: "No se pudo asignar la pregunta"
       destroy:
-        alert: "Esta acción eliminará la votación y todas sus preguntas asociadas."
-        success_notice: "Votación eliminada correctamente"
-        unable_notice: "No se pueden eliminar votaciones con votos"
+        alert: "Esta acción eliminará el sondeo y todas sus preguntas asociadas."
+        success_notice: "Sondeo eliminado correctamente"
+        unable_notice: "No se pueden eliminar sondeos con votos"
     questions:
       index:
-        title: "Preguntas de votaciones"
+        title: "Preguntas de sondeos"
         create: "Crear pregunta ciudadana"
         no_questions: "No hay ninguna pregunta ciudadana."
-        filter_poll: Filtrar por votación
-        select_poll: Seleccionar votación
+        filter_poll: Filtrar por sondeo
+        select_poll: Seleccionar sondeo
         questions_tab: "Preguntas"
         successful_proposals_tab: "Iniciativas Populares que han superado el umbral"
-        create_question: "Crear pregunta para votación"
+        create_question: "Crear pregunta para sondeo"
         table_proposal: "Iniciativa Popular"
         table_question: "Pregunta"
-        table_poll: "Votación"
-        poll_not_assigned: "Votación no asignada"
+        table_poll: "Sondeo"
+        poll_not_assigned: "Sondeo no asignado"
       edit:
         title: "Editar pregunta ciudadana"
       new:
-        title: "Crear pregunta ciudadana para la votación %{poll}"
+        title: "Crear pregunta ciudadana para el sondeo %{poll}"
         title_proposal: "Crear pregunta ciudadana"
       answers:
         images:
@@ -1349,7 +1349,7 @@ es:
           organizations: "Nombre, email o teléfono"
           poll_officers: "Buscar presidentes de mesa"
           poll_questions: "Buscar preguntas"
-          polls: "Buscar votaciones por nombre o descripción"
+          polls: "Buscar sondeos por nombre o descripción"
           proposals: "Buscar Iniciativas Populares por título, código, descripción o pregunta"
           users: "Buscar usuario por nombre o email"
         search: "Buscar"
@@ -1453,7 +1453,7 @@ es:
         direct_messages: Mensajes directos
         proposal_notifications: Notificaciones de Iniciativas Populares
         incomplete_verifications: Verificaciones incompletas
-        polls: Votaciones
+        polls: Sondeos
         sdg: ODS
       graph:
         debate_created: Propuestas Ciudadanas
@@ -1487,13 +1487,13 @@ es:
         proposals_with_notifications: Iniciativas Populares con notificaciones
         not_available: "Esta Iniciativa Popular ya no está disponible"
       polls:
-        title: Estadísticas de votaciones
-        all: Votaciones
+        title: Estadísticas de sondeos
+        all: Sondeos
         web_participants: Participantes en Web
         total_participants: Participantes totales
-        poll_questions: "Preguntas de votación: %{poll}"
+        poll_questions: "Preguntas de sondeo: %{poll}"
         table:
-          poll_name: Votación
+          poll_name: Sondeo
           question_name: Pregunta
           origin_web: Participantes en Web
           origin_total: Participantes Totales
@@ -1503,7 +1503,7 @@ es:
           winners: "Proyectos de inversión ganadores"
           sent: "Proyectos de inversión enviados"
         debates: "Propuestas Ciudadanas"
-        polls: "Votaciones"
+        polls: "Sondeos"
         proposals: "Iniciativas Populares"
         title: "Objetivos de Desarrollo Sostenible - Estadísticas"
     tags:

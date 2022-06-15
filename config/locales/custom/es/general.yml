@@ -247,7 +247,7 @@ es:
       my_activity_link: Mi contenido
       open_gov: Gobierno abierto
       proposals: Iniciativas Populares
-      poll_questions: Votaciones
+      poll_questions: Sondeos
       budgets: Presupuestos participativos
       notification_item:
         new_notifications:
@@ -603,42 +603,42 @@ es:
         support: "Tan sólo tienes que hacer clic en el botón que verás a continuación 'Apoyar esta Iniciativa Popular' y directamente podrás informarte acerca de ella antes de impulsarla. Sólo las Iniciativas Populares que consigan el máximo apoyo se llevarán a cabo por parte del Ayuntamiento, y he pensado que tú ¡seguro que me ayudas a lograrlo!"
         share: "Y si además, me haces el gran favor de compartir mi Iniciativa Popular con tus amigos, familiares y contactos ¡sería perfecto!"
   polls:
-    all: "Todas"
+    all: "Todos"
     no_dates: "sin fecha asignada"
     dates: "Desde el %{open_at} hasta el %{closed_at}"
     final_date: "Recuento final/Resultados"
     index:
       filters:
-        current: "Abiertas"
-        expired: "Terminadas"
-      title: "Votaciones"
-      participate_button: "Participar en esta votación"
-      participate_button_expired: "Votación terminada"
+        current: "Abiertos"
+        expired: "Terminados"
+      title: "Sondeos"
+      participate_button: "Participar en este sondeo"
+      participate_button_expired: "Sondeo terminado"
       no_geozone_restricted: "Toda la ciudad"
       geozone_restricted: "Distritos"
       geozone_info: "Pueden participar las personas empadronadas en: "
-      already_answer: "Ya has participado en esta votación"
+      already_answer: "Ya has participado en este sondeo"
       not_logged_in: "Necesitas iniciar sesión o registrarte para participar"
       unverified: "Por favor verifica tu cuenta para participar"
-      cant_answer: "Esta votación no está disponible en tu zona"
+      cant_answer: "Este sondeo no está disponible en tu zona"
       section_header:
-        icon_alt: Icono de Votaciones
-        title: Votaciones
-        help: Ayuda sobre las votaciones
+        icon_alt: Icono de Sondeos
+        title: Sondeos
+        help: Ayuda sobre los sondeos
       section_footer:
-        title: Ayuda sobre las votaciones
-        description: Las votaciones ciudadanas son un mecanismo de participación por el que la ciudadanía con derecho a voto puede tomar decisiones de forma directa.
-      no_polls: "No hay votaciones abiertas."
+        title: Ayuda sobre los sondeos
+        description: Los sondeos ciudadanos son un mecanismo de participación por el que la ciudadanía con derecho a voto puede tomar decisiones de forma directa.
+      no_polls: "No hay sondeos abiertos."
     show:
-      already_voted_in_booth: "Ya has participado en esta votación en urnas presenciales, no puedes volver a participar."
-      already_voted_in_web: "Ya has participado en esta votación. Si vuelves a votar se sobreescribirá tu resultado anterior."
-      back: Volver a votaciones
+      already_voted_in_booth: "Ya has participado en este sondeo en urnas presenciales, no puedes volver a participar."
+      already_voted_in_web: "Ya has participado en este sondeo. Si vuelves a votar se sobreescribirá tu resultado anterior."
+      back: Volver a sondeos
       cant_answer_not_logged_in: "Necesitas %{signin} o %{signup} para participar."
       comments_tab: Comentarios
       cant_answer_verify: "Por favor %{verify_link} para poder responder."
       verify_link: "verifica tu cuenta"
-      cant_answer_expired: "Esta votación ha terminado."
-      cant_answer_wrong_geozone: "Esta votación no está disponible en tu zona."
+      cant_answer_expired: "Este sondeo ha terminado."
+      cant_answer_wrong_geozone: "Este sondeo no está disponible en tu zona."
       more_info_title: "Más información"
       documents: Documentos
       zoom_plus: Ampliar imagen
@@ -647,7 +647,7 @@ es:
       videos: "Vídeo externo"
       info_menu: "Información"
       stats_menu: "Estadísticas de participación"
-      results_menu: "Resultados de la votación"
+      results_menu: "Resultados del sondeo"
       stats:
         total_votes: "Nº total de votos emitidos"
         votes: "VOTOS"

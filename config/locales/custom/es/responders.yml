@@ -22,9 +22,9 @@ es:
       update:
         notice: "%{resource_name} actualizado correctamente."
         debate: "Propuesta Ciudadana actualizada correctamente."
-        poll: "Votación actualizada correctamente."
+        poll: "Sondeo actualizado correctamente."
         poll_booth: "Urna actualizada correctamente."
-        active_poll: "Descripción general de votaciones actualizada correctamente."
+        active_poll: "Descripción general de sondeos actualizada correctamente."
         proposal: "Iniciativa Popular actualizada correctamente."
         budget_investment: "Proyecto de gasto actualizado correctamente"
         topic: "Tema actualizado correctamente."

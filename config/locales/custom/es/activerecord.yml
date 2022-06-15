@@ -71,8 +71,8 @@ es:
         one: "presidente de mesa"
         other: "presidentes de mesa"
       poll/ballot_sheet:
-        one: Papeleta de votación
-        other: Papeletas de votación
+        one: Papeleta de sondeo
+        other: Papeletas de sondeo
       proposal:
         one: "Iniciativa Popular"
         other: "Iniciativas Populares"
@@ -128,8 +128,8 @@ es:
         one: "Tema"
         other: "Temas"
       poll:
-        one: "Votación"
-        other: "Votaciones"
+        one: "Sondeo"
+        other: "Sondeos"
       proposal_notification:
         one: "Notificación de Iniciativa Popular"
         other: "Notificaciones de Iniciativas Populares"
@@ -309,7 +309,7 @@ es:
         summary: "Resumen"
         description: "Descripción"
       poll/question:
-        poll_id: "Votación"
+        poll_id: "Sondeo"
         title: "Pregunta"
         summary: "Resumen"
         description: "Descripción"

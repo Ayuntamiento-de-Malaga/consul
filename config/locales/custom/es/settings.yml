@@ -180,8 +180,8 @@ es:
       debates_description: "El espacio de Propuestas Ciudadanas está dirigido a que cualquier persona pueda exponer temas que le preocupan y sobre los que quiera compartir puntos de vista con otras personas"
       proposals: "Iniciativas Populares"
       proposals_description: "Las Iniciativas Populares son una oportunidad para que los vecinos y colectivos decidan directamente cómo quieren que sea su sociedad, después de conseguir los apoyos suficientes y de someterse a votación ciudadana"
-      polls: "Votaciones"
-      polls_description: "Las votaciones ciudadanas son un mecanismo de participación por el que la ciudadanía con derecho a voto puede tomar decisiones de forma directa"
+      polls: "Sondeos"
+      polls_description: "Los sondeos ciudadanos son un mecanismo de participación por el que la ciudadanía con derecho a voto puede tomar decisiones de forma directa"
       budgets: "Presupuestos participativos"
       budgets_description: "Con los presupuestos participativos la ciudadanía decide a qué proyectos presentados por los vecinos y vecinas va destinada una parte del presupuesto"
       legislation: "Propuestas de Gobierno"
@@ -219,8 +219,8 @@ es:
         debates_description: Permitir alineamiento de los Objetivos de Desarrollo Sostenible en Propuestas Ciudadanas
         proposals: Alineamiento ODS en Iniciativas Populares
         proposals_description: Permitir alineamiento de los Objetivos de Desarrollo Sostenible en Iniciativas Populares
-        polls: Alineamiento ODS en votaciones
-        polls_description: Permitir alineamiento de los Objetivos de Desarrollo Sostenible en votaciones
+        polls: Alineamiento ODS en sondeos
+        polls_description: Permitir alineamiento de los Objetivos de Desarrollo Sostenible en sondeos
         budgets: Alineamiento ODS en presupuestos participativos
         budgets_description: Permitir alineamiento de los Objetivos de Desarrollo Sostenible en presupuestos participativos
         legislation: Alineamiento ODS en Propuestas de Gobierno

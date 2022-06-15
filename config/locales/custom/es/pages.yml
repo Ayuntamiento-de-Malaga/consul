@@ -11,7 +11,7 @@ es:
         debates: "Propuestas Ciudadanas"
         proposals: "Iniciativas Populares"
         budgets: "Presupuestos participativos"
-        polls: "Votaciones"
+        polls: "Sondeos"
         other: "Otra información de interés"
         processes: "Propuestas de Gobierno"
       debates:
@@ -35,10 +35,10 @@ es:
         image_alt: "Diferentes fases de un presupuesto participativo"
         figcaption: 'Fase de "Apoyos" y fase de "Votación" de los presupuestos participativos.'
       polls:
-        title: "Votaciones"
+        title: "Sondeos"
         description: "La sección de %{link} se activa cada vez que una Iniciativa Popular alcanza el 1% de apoyos y pasa a votación o cuando el Ayuntamiento propone un tema para que la gente decida sobre él."
-        link: "votaciones ciudadanas"
-        feature_1: "Para participar en las votaciones tienes que %{link} y verificar tu cuenta."
+        link: "sondeos ciudadanos"
+        feature_1: "Para participar en los sondeos tienes que %{link} y verificar tu cuenta."
         feature_1_link: "registrarte en %{org_name}"
       processes:
         title: "Propuestas de Gobierno"
@@ -95,7 +95,7 @@ es:
             - key_column: 2
               page_column: Iniciativas Populares
             - key_column: 3
-              page_column: Votaciones
+              page_column: Sondeos
             - key_column: 4
               page_column: Presupuestos participativos
             - key_column: 5

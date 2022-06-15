@@ -64,6 +64,16 @@
         </div>
       <% end %>
 
+      <% unless @search_terms || @advanced_search_terms %>
+          <div id="section_help" class="margin" data-magellan-target="section_help">
+            <p class="lead">
+              <strong><%= t("proposals.index.section_footer.title") %></strong>
+            </p>
+            <p><%= t("proposals.index.section_footer.description") %></p>
+          </div>
+        <% end %>
+
+
       <% unless params[:selected].present? %>
         <div class="row">
           <div class="small-12 column">
@@ -102,14 +112,6 @@
         <% end %>
         <%= paginate @proposals %>
 
-        <% unless @search_terms || @advanced_search_terms %>
-          <div id="section_help" class="margin" data-magellan-target="section_help">
-            <p class="lead">
-              <strong><%= t("proposals.index.section_footer.title") %></strong>
-            </p>
-            <p><%= t("proposals.index.section_footer.description") %></p>
-          </div>
-        <% end %>
       </div>
     </div>
 

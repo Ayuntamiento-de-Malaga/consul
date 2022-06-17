@@ -30,6 +30,14 @@
       ["Vivienda", "Vivienda"]
     ] %>
   <%= form.select :area, options_for_select(select_options), label: 'Selecciona el area a la que pertenece el proceso', include_blank: '-------------' %>
+
+  <% select_options = [
+      ["Consulta Previa", "consulta"],
+      ["Audiencia", "audiencia"]
+    ] %>
+  <%= form.select :type, options_for_select(select_options), label: 'Selecciona el tipo de PDF que se va a generar' %>
+
+
   <%= form.submit "Generar documento" %>
 
 <% end %>

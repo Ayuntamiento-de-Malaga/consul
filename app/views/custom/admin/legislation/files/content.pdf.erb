@@ -9,16 +9,20 @@
 <body class="process-pdf">
 <div class="content">
     <div class="title">
-        INFORME DE EXPOSICIÓN PÚBLICA EN EL PORTAL DE</br>PARTICIPACIÓN CIUDADANA DEL AYUNTAMIENTO DE MÁLAGA
+    <% if @type=="audiencia" %>
+        INFORME DE AUDIENCIA EN EL PORTAL DE</br>PARTICIPACIÓN CIUDADANA DEL AYUNTAMIENTO DE MÁLAGA
+    <% else %>
+        INFORME DE CONSULTA PREVIA EN EL PORTAL DE</br>PARTICIPACIÓN CIUDADANA DEL AYUNTAMIENTO DE MÁLAGA
+    <% end %>
     </div>
     <p class="text">
-        El presente informe ha sido generado de manera automática por la Portal de Participación del Ayuntamiento de Málaga para certificar que el proceso denominado
+        El presente informe ha sido generado de manera automática por la Portal de Participación del Ayuntamiento de Málaga para informar que el proceso denominado
     </p>
     <div class="code">
       <%= @process.title %>
     </div>
     <p class="text">
-      fue publicado el <%= I18n.l(@process.start_date, format: '%A, %d de %B de %Y') %> por el Area de <%= @area %> y ha estado sometido a exposición pública del <%= I18n.l(@process.start_date, format: '%A, %d de %B de %Y') %> al <%= I18n.l(@process.end_date, format: '%A, %d de %B de %Y') %> en el Portal de Participación Ciudadana, concretamente en la URL:
+      fue publicado el <%= I18n.l(@process.start_date, format: '%A, %d de %B de %Y') %> por el Area de <%= @area %> y ha estado sometido a <% if @type=="audiencia" %>audiencia<% else %>consulta previa<% end %> del <%= I18n.l(@process.start_date, format: '%A, %d de %B de %Y') %> al <%= I18n.l(@process.end_date, format: '%A, %d de %B de %Y') %> en el Portal de Participación Ciudadana, concretamente en la URL:
     </p>
     <div class="link">
       <a href="<%= root_url %>legislation/processes/<%= @process.id %>" target="_blank" rel="noopener noreferrer">
@@ -46,6 +50,10 @@
     </p>
     <p class="text">
       Durante el proceso se ha producido <%= @process.total_comments_and_proposals %> comentarios, y se han alcanzado las siguientes conclusiones: <%= @conclusions.blank? ? 'Sin conclusiones' : @conclusions %>
+    </p>
+    <br />
+    <p class="date">
+      Este documento fue generado el <%= I18n.l(Date.today, format: '%A, %d de %B de %Y') %>
     </p>
   </div>
 </body>

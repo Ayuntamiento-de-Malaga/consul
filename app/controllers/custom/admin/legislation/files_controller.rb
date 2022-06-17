@@ -3,6 +3,7 @@ class Admin::Legislation::FilesController < Admin::Legislation::BaseController
     @process = ::Legislation::Process.find(params[:id])
     @conclusions = params[:conclusions]
     @area = params[:area]
+    @type = params[:type]
 
     WickedPdf.new.pdf_from_string(
       render :pdf => 'my_pdf_name',

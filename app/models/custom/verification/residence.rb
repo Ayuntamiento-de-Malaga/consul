@@ -4,8 +4,14 @@ class Verification::Residence
   validate :local_postal_code
   validate :local_residence
 
+  before_validation :default_terms
+
   def local_postal_code
     errors.add(:postal_code, I18n.t("verification.residence.new.error_not_allowed_postal_code")) unless valid_postal_code?
+  end
+
+  def default_terms
+    self.terms_of_service = true
   end
 
   def local_residence

@@ -57,17 +57,11 @@
           hint: t("verification.residence.new.postal_code_note") %>
       </div>
 
-      <div class="small-12">
-        <%= f.check_box :terms_of_service,
-          title: t("verification.residence.new.accept_terms_text_title"),
-          label: t("verification.residence.new.accept_terms_text",
-                   terms_url: link_to(t("verification.residence.new.terms"), "/census_terms",
-                                      title: t("shared.target_blank"),
-                                      target: "_blank")
-                  ) %>
+      <div class="small-12 medium-5 clear">
+        <span style="font-style: italic"><%= t("verification.residence.new.accept_terms_text") %></span>
       </div>
 
-      <div class="small-12 medium-3 clear">
+      <div class="small-12 medium-3 margin-top clear">
         <%= f.submit t("verification.residence.new.verify_residence"),
                      id: "new_residence_submit",
                      class: "button success expanded" %>

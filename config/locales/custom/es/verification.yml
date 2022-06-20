@@ -45,7 +45,7 @@ es:
         flash:
           success: Residencia verificada
       new:
-        accept_terms_text: Acepto %{terms_url} al Padrón
+        accept_terms_text: Para verificar la cuenta hay que tener 18 años o más y estar empadronado en Málaga, una vez que acepte el proceso de verificación se procederá a contrastar dicha información.
         accept_terms_text_title: Acepto los términos de acceso al Padrón
         document_number: Número de documento
         document_number_help_title: Ayuda

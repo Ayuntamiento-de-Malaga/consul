@@ -70,6 +70,7 @@ es:
         section_footer:
           title: Ayuda sobre Propuestas de Gobierno
           description: Participa en las consultas y procesos previos a la aprobación de nuevas normas o planes. Tu opinión será tenida en cuenta.
+          link: Pulsa aquí para ver las propuestas anteriores.
       phase_not_open:
         not_open: Esta fase del proceso todavía no está abierta
       phase_empty:

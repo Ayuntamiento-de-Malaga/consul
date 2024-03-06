@@ -34,11 +34,14 @@
                                   accesskey: "3" %>
       </li>
     <% end %>
-    <li>
-      <%= link_to t("layouts.header.budgets"),
-                                'https://www.malaga.eu/gobierno-abierto/participacion/presupuestos-participativos-2022/index.html',
-                                accesskey: "5", target: '_blank' %>
-    </li>
+    <% if feature?(:budgets) %>
+      <li>
+        <%= layout_menu_link_to t("layouts.header.budgets"),
+                                  budgets_path,
+                                  controller_name == "budgets" || controller_name == "investments",
+                                  accesskey: "5" %>
+      </li>
+    <% end %>
     <% if feature?(:sdg) %>
       <li>
         <%= layout_menu_link_to t("layouts.header.sdg"),

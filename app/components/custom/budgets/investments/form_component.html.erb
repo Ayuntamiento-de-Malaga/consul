@@ -70,6 +70,15 @@
     </div>
 
     <div>
+      <%= f.label :category , t("budgets.investments.form.category_label") %><br>
+      <div>
+        <% Budget::Investment::CATEGORY_OPTIONS.each do |option| %>
+          <%= f.radio_button :category, option, label: t("budgets.investments.form.categories.#{option}"), style: "display: inline;" %><br>
+        <% end %>
+      </div>
+    </div>
+
+    <div>
       <%= f.label :tag_list, t("budgets.investments.form.tags_label") %>
       <p class="help-text" id="tags-list-help-text"><%= t("budgets.investments.form.tags_instructions") %></p>
 

@@ -83,6 +83,28 @@ es:
         map_location: "Ubicación en el mapa"
         map_location_instructions: "Navega por el mapa hasta la ubicación y coloca el marcador."
         map_remove_marker: "Eliminar el marcador"
+        category_label: Categoría
+        categories:
+          acerado_aceras: "Acerado: Arreglo de aceras"
+          acerado_accesibilidad: "Acerado: Medidas de accesibilidad, creando itinerarios accesibles"
+          movilidad_velocidad: "Movilidad: Medidas de calmados de velocidad"
+          movilidad_paso_peatones: "Movilidad: Creación de paso de peatones"
+          alumbrado_jardines: "Alumbrado: Mejora del alumbrado en jardines, parques infantiles e instalaciones deportivas"
+          alumbrado_farolas: "Alumbrado:  Instalación de farolas en aquellas zonas donde por la altura de las existentes o la ubicación de árboles hacen que la luminosidad sea escasa o nula."
+          parques_infantiles_reposicion: "Parques infantiles: Reposición de elementos"
+          parques_infantiles_accesibles: "Parques infantiles: Incorporación de elementos accesibles"
+          parques_infantiles_reforma: "Parques infantiles: Reforma"
+          parques_jardines_jardines_verticales: "Parques y jardines: Jardines verticales en fachadas de edificios municipales"
+          parques_jardines_banos_publicos: "Parques y jardines: Baños públicos en parques"
+          parques_jardines_toldos: "Parques y jardines: Toldos de sombra"
+          mobiliario_urbano_bancos: "Mobiliario urbano: Bancos"
+          mobiliario_urbano_papeleras: "Mobiliario urbano: Papeleras"
+          mobiliario_urbano_barandillas: "Mobiliario urbano: Barandillas"
+          mobiliario_urbano_ornamentales: "Mobiliario urbano: Elementos ornamentales"
+          parques_caninos_mejora: "Parques caninos: Mejora y reforma"
+          equipamientos_deportivos_pintura: "Equipamientos deportivos: Pintura de señalización de actividad deportiva en pavimento"
+          equipamientos_deportivos_renovacion: "Equipamientos deportivos: Renovación de equipamiento"
+          equipamientos_deportivos_acondicionamiento: "Equipamientos deportivos: Acondicionamiento de vallado perimetral"
       index:
         title: Presupuestos participativos
         unfeasible: Proyectos de gasto no viables
@@ -135,6 +157,7 @@ es:
         code: "Código proyecto de gasto: <strong>%{code}</strong>"
         location: "Ubicación: <strong>%{location}</strong>"
         organization_name: "Propuesto en nombre de: <strong>%{name}</strong>"
+        category: "Categoría: <strong>%{category}</strong>"
         share: Compartir
         title: Proyecto de gasto
         supports: Apoyos
@@ -148,6 +171,7 @@ es:
         project_winner: "Proyecto de gasto ganador"
         project_not_selected: "Este proyecto de gasto <strong>no ha sido seleccionado</strong> para la fase de votación."
         see_price_explanation: Ver informe de coste
+
       wrong_price_format: Solo puede incluir caracteres numéricos
       investment:
         add: Votar

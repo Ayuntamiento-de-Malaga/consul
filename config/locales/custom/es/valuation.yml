@@ -25,16 +25,16 @@ es:
           valuating: En evaluación
           valuation_finished: Evaluación finalizada
         assigned_to: "Asignadas a %{valuator}"
-        title: Proyectos de gasto
+        title: Propuestas
         edit: Editar informe
         table_id: ID
         table_title: Título
         table_heading_name: Nombre de la partida
         table_actions: Acciones
-        no_investments: "No hay proyectos de gasto."
+        no_investments: "No hay propuestas."
       show:
         back: Volver
-        title: Proyecto de gasto
+        title: Propuesta
         info: Datos de envío
         by: Enviada por
         sent: Fecha de creación

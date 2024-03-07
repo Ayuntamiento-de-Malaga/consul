@@ -89,7 +89,7 @@ es:
           all: Todos
           open: Abiertos
           finished: Terminados
-        budget_investments: Proyectos de gasto
+        budget_investments: Propuestas
         table_budget_type: "Tipo"
         table_completed: Completado
         table_draft: "Borrador"
@@ -188,12 +188,12 @@ es:
     budget_headings:
       no_headings: "El grupo <strong>%{group}</strong> no tiene ninguna partida."
       create:
-        notice: "¡Partida presupuestaria creada con éxito!"
+        notice: "¡Distrito creado con éxito!"
       update:
-        notice: "Partida presupuestaria actualizada"
+        notice: "Distrito actualizado"
       destroy:
-        success_notice: "Partida presupuestaria eliminada correctamente"
-        unable_notice: "No se puede eliminar una partida presupuestaria con proyectos asociados"
+        success_notice: "Distrito eliminado correctamente"
+        unable_notice: "No se puede eliminar un distrito con proyectos asociados"
       form:
         max_ballot_lines_info: 'Máximo número de proyectos que un usuario puede votar en esta partida durante la fase "Votación final". Solamente se aplica a presupuestos con votación por aprobación.'
         population_info: "El campo población de las partidas presupuestarias se usa con fines estadísticos únicamente, con el objetivo de mostrar el porcentaje de votos habidos en cada partida que represente un área con población. Es un campo opcional, así que puedes dejarlo en blanco si no aplica."
@@ -250,8 +250,8 @@ es:
         buttons:
           filter: Filtrar
         download_current_selection: "Descargar selección actual"
-        no_budget_investments: "No hay proyectos de gasto."
-        title: Proyectos de gasto
+        no_budget_investments: "No hay propuestas."
+        title: Propuestas
         columns: Columnas
         assigned_admin: Administrador asignado
         no_admin_assigned: Sin admin asignado
@@ -285,7 +285,7 @@ es:
         assigned_admin: Administrador asignado
         assigned_valuators: Evaluadores asignados
         classification: Clasificación
-        info: "%{budget_name} - Grupo: %{group_name} - Proyecto de gasto %{id}"
+        info: "%{budget_name} - Grupo: %{group_name} - Propuesta %{id}"
         edit: Editar
         edit_classification: Editar clasificación
         by: Autor
@@ -550,8 +550,8 @@ es:
           all: Todos
           with_confirmed_hide: Confirmados
           without_confirmed_hide: Pendientes
-        title: Proyectos de gasto ocultos
-        no_hidden_budget_investments: No hay proyectos de gasto ocultos
+        title: Propuestas ocultas
+        no_hidden_budget_investments: No hay propuestas ocultas
     legislation:
       processes:
         create:
@@ -722,7 +722,7 @@ es:
       hidden_comments: Comentarios ocultos
       hidden_debates: Propuestas Ciudadanas ocultas
       hidden_proposals: Iniciativas Populares ocultas
-      hidden_budget_investments: Proyectos de gasto ocultos
+      hidden_budget_investments: Propuestas ocultos
       hidden_proposal_notifications: Notificationes de Iniciativa Popular ocultas
       hidden_users: Usuarios bloqueados
       administrators: Administradores
@@ -807,10 +807,10 @@ es:
       administrators: Administradores
       all_proposal_authors: Usuarios autores de Iniciativas Populares (incluyendo archivadas y retiradas)
       proposal_authors: Usuarios autores de Iniciativas Populares
-      investment_authors: Usuarios autores de proyectos de gasto en los actuales presupuestos
-      feasible_and_undecided_investment_authors: "Usuarios autores de algún proyecto de gasto en los actuales presupuestos que no cumpla: [evaluación finalizada inviable]"
-      selected_investment_authors: Usuarios autores de proyectos de gasto seleccionadas en los actuales presupuestos
-      winner_investment_authors: Usuarios autores de proyectos de gasto ganadoras en los actuales presupuestos
+      investment_authors: Usuarios autores de propuestas en los actuales presupuestos
+      feasible_and_undecided_investment_authors: "Usuarios autores de alguna propuesta en los actuales presupuestos que no cumpla: [evaluación finalizada inviable]"
+      selected_investment_authors: Usuarios autores de propuestas seleccionadas en los actuales presupuestos
+      winner_investment_authors: Usuarios autores de propuestas ganadoras en los actuales presupuestos
       not_supported_on_current_budget: Usuarios que no han apoyado proyectos de los actuales presupuestos
       invalid_recipients_segment: "El segmento de destinatarios es inválido"
     newsletters:
@@ -896,16 +896,16 @@ es:
         description: "Reune todas las notificaciones de Iniciativas Populares en un único mensaje, para evitar demasiados emails."
         preview_detail: "Los usuarios sólo recibirán las notificaciones de aquellas Iniciativas Populares que siguen."
       budget_investment_created:
-        title: "Proyecto de gasto creado"
+        title: "Propuesta creado"
         description: "Enviado cuando un usuario crea un proyecto de presupuestos participativos."
       budget_investment_selected:
-        title: "Proyecto de gasto seleccionado"
+        title: "Propuesta seleccionado"
         description: "Enviado al autor de un proyecto de presupuestos participativos que ha sido seleccionado."
       budget_investment_unfeasible:
-        title: "Proyecto de gasto inviable"
+        title: "Propuesta inviable"
         description: "Enviado al autor de un proyecto de presupuestos participativos que ha sido marcado como inviable."
       budget_investment_unselected:
-        title: "Proyecto de gasto no seleccionado"
+        title: "Propuesta no seleccionado"
         description: "Enviado al autor de un proyecto de presupuestos participativos que no ha sido seleccionado para la fase de votación."
       comment:
         title: "Comentario"
@@ -932,7 +932,7 @@ es:
       message_title: "Título del mensaje"
       message_body: "Este es un ejemplo de contenido de un mensaje."
       alert:
-        no_investments: "No se ha creado ningún proyecto de gasto. Se necesita algún ejemplo para poder previsualizar el email."
+        no_investments: "No se ha creado ningún propuesta. Se necesita algún ejemplo para poder previsualizar el email."
         no_comments: "No se ha creado ningún comentario. Se necesita algún ejemplo para poder previsualizar el email."
         no_replies: "No se ha creado ninguna respuesta. Se necesita algún ejemplo para poder previsualizar el email."
         no_evaluation_comments: "No se ha creado ningún comentario de evaluación. Se necesita algún ejemplo para poder previsualizar el email."
@@ -1314,7 +1314,7 @@ es:
             update: La configuración del mapa se ha guardado correctamente.
           form:
             submit: Actualizar
-          how_to_enable: 'Para mostrar el mapa a los usuarios se debe de activar "Geolocalización de Iniciativas Populares y proyectos de gasto" en la pestaña "Funcionalidades".'
+          how_to_enable: 'Para mostrar el mapa a los usuarios se debe de activar "Geolocalización de Iniciativas Populares y propuestas" en la pestaña "Funcionalidades".'
         dashboard:
           title: Panel de progreso de Iniciativas Populares
         remote_census:
@@ -1439,7 +1439,7 @@ es:
           proposal_votes: Votos en Iniciativas Populares
           proposals: Iniciativas Populares
           budgets: Presupuestos abiertos
-          budget_investments: Proyectos de gasto
+          budget_investments: Propuestas
           unverified_users: Usuarios sin verificar
           user_level_three: Usuarios de nivel tres
           user_level_two: Usuarios de nivel dos

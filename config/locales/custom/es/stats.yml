@@ -19,7 +19,7 @@ es:
     budgets:
       link: "Estadísticas"
       page_title: "%{budget} - Estadísticas de participación"
-      total_investments: "Total proyectos de gasto"
+      total_investments: "Total propuestas"
       total_selected_investments: "Proyectos en la fase final"
       total_unfeasible_investments: "Proyectos inviables"
       by_phase: "Participantes por fases"

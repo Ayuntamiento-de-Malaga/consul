@@ -44,7 +44,7 @@ es:
     menu:
       flagged_comments: Comentarios
       flagged_debates: Propuestas Ciudadanas
-      flagged_investments: Proyectos de gasto
+      flagged_investments: Propuestas
       proposals: Iniciativas Populares
       proposal_notifications: Notificaciones de Iniciativas Populares
       users: Bloquear usuarios
@@ -77,13 +77,13 @@ es:
           with_ignored_flag: Marcados como revisados
         headers:
           moderate: Moderar
-          budget_investment: Proyecto de gasto
-        hide: Ocultar proyectos de gasto
+          budget_investment: Propuesta
+        hide: Ocultar propuestas
         ignore_flags: Marcar como revisados
         orders:
           created_at: Más recientes
           flags: Más denunciadas
-        title: Proyectos de gasto
+        title: Propuestas
     proposal_notifications:
       index:
         block_authors: Bloquear autores

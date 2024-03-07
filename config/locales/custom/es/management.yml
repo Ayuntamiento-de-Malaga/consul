@@ -58,9 +58,9 @@ es:
       create_proposal: Crear Iniciativa Popular
       print_proposals: Imprimir Iniciativas Populares
       support_proposals: Apoyar Iniciativas Populares
-      create_budget_investment: Crear proyectos de gasto
-      print_budget_investments: Imprimir proyectos de gasto
-      support_budget_investments: Apoyar proyectos de gasto
+      create_budget_investment: Crear propuestas
+      print_budget_investments: Imprimir propuestas
+      support_budget_investments: Apoyar propuestas
       users: Gestión de usuarios
       user_invites: Enviar invitaciones
       select_user: Seleccionar usuario
@@ -83,9 +83,9 @@ es:
       index:
         title: Apoyar Iniciativas Populares
     budgets:
-      create_new_investment: Crear proyectos de gasto
-      print_investments: Imprimir proyectos de gasto
-      support_investments: Apoyar proyectos de gasto
+      create_new_investment: Crear propuestas
+      print_investments: Imprimir propuestas
+      support_investments: Apoyar propuestas
       table_name: Nombre
       table_phase: Fase
       table_actions: Acciones
@@ -94,7 +94,7 @@ es:
       alert:
         unverified_user: Usuario no verificado
       create: Crear nuevo proyecto
-      edit: Editar proyecto de gasto
+      edit: Editar propuesta
       filters:
         heading: Concepto
         unfeasible: Proyectos no factibles

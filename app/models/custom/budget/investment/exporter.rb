@@ -42,7 +42,7 @@ class Budget::Investment::Exporter
       [
         investment.id.to_s,
         investment.title,
-        investment.description,
+        ActionView::Base.full_sanitizer.sanitize(investment.description),
         investment.total_votes.to_s,
         admin(investment),
         investment.assigned_valuators || "-",

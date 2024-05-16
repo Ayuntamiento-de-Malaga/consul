@@ -5,8 +5,8 @@ gd:
     actions:
       actions: Gnìomhan
       block_author: "Bac ùghdar"
-      confirm_action: "A bheil thu cinnteach? %{action} \"%{name}\""
-      confirm_delete: "A bheil thu cinnteach? Sguabaidh seo \"%{name}\" às. Chan urrainn dhut an gnìomh seo a neo-dhèanamh."
+      confirm_action: 'A bheil thu cinnteach? %{action} "%{name}"'
+      confirm_delete: 'A bheil thu cinnteach? Sguabaidh seo "%{name}" às. Chan urrainn dhut an gnìomh seo a neo-dhèanamh.'
       confirm_hide: Dearbhaich modaratadh
       delete: "Sguab às"
       hide: Falaich
@@ -204,7 +204,7 @@ gd:
         success_notice: "Chaidh am bann-cinn a sguabadh às"
         unable_notice: "Chan urrainn dhut bann-cinn a sguabadh às aig a bheil tasgaidhean co-cheangailte ris"
       form:
-        max_ballot_lines_info: 'An àireamh as motha de phròiseactan air as urrainn do chleachdaiche bhòtadh air a’ cheann-sgrìobhaidh seo aig ìre “Pròiseactan bhòtaidh”. Tha seo airson buidseatan a tha a’ cleachdadh bhòtadh ceadachaidh.'
+        max_ballot_lines_info: "An àireamh as motha de phròiseactan air as urrainn do chleachdaiche bhòtadh air a’ cheann-sgrìobhaidh seo aig ìre “Pròiseactan bhòtaidh”. Tha seo airson buidseatan a tha a’ cleachdadh bhòtadh ceadachaidh."
         population_info: "Bithear a’ cleachdadh Ceann-sgrìobhaidh raon sluaigh a’ Bhuidseit airson adhbharan Àireamhail aig deireadh a’ Bhuidseit gus sealltainn dè an àireamh sa cheud a bhòt airson gach Ceann-sgrìobhaidh a tha a’ riochdachadh sgìre le sluagh. Tha an raon roghainneil gus an urrainn dhut fhàgail falamh mura h-eil e iomchaidh."
         coordinates_info: "Ma tha domhan-leud is domhan-fad air a thoirt seachad, bidh mapa air duilleag nan tasgaidhean airson a’ chinn seo. Bidh am mapa seo stèidhichte air na co-chomharran sin."
         content_blocks_info: "Ma thèid am bloc susbaint ceadaichte a chomharrachadh, bidh e comasach dhut susbaint gnàthaichte a chruthachadh co-cheangailte ris a’ cheann-sgrìobhaidh seo bhon roinn Roghainnean> Blocaichean susbaint gnàthaichte. Nochdaidh an t-susbaint seo air duilleag nan tasgaidhean airson a’ chinn-sgrìobhaidh seo."
@@ -346,7 +346,7 @@ gd:
           back: "Air ais gu deasachadh na buidhne"
       heading_mode:
         multiple:
-          description: "Cruthaich pròiseas le grunn bhuidhnean, sgìrean no cuspairean. Tha rudeigin agad coltach ri grunn phocannan airgid. Mar eisimpleir, 25,000€ airson \"Sgìre a Tuath\", 30,000€ airson \"Sgìre a’ Mheadhain\", 28,000 € airson \"Sgìre a Deas\" agus am baile gu lèir. No airson grunn chuspairean leithid spòrs, cultar no slàinte."
+          description: 'Cruthaich pròiseas le grunn bhuidhnean, sgìrean no cuspairean. Tha rudeigin agad coltach ri grunn phocannan airgid. Mar eisimpleir, 25,000€ airson "Sgìre a Tuath", 30,000€ airson "Sgìre a’ Mheadhain", 28,000 € airson "Sgìre a Deas" agus am baile gu lèir. No airson grunn chuspairean leithid spòrs, cultar no slàinte.'
           link: "Cruthaich buidseat le iomadh ceann-sgrìobhaidh"
           title: "Buidseat le <strong>Iomadh ceann-sgrìobhaidh</strong>"
         single:
@@ -458,8 +458,8 @@ gd:
         index:
           description: "Nuair a chruthaicheas luchd-cleachdaidh molaidhean gheibh iad cothrom air deas-bhòrd den mholadh aca, far an urrainn dhut goireasan agus molaidhean a mholadh gus taic fhaighinn dhan bheachd aca."
           create: Cruthaich goireas no gnìomh
-          active: 'Seadh'
-          inactive: 'Chan eadh'
+          active: "Seadh"
+          inactive: "Chan eadh"
           title: Goireasan agus gnìomhan
           action_title: Tiotal
           action_type: Seòrsa
@@ -1341,7 +1341,7 @@ gd:
           how_to_enable: 'Gus cunntas-sluaigh air astar (SOAP) a rèiteachadh feumaidh tu "Rèitich ceangal ri cunntas-sluaigh iomallach (SOAP)" a chur an comas air an taba "Feartan".'
         sdg:
           title: Rèiteachadh a thaobh Amasan Leasachaidh Seasmhach
-          how_to_enable: 'Gus na roghainnean rèiteachaidh bho Amasan Leasachaidh Seasmhach a shealltainn feumaidh tu “Amasan Leasachaidh Seasmhach” a chur an comas air an taba “Feartan”.'
+          how_to_enable: "Gus na roghainnean rèiteachaidh bho Amasan Leasachaidh Seasmhach a shealltainn feumaidh tu “Amasan Leasachaidh Seasmhach” a chur an comas air an taba “Feartan”."
       remote_census_general_name: Fiosrachadh coitcheann
       remote_census_request_name: Iarr Dàta
       remote_census_response_name: Dàta Freagairt
@@ -1391,7 +1391,7 @@ gd:
       show_results_and_stats: "Seall toraidhean agus stadastaireachd"
       results_and_stats_reminder: "Le bhith a’ comharrachadh nam bogsaichean-cromaige sin bidh na toraidhean agus/no na stadastaireachd rim faighinn gu poblach agus chì gach cleachdaiche iad."
       close_modal: Dùin an uinneag mhòdach
-      example_url: "Mar eisimpleir, https://consulproject.org no /help"
+      example_url: "Mar eisimpleir, https://consuldemocracy.org no /help"
     geozones:
       index:
         title: Geo-sgìre
@@ -1625,7 +1625,7 @@ gd:
           see_page: Seall
         new:
           title: Cruthaich duilleag ghnàthaichte ùr
-          slug_help: "Teacs gus an duilleag seo a chomharrachadh air URL, mar eisimpleir <code>https://consulproject.org/page-slug</code>"
+          slug_help: "Teacs gus an duilleag seo a chomharrachadh air URL, mar eisimpleir <code>https://consuldemocracy.org/page-slug</code>"
         page:
           created_at: Chaidh a chruthachadh aig
           status: Inbhe
@@ -1657,7 +1657,7 @@ gd:
         enable: "Cuir an comas teanant %{tenant}"
         enabled: Air a chur an comas
       new:
-        admin_information: "Nuair a chruthaicheas tu teanant, thèid an cleachdaiche làithreach <strong>\"%{username}\"</strong> agad leis a' phost-d <strong>\"%{email}\"</strong> agus am facal-faire agad a chopaigeadh gu stòr-dàta an teanaint ùr is thèid ceadan rianachd a thoirt seachad gu fèin-obrachail. Thoir an aire gu bheil na cunntasan cleachdaiche seo air an stòradh ann an stòran-dàta gu tur eadar-dhealaichte, mar sin ma dh’atharraicheas tu facal-faire a' chleachdaiche agad airson aon teanant, bidh na cunntasan agad ann an teanantan eile fhathast ann."
+        admin_information: 'Nuair a chruthaicheas tu teanant, thèid an cleachdaiche làithreach <strong>"%{username}"</strong> agad leis a'' phost-d <strong>"%{email}"</strong> agus am facal-faire agad a chopaigeadh gu stòr-dàta an teanaint ùr is thèid ceadan rianachd a thoirt seachad gu fèin-obrachail. Thoir an aire gu bheil na cunntasan cleachdaiche seo air an stòradh ann an stòran-dàta gu tur eadar-dhealaichte, mar sin ma dh’atharraicheas tu facal-faire a'' chleachdaiche agad airson aon teanant, bidh na cunntasan agad ann an teanantan eile fhathast ann.'
         title: Teanant ùr
       restore:
         notice: Teanant air cur an comas

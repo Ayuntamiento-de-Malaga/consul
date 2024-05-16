@@ -5,6 +5,8 @@
   <span class="bullet">&nbsp;&bull;&nbsp;</span>
   <%= l investment.created_at.to_date %>
   <span class="bullet">&nbsp;&bull;&nbsp;</span>
+  <%= render Shared::CommentsCountComponent.new(investment.comments_count, url: "#comments") %>
+  <span class="bullet">&nbsp;&bull;&nbsp;</span>
   <%= investment.heading.name %>
   <span class="bullet">&nbsp;&bull;&nbsp;</span>
   <% if local_assigns[:preview].nil? %>
@@ -26,7 +28,7 @@
 
 <% if feature?(:map) && map_location_available?(@investment.map_location) %>
   <div class="margin">
-    <%= render_map(investment.map_location, "budget_investment", false, nil) %>
+    <%= render_map(investment.map_location) %>
   </div>
 <% end %>
 

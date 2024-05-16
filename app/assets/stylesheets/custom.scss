@@ -18,11 +18,13 @@ header {
       color: $brand;
       margin-right: 20px;
     }
-    .top-bar-right {
-      color: $brand;
-      .button {
-        background: $white;
+    .account-menu {
+      a {
         color: $brand;
+      }
+      .button {
+        color: $brand;
+        background: none;
         @include breakpoint(medium) {
           background: $brand;
           color: $white;
@@ -51,8 +53,9 @@ header {
   }
   .subnavigation {
     a {
+      color: $brand;
       &.is-active {
-        color: $brand;
+        font-weight: bold;
         text-decoration: underline;
         @include breakpoint(medium) {
           color: $white;

@@ -16,6 +16,7 @@
 @import "foundation_and_overrides";
 @import "fonts";
 @import "icons";
+@import "functions/*";
 @import "mixins/*";
 
 @import "admin";
@@ -23,6 +24,7 @@
 @import "annotator_overrides";
 @import "autocomplete_overrides";
 @import "banner";
+@import "comments_count";
 @import "datepicker_overrides";
 @import "layout";
 @import "participation";
@@ -33,6 +35,7 @@
 @import "legislation";
 @import "legislation_process";
 @import "legislation_process_form";
+@import "map_location";
 @import "moderation_actions";
 @import "notification_item";
 @import "community";
@@ -40,6 +43,7 @@
 @import "stats";
 @import "sticky_overrides";
 @import "tags";
+@import "account/**/*";
 @import "admin/**/*";
 @import "budgets/**/*";
 @import "debates/**/*";

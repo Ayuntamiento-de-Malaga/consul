@@ -1,49 +1,37 @@
 <header>
-  <% if display_remote_translation_info?(@remote_translations, I18n.locale) %>
-    <%= render "shared/remote_translations_button", remote_translations: @remote_translations %>
-  <% end %>
-
+  <%= render Layout::RemoteTranslationsButtonComponent.new(@remote_translations) %>
   <div class="top-links">
+    <%= render Layout::LocaleSwitcherComponent.new %>
     <%= link_to 'https://www.malaga.eu/', accesskey: "0", target: "blank" do %>
         <%= image_tag(image_path_for("icon-w.png"), alt: setting["org_name"]) %>
-      <% end %>
+    <% end %>
+    <div class="hide-for-small-only">
+      <%= render Layout::TopLinksComponent.new %>
+    </div>
   </div>
 
   <div class="top-bar">
-    <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-      <button type="button" class="menu-button" data-toggle>
-        <span class="menu-icon"></span>
-        <%= t("application.menu") %>
-      </button>
-    </span>
-
     <h1 class="top-bar-title">
       <%= link_to root_path, accesskey: "0" do %>
         <%= image_tag(image_path_for("logo-blue.svg"), alt: setting["org_name"]) %>
       <% end %>
     </h1>
 
-    <div id="responsive-menu">
-      <div class="top-bar-right">
-        <ul class="menu" data-responsive-menu="medium-dropdown">
-          <%= render "shared/admin_login_items" %>
-          <%= render "layouts/notification_item" %>
-          <%= render "devise/menu/login_items" %>
-        </ul>
-
-        <div class="show-for-small-only">
-          <div class="subnavigation subnavigation-with-top-links">
-            <%= render "shared/subnavigation" %>
-            <%= render "shared/top_links" %>
-          </div>
+    <%= render Layout::ResponsiveMenuComponent.new do %>
+      <%= render Layout::AccountMenuComponent.new(current_user) %>
+      
+      <div class="show-for-small-only">
+        <div class="subnavigation subnavigation-with-top-links">
+          <%= render Layout::SubnavigationComponent.new %>
+          <%= render Layout::TopLinksComponent.new %>
         </div>
       </div>
-    </div>
+    <% end %>
   </div>
 
   <div id="navigation_bar" class="subnavigation">
     <div class="hide-for-small-only">
-      <%= render "shared/subnavigation" %>
+      <%= render Layout::SubnavigationComponent.new %>
     </div>
 
     <%= yield :header_addon %>

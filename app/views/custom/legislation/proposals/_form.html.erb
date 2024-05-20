@@ -27,18 +27,20 @@
     </div>
 
     <% if feature?(:allow_images) %>
-      <div class="images small-12 column">
-        <%= render "images/nested_image", f: f %>
+      <div class="small-12 column">
+        <%= render Images::NestedComponent.new(f) %>
       </div>
     <% end %>
 
-    <div class="documents small-12 column" data-max-documents="<%= Legislation::Proposal.max_documents_allowed %>">
-      <%= render "documents/nested_documents", f: f %>
+    <div class="small-12 column">
+      <%= render Documents::NestedComponent.new(f) %>
     </div>
 
+    <% if Geozone.any? %>
     <div class="small-12 medium-6 column">
       <%= f.select :geozone_id, geozone_select_options, include_blank: t("geozones.none") %>
     </div>
+    <% end %>
 
     <div class="small-12 column">
       <%= f.label :tag_list, t("legislation.proposals.form.tags_label") %>
@@ -60,12 +62,7 @@
 
     <div class="small-12 column">
       <% if @proposal.new_record? %>
-        <%= f.check_box :terms_of_service,
-          title: t("form.accept_terms_title"),
-          label: t("form.accept_terms",
-                   policy: link_to(t("form.policy"), "https://www.malaga.eu/informacion-general/politica-de-privacidad/", target: "blank"),
-                   conditions: link_to(t("form.conditions"), "/conditions", target: "blank")
-                  ) %>
+        <%= render Shared::AgreeWithTermsOfServiceFieldComponent.new(f) %>
       <% end %>
     </div>
 

@@ -40,9 +40,6 @@ class Verification::Residence
 
   private
 
-    def valid_postal_code?
-      postal_code =~ /^290/
-    end
 
     def residency_valid?
       @census_data.valid? &&

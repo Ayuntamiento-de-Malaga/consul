@@ -1,0 +1,6 @@
+<%= form.check_box :terms_of_service,
+          title: t("form.accept_terms_title"),
+          label: t("form.accept_terms",
+                   policy: link_to(t("form.policy"), "https://www.malaga.eu/informacion-general/politica-de-privacidad/", target: "blank"),
+                   conditions: link_to(t("form.conditions"), "/conditions", target: "blank")
+                  ) %>

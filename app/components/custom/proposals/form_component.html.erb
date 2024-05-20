@@ -38,23 +38,31 @@
     </div>
 
     <% if feature?(:allow_images) %>
-      <div class="images">
-        <%= render "images/nested_image", f: f %>
-      </div>
+      <%= render Images::NestedComponent.new(f) %>
     <% end %>
 
     <% if feature?(:allow_attached_documents) %>
-      <div class="documents">
-        <%= render "documents/nested_documents", f: f %>
-      </div>
+      <%= render Documents::NestedComponent.new(f) %>
     <% end %>
 
+    <% if Geozone.any? %>
     <div>
       <%= f.select :geozone_id, geozone_select_options,
         include_blank: t("geozones.none") %>
     </div>
 
-    <br>
+    <% end %>
+
+    <% if feature?(:map) %>
+      <div>
+        <%= render "map_locations/form_fields",
+                   form: f,
+                   map_location: proposal.map_location || MapLocation.new,
+                   label: t("proposals.form.map_location"),
+                   help: t("proposals.form.map_location_instructions"),
+                   i18n_namespace: "proposals" %>
+      </div>
+    <% end %>
 
     <div>
       <%= f.label :tag_list, t("proposals.form.tags_label") %>
@@ -89,12 +97,7 @@
   <div class="actions">
     <% if proposal.new_record? %>
       <div>
-        <%= f.check_box :terms_of_service,
-          title: t("form.accept_terms_title"),
-          label: t("form.accept_terms",
-                   policy: link_to(t("form.policy"), "https://www.malaga.eu/informacion-general/politica-de-privacidad/", target: "blank"),
-                   conditions: link_to(t("form.conditions"), "/conditions", target: "blank")
-                  ) %>
+        <%= render Shared::AgreeWithTermsOfServiceFieldComponent.new(f) %>
       </div>
     <% end %>
 

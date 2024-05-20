@@ -79,10 +79,23 @@ header {
     p {
       font-size: 16px;
       i {
+        display: inline-block;
         width: 15px;
         height: auto;
         margin-right: 8px;
       }
+      .address {
+        margin-left: 8px;
+      }
+    }
+    .fa-map-marker {
+      @include has-fa-icon(map-marker-alt, solid);
+    }
+    .fa-phone {
+      @include has-fa-icon(phone, solid);
+    }
+    .fa-envelope {
+      @include has-fa-icon(envelope, solid);
     }
   }
   .info-rrss {
@@ -99,6 +112,30 @@ header {
       &:first-of-type {
         padding-left: 0;
       }
+    }
+    i {
+      color: $white;
+    }
+    .fa-facebook {
+      @include has-fa-icon(facebook, brands);
+    }
+    .fa-twitter {
+      @include has-fa-icon(twitter, brands);
+    }
+    .fa-youtube {
+      @include has-fa-icon(youtube, brands);
+    }
+    .fa-instagram {
+      @include has-fa-icon(instagram, brands);
+    }
+    .fa-linkedin {
+      @include has-fa-icon(linkedin, brands);
+    }
+    .fa-tiktok {
+      @include has-fa-icon(tiktok, brands);
+    }
+    .fa-plus-circle {
+      @include has-fa-icon(plus-circle, solid);
     }
   }
   .footer-logo {

@@ -161,6 +161,10 @@ module Budgets
         @view = (params[:view] == "minimal") ? "minimal" : "default"
       end
 
+      def investments_with_filters
+        @budget.investments.apply_filters_and_search(@budget, params, @current_filter)
+      end
+
       def investments
         if @current_order == "random"
           @budget.investments.apply_filters_and_search(@budget, params, @current_filter)

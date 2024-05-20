@@ -115,6 +115,7 @@ header {
     }
     i {
       color: $white;
+      font-size: 24px;
     }
     .fa-facebook {
       @include has-fa-icon(facebook, brands);

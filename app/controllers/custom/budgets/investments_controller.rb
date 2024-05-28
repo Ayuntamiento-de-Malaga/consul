@@ -134,10 +134,8 @@ module Budgets
         if params[:heading_id].present?
           @heading = @budget.headings.find_by_slug_or_id! params[:heading_id]
           @assigned_heading = @ballot&.heading_for_group(@heading.group)
-          load_map
         elsif @budget.single_heading?
           @heading = @budget.headings.first
-          load_map
         end
       end
 
@@ -167,11 +165,9 @@ module Budgets
 
       def investments
         if @current_order == "random"
-          @budget.investments.apply_filters_and_search(@budget, params, @current_filter)
-                             .sort_by_random(session[:random_seed])
+          investments_with_filters.sort_by_random(session[:random_seed])
         else
-          @budget.investments.apply_filters_and_search(@budget, params, @current_filter)
-                             .send("sort_by_#{@current_order}")
+          investments_with_filters.send("sort_by_#{@current_order}")
         end
       end
 
@@ -181,10 +177,6 @@ module Budgets
         elsif @budget&.publishing_prices_or_later?
           params[:filter] ||= "selected"
         end
-      end
-
-      def load_map
-        @map_location = MapLocation.load_from_heading(@heading)
       end
   end
 end

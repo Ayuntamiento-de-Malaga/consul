@@ -42,8 +42,8 @@
         <ol>
           <li>
             <% info_text = "#{doc.humanized_content_type} | #{number_to_human_size(doc.attachment_file_size)}" %>
-            <a href="<%= root_url %><%= doc.attachment.url %>"><%= doc.title %> (<%= info_text %>)</a><br>
-            <small>Disponible en la siguiente URL: <%= root_url %><%= doc.attachment.url %></small>
+            <a href="<%= root_url %><%= url_for(doc.attachment) %>"><%= doc.title %> (<%= info_text %>)</a><br>
+            <small>Disponible en la siguiente URL: <%= root_url %><%= url_for(doc.attachment) %></small>
           </li>
         </ol>
       <% end %>

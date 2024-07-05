@@ -6,55 +6,75 @@
       </h1>
 
       <div class="info-list">
+        <% if setting["physical_address"] %>
         <p>
           <i class="fa-map-marker"></i>
-          <span><%= t("layouts.footer.address") %></span>
+          <span><%= setting["physical_address"] %></span>
         </p>
+        <% end %>
+        <% if setting["phone_number"] %>
         <p>
           <i class="fa-phone"></i>
-          <span><%= t("layouts.footer.phone") %></span>
+          <span><%= setting["phone_number"] %></span>
         </p>
+        <% end %>
+        <% if setting["contact_email"] %>
         <p>
           <i class="fa-envelope"></i>
-          <span><%= t("layouts.footer.email") %></span>
+          <span><%= setting["contact_email"] %></span>
         </p>
+        <% end %>
       </div>
       <ul class="info-rrss">
+        <% if setting["facebook_handle"] %>
         <li>
-        <%= link_to 'https://www.facebook.com/AyuntamientodeMalaga', target: "blank" do %>
-          <i class="fa-facebook"></i>
-        <% end %>
+          <%= link_to "https://www.facebook.com/#{setting['facebook_handle']}", target: "blank" do %>
+            <i class="fa-facebook"></i>
+          <% end %>
         </li>
-        <li>
-        <%= link_to 'https://twitter.com/malaga', target: "blank" do %>
-        <i class="fa-twitter"></i>
         <% end %>
-        </li>
-        <li>
-        <%= link_to 'https://www.youtube.com/user/AytodeMalaga', target: "blank" do %>
-        <i class="fa-youtube"></i>
+        <% if setting["twitter_handle"] %>
+          <li>
+            <%= link_to "https://twitter.com/#{setting['twitter_handle']}", target: "blank" do %>
+              <i class="fa-twitter"></i>
+            <% end %>
+          </li>
         <% end %>
-        </li>
-        <li>
-        <%= link_to 'https://www.instagram.com/ayuntamientomalaga/?hl=es', target: "blank" do %>
-        <i class="fa-instagram"></i>
+        <% if setting["youtube_handle"] %>
+          <li>
+            <%= link_to "https://www.youtube.com/user/#{setting['youtube_handle']}", target: "blank" do %>
+              <i class="fa-youtube"></i>
+            <% end %>
+          </li>
         <% end %>
-        </li>
-        <li>
-        <%= link_to 'https://www.linkedin.com/company/ayuntamientodemalaga/', target: "blank" do %>
-        <i class="fa-linkedin"></i>
+        <% if setting["instagram_handle"] %>
+          <li>
+            <%= link_to "https://www.instagram.com/#{setting['instagram_handle']}", target: "blank" do %>
+              <i class="fa-instagram"></i>
+            <% end %>
+          </li>
         <% end %>
-        </li>
-        <li>
-        <%= link_to 'https://www.tiktok.com/@ayuntamientomalaga', target: "blank" do %>
-        <i class="fa-tiktok"></i>
+        <% if setting["linkedin_handle"] %>
+          <li>
+            <%= link_to "https://www.linkedin.com/company/#{setting['linkedin_handle']}", target: "blank" do %>
+              <i class="fa-linkedin"></i>
+            <% end %>
+          </li>
         <% end %>
-        </li>
-        <li>
-        <%= link_to 'https://www.malaga.eu/informacion-general/redes-sociales/', target: "blank" do %>
-        <i class="fa-plus-circle"></i>
+        <% if setting["tiktok_handle"] %>
+          <li>
+            <%= link_to "https://www.tiktok.com/@#{setting['tiktok_handle']}", target: "blank" do %>
+              <i class="fa-tiktok"></i>
+            <% end %>
+          </li>
         <% end %>
-        </li>
+        <% if setting["rrss_link"] %>
+          <li>
+            <%= link_to "#{setting['rrss_link']}", target: "blank" do %>
+              <i class="fa-plus-circle"></i>
+            <% end %>
+          </li>
+        <% end %>
       </ul>
     </div>
 

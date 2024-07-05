@@ -24,6 +24,12 @@ class Setting
       else
         consul_defaults.merge({
           # Overwrite default CONSUL DEMOCRACY settings or add new settings here
+          "linkedin_handle": nil,
+          "tiktok_handle": nil,
+          "rrss_link": nil,
+          "contact_email": nil,
+          "physical_address": nil,
+          "phone_number": nil,
         })
       end
     end

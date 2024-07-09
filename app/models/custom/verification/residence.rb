@@ -40,18 +40,13 @@ class Verification::Residence
 
   private
 
-
-    def residency_valid?
-      @census_data.valid? &&
-        @census_data.estado == 1
+    def census_data
+      @census_data = CensusCaller.new.call(document_type, base64_document(document_number), formated_date(date_of_birth), postal_code)
     end
 
-    def retrieve_census_data
-      logger = Rails.logger
-      logger.info 'RETRIEVE!'
-      logger.info document_number
-      logger.info base64_document(document_number)
-      @census_data = CensusCaller.new.call(document_type, base64_document(document_number), formated_date(date_of_birth), postal_code)
+    def residency_valid?
+      census_data.valid? &&
+        census_data.estado == 1
     end
 
     def clean_document_number

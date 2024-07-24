@@ -2,7 +2,8 @@
   <%= render Layout::RemoteTranslationsButtonComponent.new(@remote_translations) %>
   <div class="top-links">
     <%= render Layout::LocaleSwitcherComponent.new %>
-    <%= link_to 'https://www.malaga.eu/', accesskey: "0", target: "blank" do %>
+    <%= link_to 'https://www.malaga.eu/', class: "logo", accesskey: "0", target: "blank" do %>
+        www.malaga.eu
         <%= image_tag(image_path_for("icon-w.png"), alt: setting["org_name"]) %>
     <% end %>
     <div class="hide-for-small-only">

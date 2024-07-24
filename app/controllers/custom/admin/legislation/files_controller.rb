@@ -11,7 +11,10 @@ class Admin::Legislation::FilesController < Admin::Legislation::BaseController
       :header => {
         :content => render_to_string(:template => 'admin/legislation/files/header.pdf.erb', :layout => false)
       },
-      :margin => {top: 33, bottom: 27, left: 20, right: 20}
+      :footer => {
+        :content => render_to_string(:template => 'admin/legislation/files/footer.pdf.erb', :layout => false)
+      },
+      :margin => {top: 33, bottom: 40, left: 20, right: 20}
     )
   end
 end

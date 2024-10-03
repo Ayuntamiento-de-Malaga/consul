@@ -7,13 +7,15 @@
   <%= wicked_pdf_stylesheet_link_tag "pdf_fonts" -%>
 </head>
 <body class="process-pdf">
-<div class="content">
+  <div class="content">
     <div class="title">
-    <% if @type=="audiencia" %>
-        INFORME DE AUDIENCIA PÚBLICA EN EL PORTAL DE</br>PARTICIPACIÓN CIUDADANA DEL AYUNTAMIENTO DE MÁLAGA
-    <% else %>
-        INFORME DE CONSULTA PÚBLICA EN EL PORTAL DE</br>PARTICIPACIÓN CIUDADANA DEL AYUNTAMIENTO DE MÁLAGA
-    <% end %>
+      <b>
+      <% if @type=="audiencia" %>
+          INFORME DE AUDIENCIA PÚBLICA EN EL PORTAL DE PARTICIPACIÓN CIUDADANA DEL AYUNTAMIENTO DE MÁLAGA
+      <% else %>
+          INFORME DE CONSULTA PÚBLICA EN EL PORTAL DE PARTICIPACIÓN CIUDADANA DEL AYUNTAMIENTO DE MÁLAGA
+      <% end %>
+      </b>
     </div>
     <p class="text">
         El presente informe ha sido generado de manera automática por la Portal de Participación del Ayuntamiento de Málaga para acreditar que el proceso denominado
@@ -22,7 +24,7 @@
       <%= @process.title %>
     </div>
     <p class="text">
-      fue publicado el <%= I18n.l(@process.start_date, format: '%A, %d de %B de %Y') %> por el Area de <%= @area %> y ha estado sometido a <% if @type=="audiencia" %>audiencia pública<% else %>consulta pública<% end %> del <%= I18n.l(@process.start_date, format: '%A, %d de %B de %Y') %> al <%= I18n.l(@process.end_date, format: '%A, %d de %B de %Y') %> en el Portal de Participación Ciudadana, concretamente en la URL:
+      fue publicado el <%= I18n.l(@process.start_date, format: '%A, %d de %B de %Y') %> por el Área de <%= @area %> y ha estado sometido a <% if @type=="audiencia" %>audiencia pública<% else %>consulta pública<% end %> del <%= I18n.l(@process.start_date, format: '%A, %d de %B de %Y') %> al <%= I18n.l(@process.end_date, format: '%A, %d de %B de %Y') %> en el Portal de Participación Ciudadana, concretamente en la URL:
     </p>
     <div class="link">
       <a href="<%= root_url %>legislation/processes/<%= @process.id %>" target="_blank" rel="noopener noreferrer">
@@ -38,20 +40,20 @@
     </div>
     <p class="text">
       Incluyendo además los siguientes archivos adjuntos: <br>
-      <% @process.documents.each do |doc|%>
-        <ol>
+      <ol>
+        <% @process.documents.each do |doc|%>
           <li>
             <% info_text = "#{doc.humanized_content_type} | #{number_to_human_size(doc.attachment_file_size)}" %>
             <a href="<%= root_url %><%= url_for(doc.attachment) %>"><%= doc.title %> (<%= info_text %>)</a><br>
             <small>Disponible en la siguiente URL: <%= root_url %><%= url_for(doc.attachment) %></small>
           </li>
-        </ol>
-      <% end %>
+        <% end %>
+      </ol>
     </p>
     <p class="text">
-      Durante el proceso se ha producido <%= @process.total_comments_and_proposals %> comentarios, y se han alcanzado las siguientes conclusiones: <%= @conclusions.blank? ? 'Sin conclusiones' : @conclusions %>
+      Durante el proceso se ha producido <%= @process.total_comments_and_proposals %> comentarios<%= @conclusions.blank? ? '.' : ", y se han alcanzado las siguientes conclusiones: #{@conclusions}" %>
     </p>
-    <br />
+    <br>
     <p class="date">
       Este documento fue generado el <%= I18n.l(Date.today, format: '%A, %d de %B de %Y') %>
     </p>

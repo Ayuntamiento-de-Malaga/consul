@@ -2,6 +2,7 @@
 //
 // 01. Source Sans Pro (https://www.google.com/fonts/specimen/Source+Sans+Pro)
 // 02. Lato (https://www.google.com/fonts/specimen/Lato)
+// 03. Matter
 //
 
 // 01. Source Sans Pro
@@ -59,7 +60,30 @@
   font-style: normal;
 }
 
-body, h1, h2, h3 {
-  font-family: Lato PDF !important;
-  font-weight: lighter !important;
+// 03. Matter
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@font-face {
+  font-family: 'Matter';
+  src: url("<%= ApplicationHelper.asset_data_base64('Matter-Light.ttf') %>");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matter';
+  src: url("<%= ApplicationHelper.asset_data_base64('Matter-Regular.ttf') %>");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Matter';
+  src: url("<%= ApplicationHelper.asset_data_base64('Matter-SemiBold.ttf') %>");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Matter';
 }

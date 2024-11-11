@@ -53,6 +53,16 @@
     <p class="text">
       Durante el proceso se ha producido <%= @process.total_comments_and_proposals %> comentarios<%= @conclusions.blank? ? '.' : ", y se han alcanzado las siguientes conclusiones: #{@conclusions}" %>
     </p>
+    <p>Comentarios</p>
+    <% @process.questions_comments.each do |comment| %>
+      <p><i><%= comment.body %></i></p>
+      <p class="comment-info">- Publicado el <i><%= l comment.created_at.to_datetime, format: :datetime %></i>&nbsp;&nbsp; por <i><%= comment.author.name %></i></p>
+    <% end %>
+
+    <% @process.proposals.each do |proposal| %>
+      <p><i><%= proposal.title %></i></p>
+      <p class="comment-info">- Publicado el <i><%= l proposal.created_at.to_datetime, format: :datetime %></i>&nbsp;&nbsp; por <i><%= proposal.author.name %></i></p>
+    <% end %>
     <br>
     <p class="date">
       Este documento fue generado el <%= I18n.l(Date.today, format: '%A, %d de %B de %Y') %>

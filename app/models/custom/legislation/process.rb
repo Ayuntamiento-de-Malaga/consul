@@ -116,6 +116,19 @@ class Legislation::Process < ApplicationRecord
   def total_comments_and_proposals
     total_comments + proposals.count
   end
+  
+  def questions_comments
+    comments_list = []
+    # Iterate over each question in the process
+    questions.includes(:comments).each do |question|
+      # Append comments of the current question to the list
+      question.comments.each do |comment|
+        comments_list << comment
+      end
+    end
+    comments_list
+  end
+  
 
   def status
     today = Date.current

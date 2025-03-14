@@ -3,26 +3,35 @@ class Budget
     SORTING_OPTIONS = { id: "id", supports: "cached_votes_up" }.freeze
 
     CATEGORY_OPTIONS = %w[
-      acerado_aceras
-      acerado_accesibilidad
-      movilidad_velocidad
-      movilidad_paso_peatones
-      alumbrado_jardines
-      alumbrado_farolas
-      parques_infantiles_reposicion
-      parques_infantiles_accesibles
-      parques_infantiles_reforma
-      parques_jardines_jardines_verticales
-      parques_jardines_banos_publicos
-      parques_jardines_toldos
-      mobiliario_urbano_bancos
-      mobiliario_urbano_papeleras
-      mobiliario_urbano_barandillas
-      mobiliario_urbano_ornamentales
-      parques_caninos_mejora
-      equipamientos_deportivos_pintura
+      parques_infantiles_instalacion
+      parques_infantiles_mejora
+      mobiliario_urbano_bancos_sustitucion
+      mobiliario_urbano_bancos_instalacion
+      mobiliario_urbano_fuentes_sustitucion
+      mobiliario_urbano_fuentes_instalacion
+      mobiliario_urbano_farolas_sustitucion
+      mobiliario_urbano_farolas_instalacion
+      mobiliario_urbano_papeleras_sustitucion
+      mobiliario_urbano_papeleras_instalacion
+      mobiliario_urbano_letras_sustitucion
+      mobiliario_urbano_letras_instalacion
+      mobiliario_urbano_barandillas_sustitucion
+      mobiliario_urbano_barandillas_instalacion
+      mobiliario_urbano_ornamentales_sustitucion
+      mobiliario_urbano_ornamentales_instalacion
+      mobiliario_urbano_toldos_sustitucion
+      mobiliario_urbano_toldos_instalacion
+      mobiliario_urbano_alumbrado_sustitucion
+      mobiliario_urbano_alumbrado_instalacion
+      medio_ambiente_zonas_verdes_creacion
+      medio_ambiente_zonas_verdes_acondicionamiento
+      medio_ambiente_zonas_verdes_intervencion_alcorques
+      parques_caninos_creacion
+      parques_caninos_acondicionamiento
       equipamientos_deportivos_renovacion
+      equipamientos_deportivos_reposicion
       equipamientos_deportivos_acondicionamiento
+      equipamientos_deportivos_construccion
     ].freeze
 
     include Rails.application.routes.url_helpers

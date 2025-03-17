@@ -5,6 +5,8 @@ class RemoteCensusRestApi
     response = nil
     # Modificado para la API del Padrón de Málaga
     response = Response.new(get_response_body(document_type, base64_document(document_number), formated_date(date_of_birth), postal_code))
+    puts 'remotecensusrestapi'
+    puts response.inspect
     response
   end
   

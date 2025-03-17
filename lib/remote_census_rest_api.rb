@@ -3,8 +3,30 @@ include DocumentParser
 class RemoteCensusRestApi
   def call(document_type, document_number, date_of_birth, postal_code)
     response = nil
-    response = Response.new(get_response_body(document_type, document_number, date_of_birth, postal_code))
+    # Modificado para la API del Padrón de Málaga
+    response = Response.new(get_response_body(document_type, base64_document(document_number), formated_date(date_of_birth), postal_code))
     response
+  end
+  
+  # Modificado para la API del Padrón de Málaga
+  def base64_document(document)
+    begin
+      Base64.encode64(document).gsub(/\n/,"")
+    rescue Exception => e
+      puts e
+    end
+  end
+  # Modificado para la API del Padrón de Málaga
+  def formated_date(date)
+    return unless date.present?
+    begin
+      day = date.day < 10 ? "0#{date.day}" : date.day
+      month = date.month < 10 ? "0#{date.month}" : date.month
+      date = "#{date.year}#{month}#{day}000000"
+      date
+    rescue Exception => e
+      puts e
+    end
   end
 
   class Response
@@ -19,9 +41,10 @@ class RemoteCensusRestApi
       @body.dig(*path)
     end
 
+    # Modificado para la API del Padrón de Málaga
     def valid?
       path_value = Setting["remote_census.response.valid"]
-      extract_value(path_value) == "-1"
+      extract_value(path_value) == "-1" && estado == 1
     end
 
     def date_of_birth

@@ -3,7 +3,7 @@ require_dependency Rails.root.join("app", "models", "verification", "management"
 class Verification::Management::Document
   def in_census?
     response = CensusCaller.new.call(document_type, base64_document(document_number), formated_date(date_of_birth), postal_code)
-    response.valid? && census_data.estado == 1
+    response.valid? && response.estado == 1
   end
 
   def base64_document(document)

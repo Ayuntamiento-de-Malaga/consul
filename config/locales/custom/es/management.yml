@@ -43,7 +43,9 @@ es:
       title: Gestión de usuarios
       under_age: "No tienes edad suficiente para verificar tu cuenta."
       verify: Verificar usuario
-    date_of_birth: Fecha de nacimiento
+    # modificado
+    date_of_birth: Fecha de nacimiento (recomendado pero opcional)
+
     email_verifications:
       already_verified: Esta cuenta de usuario ya está verificada.
       choose_options: "Elige una de las opciones siguientes:"

@@ -22,8 +22,19 @@
               data: suggest_data(investment) %>
       </div>
 
+      <!-- custom field -->
       <div>
-        <%= translations_form.text_area :description,
+        <%= f.label :category , t("budgets.investments.form.category_label") %><br>
+        <div>
+          <% Budget::Investment::CATEGORY_OPTIONS.each do |option| %>
+            <%= f.radio_button :category, option, label: t("budgets.investments.form.categories.#{option}"), style: "display: inline;" %><br>
+          <% end %>
+        </div>
+      </div>
+      <br/>
+
+      <div>
+        <%= translations_form.text_area :description, label: t("budgets.investments.form.description_label"),
               maxlength: Budget::Investment.description_max_length,
               class: "html-area" %>
       </div>
@@ -64,14 +75,6 @@
       <%= f.text_field :organization_name %>
     </div>
 
-    <div>
-      <%= f.label :category , t("budgets.investments.form.category_label") %><br>
-      <div>
-        <% Budget::Investment::CATEGORY_OPTIONS.each do |option| %>
-          <%= f.radio_button :category, option, label: t("budgets.investments.form.categories.#{option}"), style: "display: inline;" %><br>
-        <% end %>
-      </div>
-    </div>
 
     <div>
       <%= f.label :tag_list, t("budgets.investments.form.tags_label") %>

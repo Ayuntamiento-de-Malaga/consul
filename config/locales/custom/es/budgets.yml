@@ -83,6 +83,7 @@ es:
         map_location: "Ubicación en el mapa"
         map_location_instructions: "Navega por el mapa hasta la ubicación y coloca el marcador."
         map_remove_marker: "Eliminar el marcador"
+        description_label: Breve descripción
         category_label: Categoría
         categories:
           parques_infantiles_instalacion: "Parques infantiles: Instalación"

@@ -10,7 +10,8 @@ module TextWithLinksHelper
     return if html.nil?
     raise "Could not add links because the content is not safe" unless html.html_safe?
 
-    raw Rinku.auto_link(html, :all, 'rel="nofollow"')
+    # Add target="_blank" to all links
+    raw Rinku.auto_link(html, :all, 'rel="nofollow" target="_blank"')
   end
 
   def simple_format_no_tags_no_sanitize(html)

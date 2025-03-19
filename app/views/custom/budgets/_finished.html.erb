@@ -1,0 +1,23 @@
+<div class="row margin-top">
+  <div class="small-12 column">
+    <h2><%= t("budgets.index.finished_budgets") %></h2>
+
+    <div id="finished_budgets">
+      <% budgets.each do |budget| %>
+        <div class="budget-investment clear">
+          <div class="panel past-budgets">
+            <h3><%= budget.name %></h3>
+
+            <div id="budget_<%= budget.id %>_results">
+              <% if can?(:read_results, budget) %>
+                <%= link_to t("budgets.index.see_results"), budget_results_path(budget), class: "button" %>
+              <% end %>
+              <!-- Revertir al original cuando cierre el año 2026-2027 -->
+              <%= link_to t("budgets.index.milestones"), "/resultados-2024", class: "button" %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

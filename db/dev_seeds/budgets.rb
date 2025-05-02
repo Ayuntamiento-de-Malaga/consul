@@ -112,7 +112,8 @@ section "Creating Investments" do
       valuation_finished: [false, true].sample,
       tag_list: tags.sample(3).join(","),
       price: rand(1..100) * 100000,
-      terms_of_service: "1"
+      terms_of_service: "1",
+      category: Budget::Investment::CATEGORY_OPTIONS.sample
     }.merge(translation_attributes))
 
     add_image_to_investment(investment) if Random.rand > 0.5
@@ -158,7 +159,8 @@ section "Winner Investments" do
       valuation_finished: true,
       selected: true,
       price: rand(10000..heading.price),
-      terms_of_service: "1"
+      terms_of_service: "1",
+      category: Budget::Investment::CATEGORY_OPTIONS.sample
     )
     add_image_to_investment(investment) if Random.rand > 0.3
   end

@@ -18,7 +18,9 @@ class Budgets::Investments::MapComponent < ApplicationComponent
     end
 
     def coordinates
-      MapLocation.investments_json_data(investments.unscope(:order))
+      if investments
+        MapLocation.investments_json_data(investments.unscope(:order))
+      end
     end
 
     def geozones_data

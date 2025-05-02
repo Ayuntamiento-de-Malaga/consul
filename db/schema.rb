@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_03_07_083356) do
+ActiveRecord::Schema.define(version: 2024_10_26_112901) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_trgm"
@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 2024_03_07_083356) do
     t.string "content_type"
     t.text "metadata"
     t.bigint "byte_size", null: false
-    t.string "checksum", null: false
+    t.string "checksum"
     t.datetime "created_at", null: false
     t.string "service_name", null: false
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
@@ -476,6 +476,16 @@ ActiveRecord::Schema.define(version: 2024_03_07_083356) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "cookies_vendors", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.string "cookie"
+    t.text "script"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["cookie"], name: "index_cookies_vendors_on_cookie", unique: true
+  end
+
   create_table "dashboard_actions", id: :serial, force: :cascade do |t|
     t.string "title", limit: 80
     t.text "description"
@@ -530,7 +540,6 @@ ActiveRecord::Schema.define(version: 2024_03_07_083356) do
     t.integer "author_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "visit_id"
     t.datetime "hidden_at"
     t.integer "flags_count", default: 0
     t.datetime "ignored_flag_at"
@@ -1027,7 +1036,10 @@ ActiveRecord::Schema.define(version: 2024_03_07_083356) do
     t.string "answer"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.bigint "option_id"
     t.index ["author_id"], name: "index_poll_answers_on_author_id"
+    t.index ["option_id", "author_id"], name: "index_poll_answers_on_option_id_and_author_id", unique: true
+    t.index ["option_id"], name: "index_poll_answers_on_option_id"
     t.index ["question_id", "answer"], name: "index_poll_answers_on_question_id_and_answer"
     t.index ["question_id"], name: "index_poll_answers_on_question_id"
   end
@@ -1211,7 +1223,6 @@ ActiveRecord::Schema.define(version: 2024_03_07_083356) do
     t.integer "age"
     t.string "gender"
     t.integer "geozone_id"
-    t.integer "answer_id"
     t.integer "officer_assignment_id"
     t.integer "user_id"
     t.string "origin"
@@ -1516,14 +1527,8 @@ ActiveRecord::Schema.define(version: 2024_03_07_083356) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "locale"
-  end
-
-  create_table "stats_versions", id: :serial, force: :cascade do |t|
-    t.string "process_type"
-    t.integer "process_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["process_type", "process_id"], name: "index_stats_versions_on_process_type_and_process_id"
+    t.boolean "is_news", default: false
+    t.datetime "news_date"
   end
 
   create_table "taggings", id: :serial, force: :cascade do |t|
@@ -1715,6 +1720,7 @@ ActiveRecord::Schema.define(version: 2024_03_07_083356) do
     t.datetime "started_at"
     t.index ["started_at"], name: "index_visits_on_started_at"
     t.index ["user_id"], name: "index_visits_on_user_id"
+    t.index ["visitor_id", "started_at"], name: "index_visits_on_visitor_id_and_started_at"
   end
 
   create_table "votation_types", force: :cascade do |t|
@@ -1769,6 +1775,7 @@ ActiveRecord::Schema.define(version: 2024_03_07_083356) do
     t.integer "cardable_id"
     t.integer "columns", default: 4
     t.string "cardable_type", default: "SiteCustomization::Page"
+    t.integer "order", default: 1, null: false
     t.index ["cardable_id"], name: "index_widget_cards_on_cardable_id"
   end
 
@@ -1808,6 +1815,7 @@ ActiveRecord::Schema.define(version: 2024_03_07_083356) do
   add_foreign_key "moderators", "users"
   add_foreign_key "notifications", "users"
   add_foreign_key "organizations", "users"
+  add_foreign_key "poll_answers", "poll_question_answers", column: "option_id"
   add_foreign_key "poll_answers", "poll_questions", column: "question_id"
   add_foreign_key "poll_booth_assignments", "polls"
   add_foreign_key "poll_officer_assignments", "poll_booth_assignments", column: "booth_assignment_id"

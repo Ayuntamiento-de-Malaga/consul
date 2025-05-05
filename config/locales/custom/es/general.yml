@@ -1,6 +1,4 @@
 es:
-  signin: iniciar sesión
-  signup: registrarte
   account:
     show:
       change_credentials_link: Cambiar mis datos de acceso
@@ -860,15 +858,11 @@ es:
   votes:
     agree: Estoy de acuerdo
     anonymous: Demasiados votos anónimos, para poder votar %{verify_account}.
-    comment_unauthenticated: Necesitas %{signin} o %{signup} para poder votar.
     disagree: No estoy de acuerdo
     organizations: Las organizaciones no pueden votar.
     supports: Apoyos
     verified_only: Las Iniciativas Populares sólo pueden ser votadas por usuarios verificados, %{verify_account}.
-    signin: iniciar sesión
-    signup: registrarte
     budget_investments:
-      not_logged_in: Necesitas %{signin} o %{signup} para continuar.
       not_verified: Los propuestas sólo pueden ser apoyadas por usuarios verificados, %{verify_account}.
       organization: Las organizaciones no pueden votar.
       unfeasible: No se pueden votar Iniciativas Populares inviables.

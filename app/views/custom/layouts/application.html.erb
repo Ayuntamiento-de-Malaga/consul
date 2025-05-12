@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html <%= common_html_attributes %> data-current-user-id="<%= current_user&.id %>">
+  <head>
+    <%= render "layouts/common_head", default_title: setting["org_name"] %>
+    <%= render "layouts/meta_tags" %>
+    <%= content_for :canonical %>
+    <%= favicon_link_tag image_path_for("apple-touch-icon-200.png"),
+                         rel: "icon apple-touch-icon",
+                         sizes: "200x200",
+                         type: "image/png" %>
+    <%= content_for :social_media_meta_tags %>
+
+    <%= raw setting["html.per_page_code_head"] %>
+  </head>
+  <body class="<%= yield(:body_class) %> public">
+    <%= raw setting["html.per_page_code_body"] %>
+
+    <div class="wrapper <%= yield(:wrapper_class) %>">
+      <%= render "layouts/header", with_subnavigation: true %>
+      <%= render "layouts/flash" %>
+
+      <%= yield %>
+    </div>
+
+    <div class="footer">
+      <%= render Layout::FooterComponent.new %>
+    </div>
+    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251052083165045']", "https://form.jotform.com/")</script>
+  </body>
+</html>

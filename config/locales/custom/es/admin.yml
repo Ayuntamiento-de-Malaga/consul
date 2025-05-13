@@ -1647,7 +1647,7 @@ es:
       feeds:
         proposals: Iniciativas Populares
         debates: Propuestas Ciudadanas
-        processes: Procesos
+        processes: Propuestas de Gobierno
       new:
         header_title: Nuevo encabezado
         submit_header: Crear encabezado

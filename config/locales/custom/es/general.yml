@@ -875,7 +875,7 @@ es:
       most_active:
         debates: "Propuestas Ciudadanas más activas"
         proposals: "Iniciativas Populares más activas"
-        processes: "Procesos abiertos"
+        processes: "Propuestas de Gobierno"
       see_all:
         debates: Ver todos las Propuestas Ciudadanas
         proposals: Ver todas las Iniciativas Populares
@@ -883,11 +883,11 @@ es:
       no_items:
         debates: Ahora mismo no hay Propuestas Ciudadanas
         proposals: Ahora mismo no hay Iniciativas Populares
-        processes: Ahora mismo no hay procesos abiertos
+        processes: Ahora mismo no hay Propuestas de Gobierno
       process_label: Proceso
       see_process: Ver proceso
     cards:
-      title: Propuestas de Gobierno
+      title: Destacados
     recommended:
       title: Recomendaciones que te pueden interesar
       help: "Estas recomendaciones se generan por las etiquetas de las Propuestas Ciudadanas y Iniciativas Populares que estás siguiendo."

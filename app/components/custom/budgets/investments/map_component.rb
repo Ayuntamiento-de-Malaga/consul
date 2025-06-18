@@ -17,8 +17,11 @@ class Budgets::Investments::MapComponent < ApplicationComponent
       MapLocation.from_heading(heading) if heading.present?
     end
 
+    # MODIFIED
     def coordinates
-      MapLocation.investments_json_data(investments.unscope(:order))
+      if investments
+        MapLocation.investments_json_data(investments.unscope(:order))
+      end
     end
 
     def geozones_data

@@ -13,7 +13,7 @@ class Officing::Residence
         document_number: document_number,
         document_type: document_type,
         geozone: geozone,
-        date_of_birth: response_date_of_birth&.in_time_zone.to_datetime,
+        date_of_birth: response_date_of_birth&.in_time_zone&.to_datetime,
         gender: gender,
         residence_verified_at: Time.current,
         verified_at: Time.current,

@@ -1,6 +1,7 @@
 class Budgets::Investments::FormComponent < ApplicationComponent
   include TranslatableFormHelper
   include GlobalizeHelper
+  
   attr_reader :investment, :url
   use_helpers :current_user, :budget_heading_select_options, :suggest_data
 
@@ -17,5 +18,9 @@ class Budgets::Investments::FormComponent < ApplicationComponent
 
     def categories
       Tag.category.order(:name)
+    end
+
+    def map_location
+      investment.map_location || MapLocation.new(investment: Budget::Investment.new)
     end
 end

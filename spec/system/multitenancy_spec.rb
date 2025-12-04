@@ -45,7 +45,7 @@ describe "Multitenancy", :seed_tenants do
 
     with_subdomain("mars") do
       visit new_proposal_path
-      fill_in "Proposal title", with: "Use the unaccent extension in Mars"
+      fill_in_new_proposal_title with: "Use the unaccent extension in Mars"
       fill_in "Proposal summary", with: "tsvector for María the Martian"
       check "I agree to the Privacy Policy and the Terms and conditions of use"
 
@@ -73,7 +73,7 @@ describe "Multitenancy", :seed_tenants do
 
     with_subdomain("mars") do
       visit new_debate_path
-      fill_in "Debate title", with: "Found any water here?"
+      fill_in_new_debate_title with: "Found any water here?"
       fill_in_ckeditor "Initial debate text", with: "Found any water here?"
       check "I agree to the Privacy Policy and the Terms and conditions of use"
 
@@ -143,19 +143,13 @@ describe "Multitenancy", :seed_tenants do
     Tenant.switch("mars") { create(:user, email: "marty@consul.dev", password: "20151021") }
 
     with_subdomain("mars") do
-      visit new_user_session_path
-      fill_in "Email or username", with: "marty@consul.dev"
-      fill_in "Password", with: "20151021"
-      click_button "Enter"
+      login_through_form_with("marty@consul.dev", password: "20151021")
 
       expect(page).to have_content "You have been signed in successfully."
     end
 
     with_subdomain("venus") do
-      visit new_user_session_path
-      fill_in "Email or username", with: "marty@consul.dev"
-      fill_in "Password", with: "20151021"
-      click_button "Enter"
+      login_through_form_with("marty@consul.dev", password: "20151021")
 
       expect(page).to have_content "Invalid Email or username or password."
     end
@@ -163,10 +157,7 @@ describe "Multitenancy", :seed_tenants do
 
   scenario "Uses the right tenant after failing to sign in" do
     with_subdomain("mars") do
-      visit new_user_session_path
-      fill_in "Email or username", with: "wrong@consul.dev"
-      fill_in "Password", with: "wrong"
-      click_button "Enter"
+      login_through_form_with("wrong@consul.dev", password: "wrong")
 
       expect(page).to have_content "Invalid Email or username or password"
       expect(page).to have_css "html.tenant-mars"

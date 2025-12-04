@@ -181,7 +181,7 @@ describe "Admin budget headings", :admin do
 
       visit edit_admin_budget_group_heading_path(budget, group, heading)
 
-      select "Español", from: :add_language
+      select "Español", from: "Add language"
       fill_in "Heading name", with: "Spanish name"
       click_button "Save heading"
 
@@ -189,11 +189,12 @@ describe "Admin budget headings", :admin do
 
       visit budget_investments_path(budget, heading_id: "old-english-name")
 
+      expect(page).not_to have_content "Heading updated successfully"
       expect(page).to have_content "Old English Name"
 
       visit edit_admin_budget_group_heading_path(budget, group, heading)
 
-      select "English", from: :select_language
+      select "English", from: "Current language"
       fill_in "Heading name", with: "New English Name"
       click_button "Save heading"
 
@@ -201,6 +202,7 @@ describe "Admin budget headings", :admin do
 
       visit budget_investments_path(budget, heading_id: "new-english-name")
 
+      expect(page).not_to have_content "Heading updated successfully"
       expect(page).to have_content "New English Name"
     end
   end

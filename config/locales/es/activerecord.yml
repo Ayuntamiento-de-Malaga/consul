@@ -151,6 +151,9 @@ es:
       votation_type:
         one: Tipo de votación
         other: Tipos de votación
+      cookies/vendor:
+        one: proveedor de cookies
+        other: proveedores de cookies
     attributes:
       budget:
         name: "Nombre"
@@ -293,7 +296,6 @@ es:
         public_interests: "Mostrar públicamente los elementos que sigo"
         recommended_debates: "Mostrar recomendaciones en el listado de debates"
         recommended_proposals: "Mostrar recomendaciones en el listado de propuestas"
-        redeemable_code: "Código de verificación por carta (opcional)"
       direct_message:
         title: "Título"
         body: "Mensaje"
@@ -534,6 +536,10 @@ es:
       votation_type/vote_type:
         unique: Respuesta única
         multiple: Respuesta múltiple
+      cookies/vendor:
+        name: Nombre del proveedor
+        cookie: Nombre de la cookie
+        script: Código javascript
     errors:
       models:
         user:
@@ -551,7 +557,8 @@ es:
         geozone:
           attributes:
             geojson:
-              invalid: "Los datos GeoJSON proporcionados no tienen el formato correcto. Deben tener un tipo del formato \"Polygon\" o \"MultiPolygon\"."
+              invalid: "Los datos GeoJSON proporcionados no tienen el formato correcto. Deben seguir el formato estándar RFC 7946"
+              invalid_coordinates: "Los datos GeoJSON proporcionados contienen coordenadas inválidas; las coordenadas deben utilizar el formato \"Longitud, Latitud\" y seguir el formato estándar RFC 7946"
         image:
           attributes:
             attachment:

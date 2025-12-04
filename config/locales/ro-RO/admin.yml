@@ -207,7 +207,6 @@ ro:
         valuator_filter_all: Toți evaluatorii
         tags_filter_all: Toate etichetele
         advanced_filters: Filtre avansate
-        placeholder: Caută proiecte
         filters:
           all: Toate
           without_admin: Fără administrator atribuit
@@ -237,7 +236,6 @@ ro:
           unfeasible: "Nerealizabil"
           undecided: "Nehotărât"
         selected: "Selectat"
-        select: "Selectează"
         list:
           id: ID
           title: Titlu
@@ -1065,18 +1063,11 @@ ro:
         unable_notice: "Nu puteți șterge un chestionar care are voturi"
     questions:
       index:
-        title: "Întrebări"
         create: "Crează întrebare"
-        no_questions: "Nu există întrebări."
-        filter_poll: Filtrează după Chestionar
         select_poll: Selectează chestionar
-        questions_tab: "Întrebări"
         successful_proposals_tab: "Propunere de succes"
         create_question: "Crează întrebare"
         table_proposal: "Propunere"
-        table_question: "Întrebare"
-        table_poll: "Sondaj"
-        poll_not_assigned: "Sondajul nu este atribuit"
       edit:
         title: "Editează Întrebare"
       new:
@@ -1093,7 +1084,6 @@ ro:
         edit_question: Editează întrebare
         valid_answers: Întrebări valide
         add_answer: Adaugă răspuns
-        video_url: Video extern
         answers:
           title: Răspuns
           description: Descriere
@@ -1219,7 +1209,6 @@ ro:
         title: Propuneri
         id: ID
         author: Autor
-        select: Selectează
         selected: Selectat
         milestones: Repere
         no_proposals: Nu există propuneri.

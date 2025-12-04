@@ -6,7 +6,11 @@ class Admin::ProposalsController < Admin::BaseController
 
   has_orders %w[created_at]
 
-  before_action :load_proposal, except: :index
+  before_action :load_proposal, except: [:index, :successful]
+
+  def successful
+    @proposals = Proposal.successful.sort_by_confidence_score
+  end
 
   def show
   end
@@ -19,9 +23,22 @@ class Admin::ProposalsController < Admin::BaseController
     end
   end
 
-  def toggle_selection
-    @proposal.toggle :selected
-    @proposal.save!
+  def select
+    @proposal.update!(selected: true)
+
+    respond_to do |format|
+      format.html { redirect_to request.referer, notice: t("flash.actions.update.proposal") }
+      format.js { render :toggle_selection }
+    end
+  end
+
+  def deselect
+    @proposal.update!(selected: false)
+
+    respond_to do |format|
+      format.html { redirect_to request.referer, notice: t("flash.actions.update.proposal") }
+      format.js { render :toggle_selection }
+    end
   end
 
   private

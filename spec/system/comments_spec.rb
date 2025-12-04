@@ -336,16 +336,16 @@ describe "Comments" do
       visit polymorphic_path(resource)
 
       accept_confirm("Are you sure? This action will delete this comment. You can't undo this action.") do
-        within(".comment-body", text: "This was a mistake") { click_link "Delete comment" }
+        within(".comment-body", text: "This was a mistake") { click_button "Delete comment" }
       end
 
       expect(page).not_to have_content "This was a mistake"
-      expect(page).not_to have_link "Delete comment"
+      expect(page).not_to have_button "Delete comment"
 
       refresh
 
       expect(page).not_to have_content "This was a mistake"
-      expect(page).not_to have_link "Delete comment"
+      expect(page).not_to have_button "Delete comment"
 
       logout
       login_as(admin)
@@ -363,7 +363,7 @@ describe "Comments" do
       visit polymorphic_path(resource)
 
       accept_confirm("Are you sure? This action will delete this comment. You can't undo this action.") do
-        within(".comment-body", text: "Wrong comment") { click_link "Delete comment" }
+        within(".comment-body", text: "Wrong comment") { click_button "Delete comment" }
       end
 
       within "#comments > .comment-list > li", text: "Right reply" do
@@ -383,21 +383,7 @@ describe "Comments" do
   scenario "Reply" do
     comment = create(:comment, commentable: resource)
 
-    login_as(user)
-    visit polymorphic_path(resource)
-
-    within "#comment_#{comment.id}" do
-      click_link "Reply"
-    end
-
-    within "#js-comment-form-comment_#{comment.id}" do
-      fill_in fill_text, with: "It will be done next week."
-      click_button "Publish reply"
-    end
-
-    within "#comment_#{comment.id}" do
-      expect(page).to have_content "It will be done next week."
-    end
+    reply_to(comment, with: "It will be done next week.", replier: user)
 
     expect(page).not_to have_css "#js-comment-form-comment_#{comment.id}"
   end

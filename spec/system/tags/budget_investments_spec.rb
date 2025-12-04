@@ -10,7 +10,6 @@ describe "Tags" do
   end
   let!(:tag_medio_ambiente) { create(:tag, :category, name: "Medio Ambiente") }
   let!(:tag_economia) { create(:tag, :category, name: "Economía") }
-  let(:admin) { create(:administrator).user }
 
   scenario "Index" do
     earth = create(:budget_investment, heading: heading, tag_list: tag_medio_ambiente.name)
@@ -76,7 +75,7 @@ describe "Tags" do
 
     click_button "Create Investment"
 
-    expect(page).to have_content "Investment created successfully."
+    expect(page).to have_content "Budget Investment created successfully."
     expect(page).to have_content tag_economia.name
     expect(page).to have_content tag_medio_ambiente.name
   end
@@ -93,7 +92,7 @@ describe "Tags" do
     find(".js-add-tag-link", text: tag_economia.name).click
     click_button "Create Investment"
 
-    expect(page).to have_content "Investment created successfully."
+    expect(page).to have_content "Budget Investment created successfully."
     expect(page).to have_content "Build a skyscraper"
 
     within ".tags" do
@@ -117,7 +116,7 @@ describe "Tags" do
     find(".js-add-tag-link", text: "Education").click
     click_button "Create Investment"
 
-    expect(page).to have_content "Investment created successfully."
+    expect(page).to have_content "Budget Investment created successfully."
     expect(page).to have_content "Build a skyscraper"
 
     within ".tags" do
@@ -141,7 +140,7 @@ describe "Tags" do
     find(".js-add-tag-link", text: "Education").click
     click_button "Create Investment"
 
-    expect(page).to have_content "Investment created successfully."
+    expect(page).to have_content "Budget Investment created successfully."
     expect(page).to have_content "Build a skyscraper"
 
     within ".tags" do
@@ -181,7 +180,7 @@ describe "Tags" do
 
     click_button "Create Investment"
 
-    expect(page).to have_content "Investment created successfully."
+    expect(page).to have_content "Budget Investment created successfully."
     expect(page).to have_content "user_id1"
     expect(page).to have_content "a3"
     expect(page).to have_content "scriptalert('hey');script"

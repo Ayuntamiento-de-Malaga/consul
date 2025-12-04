@@ -16,6 +16,8 @@ cs:
       unmark_featured: Zrušit označení
       edit: Upravit
       configure: Nastavení
+      select: Vybrat
+      show_to_valuators: "Zobrazit %{name} hodnotitelům"
     officing_booth:
       title: "Obsluhujete hlasovací kabinu na adrese %{booth}. Pokud to není správně, nepokračujte a zavolejte na telefonní číslo nápovědy. Děkujeme."
     banners:
@@ -170,6 +172,8 @@ cs:
         calculate: Vypočítat vítěznou investici
         calculated: Výpočet vítězných investic může chvíli trvat.
         recalculate: Přepočítat vítězné investice
+      ballots:
+        feature_disabled: 'Chcete-li vytvářet hlasovací kabiny, musí být povolena funkce <strong>Ankety</strong>. Můžete jej povolit na stránce <a href="%{link}">konfigurace nastavení</a>.'
     budget_groups:
       name: "Název"
       headings_name: "Kapitoly"
@@ -214,7 +218,6 @@ cs:
         submit: "Uložit hadpisy"
       group_switcher:
         currently_showing: "Zobrazení rozpočtových položek ze skupiny <strong>%{group}</strong>."
-        different_group: "Správa rozpočtových položek z jiné skupiny"
         the_other_group: "Správa položek ze skupiny %{group}."
       index:
         back: "Jít zpět do skupin"
@@ -237,12 +240,14 @@ cs:
         title: "%{budget} fáze"
     budget_investments:
       index:
+        basic_filters:
+          valuator_or_group: Hodnotitel nebo skupina
+          title_or_id: Název nebo ID
         heading_filter_all: Všechny kapitoly
         administrator_filter_all: Všichni administrátoři
         valuator_filter_all: Všichni hodotitelé
         tags_filter_all: Všechny štítky
         advanced_filters: Pokročilé filtry
-        placeholder: Prohledat projekty
         filters:
           all: Vše
           without_admin: Bez přidělené role admin
@@ -272,7 +277,6 @@ cs:
           unfeasible: "Nerealizovatelné"
           undecided: "Nerozhodnuté"
         selected: "Vybrané"
-        select: "Vybrat"
         list:
           id: ID
           title: Předmět
@@ -1137,18 +1141,11 @@ cs:
         multiple_description: "Umožňuje vybrat více odpovědí. Je možné nastavit maximální počet odpovědí."
     questions:
       index:
-        title: "Otázky"
         create: "Vytvořit otázku"
-        no_questions: "Nejsou k dispozici žádné otázky."
-        filter_poll: Filtrovat podle ankety
         select_poll: Vyberte anketu
-        questions_tab: "Otázky"
         successful_proposals_tab: "Úspěšné návrhy"
         create_question: "Vytvořit otázku"
         table_proposal: "Návrhy"
-        table_question: "Question"
-        table_poll: "Průzkum"
-        poll_not_assigned: "Anketa není přiřazena"
       edit:
         title: "Upravit dotaz"
       form:
@@ -1169,7 +1166,6 @@ cs:
         edit_question: Upravit dotaz
         valid_answers: Správné odpovědi
         add_answer: Upravit odpověď
-        video_url: External video
         answers:
           title: Answer
           description: Description
@@ -1302,7 +1298,6 @@ cs:
         title: Návrhy
         id: ID
         author: Autor
-        select: Vybrat
         selected: Vybrané
         milestones: Milníky
         no_proposals: Neexistují žádné návrhy.
@@ -1507,7 +1502,12 @@ cs:
         polls: Průzkum
         sdg: SDG
       graph:
+        budget_investment_created: Rozpočtová investice vytvořena
+        budget_investment_supported: Podporované rozpočtové investice
         debate_created: Debaty
+        legislation_annotation_created: Vytvořené anotace právních předpisů
+        legislation_answer_created: Vytvořené odpovědi na právní předpisy
+        level_3_user: Ověření uživatelů 3. úrovně
         proposal_created: Návrhy občanů
         title: Grafy
         visits: Návštěvy
@@ -1624,6 +1624,7 @@ cs:
             subnavigation_right: Hlavní navigace vpravo
       images:
         index:
+          dimensions: "(%{width}x%{height})"
           title: Vlastní obrázky
           update: Aktualizovat
           image: Image

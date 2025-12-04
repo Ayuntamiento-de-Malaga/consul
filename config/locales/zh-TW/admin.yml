@@ -118,7 +118,6 @@ zh-TW:
         valuator_filter_all: 所有評估員
         tags_filter_all: 所有標籤
         advanced_filters: 高級篩選器
-        placeholder: 搜索項目
         filters:
           all: 所有
           without_admin: 沒有指定的管理員
@@ -146,7 +145,6 @@ zh-TW:
           unfeasible: "不可行"
           undecided: "未定"
         selected: "已選擇"
-        select: "選擇"
         list:
           id: ID
           title: 標題
@@ -801,17 +799,11 @@ zh-TW:
         table_title: "標題"
     questions:
       index:
-        title: "問題"
         create: "創建問題"
-        no_questions: "這裡沒有問題。"
-        filter_poll: 按投票項篩選
         select_poll: 選擇投票項
-        questions_tab: "問題"
         successful_proposals_tab: "成功的建議"
         create_question: "創建問題"
         table_proposal: "建議"
-        table_question: "問題"
-        table_poll: "投票"
       edit:
         title: "編輯問題"
       new:
@@ -827,7 +819,6 @@ zh-TW:
         edit_question: 編輯問題
         valid_answers: 有效答案
         add_answer: 添加答案
-        video_url: 外部視頻
         answers:
           title: 回答
           description: 描述
@@ -948,7 +939,6 @@ zh-TW:
         title: 建議
         id: ID
         author: 作者
-        select: 選擇
         selected: 已選擇
         milestones: 里程碑
     hidden_proposals:

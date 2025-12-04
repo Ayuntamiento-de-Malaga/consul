@@ -161,6 +161,9 @@ describe "Polls" do
     end
 
     click_button "Update poll"
+
+    expect(page).to have_content "Poll updated successfully"
+
     visit edit_proposal_dashboard_poll_path(proposal, poll)
 
     expect(page).to have_css ".nested-fields", count: 1
@@ -199,7 +202,7 @@ describe "Polls" do
     visit proposal_dashboard_polls_path(proposal)
 
     within("#poll_#{poll.id}") do
-      accept_confirm { click_link "Delete survey" }
+      accept_confirm { click_button "Delete survey" }
     end
 
     expect(page).to have_content("Survey deleted successfully")
@@ -214,7 +217,7 @@ describe "Polls" do
     visit proposal_dashboard_polls_path(proposal)
 
     within("#poll_#{poll.id}") do
-      accept_confirm { click_link "Delete survey" }
+      accept_confirm { click_button "Delete survey" }
     end
 
     expect(page).to have_content("You cannot destroy a survey that has responses")

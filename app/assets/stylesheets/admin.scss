@@ -135,10 +135,6 @@ $table-header:   #ecf1f6;
       }
     }
 
-    .break {
-      word-break: break-word;
-    }
-
     &.fixed {
       table-layout: fixed;
     }
@@ -166,6 +162,10 @@ $table-header:   #ecf1f6;
     .checkbox,
     .radio {
       font-weight: bold;
+    }
+
+    .radio {
+      @include radio-or-checkbox-and-label-alignment;
     }
 
     select {
@@ -229,7 +229,7 @@ $table-header:   #ecf1f6;
   display: none;
 }
 
-.sortable thead th:hover {
+.table-sortable thead th:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -587,115 +587,8 @@ table {
   }
 }
 
-.legislation-draft-versions-form {
-
-  .control {
-    cursor: pointer;
-    margin-bottom: 1rem;
-
-    small {
-      color: $text-medium;
-      display: block;
-      margin-top: -1rem;
-
-      @include breakpoint(medium) {
-        display: inline-block;
-        margin-left: 0.25rem;
-        margin-top: 0;
-      }
-    }
-  }
-
-  .fullscreen-container {
-    background: #ccdbe6;
-    text-align: center;
-
-    .markdown-editor-header,
-    .markdown-editor-buttons {
-      display: none;
-    }
-
-    span {
-      font-size: $small-font-size;
-      text-decoration: none;
-    }
-
-    .icon-expand {
-      line-height: 0;
-      margin-left: 0.25rem;
-      text-decoration: none;
-      vertical-align: sub;
-    }
-  }
-
-  .markdown-preview {
-    border: 1px solid #cacaca;
-    font-family: $font-family-serif;
-    margin-bottom: 2rem;
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: $font-family-serif !important;
-      font-size: 1rem;
-      line-height: 1.625rem;
-      margin-bottom: 0;
-    }
-
-    p {
-      font-size: 1rem;
-      line-height: 1.625rem;
-    }
-  }
-
-  .fullscreen {
-
-    .markdown-area,
-    .markdown-preview {
-      display: block;
-    }
-
-    .column {
-      padding: 0;
-    }
-
-    .fullscreen-container {
-      background: $admin-color;
-      margin-bottom: 0;
-      padding: 0.5rem 1rem;
-      text-align: left;
-    }
-
-    .legislation-draft-version-body {
-      border-radius: 0;
-
-      @include breakpoint(medium) {
-        padding-left: 2rem;
-        padding-right: 2rem;
-      }
-
-      &:focus {
-        box-shadow: inset 0 1px 2px rgba(34, 34, 34, 0.1);
-      }
-    }
-
-    .markdown-preview {
-      border: 0;
-      padding: 1rem;
-
-      @include breakpoint(medium) {
-        padding: 1rem 2rem;
-      }
-    }
-  }
-}
-
 // 10. Budgets
 // -----------------
-
 
 .columns-selector {
 

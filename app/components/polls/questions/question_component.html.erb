@@ -1,22 +1,31 @@
-<div id="<%= dom_id(question) %>" class="poll-question">
-  <h3>
-    <%= question.title %>
-  </h3>
-
-  <% if question.votation_type.present? %>
-    <strong>
-      <%= t("poll_questions.description.#{question.vote_type}", maximum: question.max_votes) %>
-    </strong>
-  <% end %>
-
-  <div id="<%= dom_id(question) %>_options" class="padding">
-    <%= render Polls::Questions::OptionsComponent.new(question) %>
+<% if question.open? %>
+  <div class="poll-question-open-ended">
+    <%= fields_for "web_vote[#{question.id}]" do |f| %>
+      <%= f.text_area :answer, label: question.title, value: existing_answer, rows: 3 %>
+    <% end %>
   </div>
+<% else %>
+  <fieldset <%= fieldset_attributes %>>
+    <legend><%= question.title %></legend>
 
-  <% if question.options_with_read_more? %>
-    <div>
-      <p><%= t("poll_questions.read_more_about") %></p>
-      <p><%= options_read_more_links %></p>
-    </div>
-  <% end %>
-</div>
+    <% if multiple_choice? %>
+      <%= multiple_choice_help_text %>
+
+      <% question.question_options.each do |option| %>
+        <%= multiple_choice_field(option) %>
+      <% end %>
+    <% else %>
+      <% question.question_options.each do |option| %>
+        <%= single_choice_field(option) %>
+      <% end %>
+    <% end %>
+
+    <% if question.options_with_read_more? %>
+      <div class="read-more-links">
+        <p><%= t("poll_questions.read_more_about") %></p>
+        <p><%= options_read_more_links %></p>
+      </div>
+    <% end %>
+    <%= form.error_for(:"question_#{question.id}") %>
+  </fieldset>
+<% end %>

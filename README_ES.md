@@ -14,7 +14,6 @@ Aplicación de Participación Ciudadana y Gobierno Abierto
 [![Accessibility conformance](https://img.shields.io/badge/accessibility-WAI:AA-green.svg)](https://www.w3.org/WAI/eval/Overview)
 
 ![Estado de los tests](https://github.com/consuldemocracy/consuldemocracy/workflows/tests/badge.svg)
-[![Code Climate](https://codeclimate.com/github/consuldemocracy/consuldemocracy/badges/gpa.svg)](https://codeclimate.com/github/consuldemocracy/consuldemocracy)
 [![Coverage Status](https://coveralls.io/repos/github/consuldemocracy/consuldemocracy/badge.svg?branch=master)](https://coveralls.io/github/consuldemocracy/consuldemocracy?branch=master)
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/consul/localized.svg)](https://translate.consuldemocracy.org/)
 
@@ -32,9 +31,10 @@ Puedes acceder a la página principal del proyecto en [http://consuldemocracy.or
 
 ## Configuración para desarrollo y tests
 
-**NOTA**: para unas instrucciones más detalladas, consulta la [documentación de instalación local](docs/es/installation/local_installation.md).
+**NOTA**:
+El proceso de instalación varía según el sistema operativo. Por favor, consulta la [documentación de instalación local](docs/es/installation/local_installation.md) apropiada para tu SO.
 
-Prerrequisitos: tener instalado git, Ruby 3.2.8, CMake, pkg-config, Node.js 18.20.3, ImageMagick y PostgreSQL (9.5 o superior).
+Prerrequisitos: tener instalado git, Ruby 3.3.10, CMake, pkg-config, Node.js 20.19.5, ImageMagick y PostgreSQL (13 o superior).
 
 **Nota**: Es posible que ejecutar `bin/setup`, como se indica a continuación, falle si has configurado un nombre de usuario y contraseña para PostgreSQL. Si es así, edita las líneas que contienen `username:` y `password:` (añadiendo tus credenciales) en el fichero `config/database.yml` y ejecuta `bin/setup` de nuevo.
 

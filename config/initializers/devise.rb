@@ -286,6 +286,14 @@ Devise.setup do |config|
                   Rails.application.secrets.wordpress_oauth2_secret,
                   client_options: { site: Rails.application.secrets.wordpress_oauth2_site },
                   setup: ->(env) { OmniauthTenantSetup.wordpress_oauth2(env) }
+  config.omniauth :saml, setup: ->(env) { OmniauthTenantSetup.saml(env) }
+  config.omniauth :openid_connect,
+                  name: :oidc,
+                  scope: [:openid, :email, :profile],
+                  response_type: :code,
+                  discovery: true,
+                  client_auth_method: :basic,
+                  setup: ->(env) { OmniauthTenantSetup.oidc(env) }
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

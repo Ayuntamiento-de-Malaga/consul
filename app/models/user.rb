@@ -1,6 +1,11 @@
 class User < ApplicationRecord
   include Verification
+
   attribute :registering_from_web, default: false
+  %i[newsletter email_digest email_on_direct_message public_activity recommended_debates
+     recommended_proposals].each do |field|
+    attribute field, :boolean, default: -> { !Setting["feature.gdpr.require_consent_for_notifications"] }
+  end
 
   devise :database_authenticatable, :registerable, :confirmable, :recoverable, :rememberable,
          :trackable, :validatable, :omniauthable, :password_expirable, :secure_validatable,
@@ -107,7 +112,7 @@ class User < ApplicationRecord
   scope :erased,         -> { where.not(erased_at: nil) }
   scope :active,         -> { excluding(erased) }
   scope :public_for_api, -> { all }
-  scope :by_authors,     ->(author_ids) { where(id: author_ids) }
+  scope :with_ids,       ->(ids) { where(id: ids) }
   scope :by_comments,    ->(commentables) do
     joins(:comments).where("comments.commentable": commentables).distinct
   end
@@ -289,14 +294,10 @@ class User < ApplicationRecord
   def take_votes_from(other_user)
     return if other_user.blank?
 
-    with_lock do
-      Poll::Voter.where(user_id: other_user.id).find_each do |poll_voter|
-        if Poll::Voter.where(poll: poll_voter.poll, user_id: id).any?
-          poll_voter.delete
-        else
-          poll_voter.update_column(:user_id, id)
-        end
-      end
+    Poll::Voter.where(user_id: other_user.id).find_each do |poll_voter|
+      transaction(requires_new: true) { poll_voter.update_column(:user_id, id) }
+    rescue ActiveRecord::RecordNotUnique
+      poll_voter.delete
     end
 
     Budget::Ballot.where(user_id: other_user.id).update_all(user_id: id)
@@ -325,7 +326,7 @@ class User < ApplicationRecord
   end
 
   def show_welcome_screen?
-    verification = Setting["feature.user.skip_verification"].present? ? true : unverified?
+    verification = Setting["feature.user.skip_verification"].present? || unverified?
     sign_in_count == 1 && verification && !organization && !administrator?
   end
 

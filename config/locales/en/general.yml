@@ -88,7 +88,6 @@ en:
         confidence_score: highest rated
         created_at: newest
         hot_score: most active
-        most_commented: most commented
         relevance: relevance
         recommendations: recommendations
       recommendations:
@@ -278,6 +277,14 @@ en:
     info:
       sign_in: "Sign in with:"
       sign_up: "Sign up with:"
+    saml:
+      sign_in: Sign in with SAML
+      sign_up: Sign up with SAML
+      name: SAML
+    oidc:
+      sign_in: Sign in with OIDC
+      sign_up: Sign up with OIDC
+      name: OIDC
     or_fill: "Or fill the following form:"
   proposals:
     create:
@@ -321,6 +328,7 @@ en:
       tags_placeholder: "Enter the tags you would like to use, separated by commas (',')"
       map_location: "Map location"
       map_location_instructions: "Navigate the map to the location and place the marker."
+      map_marker_coordinates: "Latitude: %{latitude}. Longitude: %{longitude}"
       map_remove_marker: "Remove map marker"
     index:
       featured_proposals: Featured
@@ -573,6 +581,9 @@ en:
   polls:
     dates: "From %{open_at} to %{closed_at}"
     final_date: "Final recounts/Results"
+    form:
+      vote: "Vote"
+      maximum_exceeded: "you've selected %{given} answers, but the maximum you can select is %{maximum}"
     index:
       filters:
         current: "Open"
@@ -598,6 +609,7 @@ en:
     show:
       already_voted_in_booth: "You have already participated in a physical booth. You can not participate again."
       already_voted_in_web: "You have already participated in this poll. If you vote again it will be overwritten."
+      already_voted_blank_in_web: "You have already participated in this poll by casting a blank vote. If you vote again it will be overwritten."
       back: Back to voting
       cant_answer_not_logged_in: "You must %{signin} or %{signup} to participate."
       comments_tab: Comments
@@ -627,14 +639,13 @@ en:
       results:
         title: "Questions"
         most_voted_answer: "Most voted answer: "
+        open_ended:
+          valid: Valid
+          blank: Blank
     poll_header:
       back_to_proposal: Back to proposal
   poll_questions:
-    show:
-      vote_answer: "Vote %{answer}"
-      voted: "You have voted %{answer}"
     description:
-      unique: "You can select a maximum of 1 answer."
       multiple: "You can select a maximum of %{maximum} answers."
     read_more_about: "Read more about:"
   proposal_notifications:

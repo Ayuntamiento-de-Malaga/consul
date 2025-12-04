@@ -52,20 +52,8 @@ module ProposalsDashboardHelper
       dashboard_action&.proposed_action?
   end
 
-  def is_request_active(id)
+  def request_active?(id)
     controller_name == "dashboard" && action_name == "new_request" && dashboard_action&.id == id
-  end
-
-  def resource_availability_label(resource)
-    label = []
-
-    label << t("dashboard.resource.required_days",
-               days: resource.day_offset) if resource.day_offset > 0
-    label << t("dashboard.resource.required_supports",
-               supports: number_with_delimiter(resource.required_supports,
-                                               delimiter: ".")) if resource.required_supports > 0
-
-    safe_join label, h(" #{t("dashboard.resource.and")})") + tag(:br)
   end
 
   def daily_selected_class
@@ -86,21 +74,6 @@ module ProposalsDashboardHelper
     "hollow"
   end
 
-  def resource_card_class(resource, proposal)
-    return "alert" unless resource.active_for?(proposal)
-    return "success" if resource.executed_for?(proposal)
-
-    "primary"
-  end
-
-  def resource_tooltip(resource, proposal)
-    return t("dashboard.resource.resource_locked") unless resource.active_for?(proposal)
-    return t("dashboard.resource.view_resource") if resource.executed_for?(proposal)
-    return t("dashboard.resource.resource_requested") if resource.requested_for?(proposal)
-
-    t("dashboard.resource.request_resource")
-  end
-
   def proposed_action_description(proposed_action)
     sanitize proposed_action.description.truncate(200)
   end
@@ -116,9 +89,8 @@ module ProposalsDashboardHelper
   end
 
   def new_resources_since_last_login?(resources, new_actions_since_last_login)
-    if resources.present?
+    resources.present? &&
       resources.ids.any? { |id| new_actions_since_last_login.include?(id) }
-    end
   end
 
   def active_resources_for(proposal)

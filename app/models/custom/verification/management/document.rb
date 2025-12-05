@@ -2,7 +2,7 @@ load Rails.root.join("app", "models", "verification", "management", "document.rb
 
 class Verification::Management::Document
   include ActiveModel::Model
-  include ActiveModel::Dates
+  include ActiveModel::Attributes
 
   attr_accessor :document_type, :document_number, :date_of_birth, :postal_code
 

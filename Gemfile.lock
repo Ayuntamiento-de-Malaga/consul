@@ -98,6 +98,7 @@ GEM
       execjs (~> 2)
     base64 (0.2.0)
     bcrypt (3.1.20)
+    bcrypt_pbkdf (1.1.1)
     bcrypt_pbkdf (1.1.1-arm64-darwin)
     better_html (2.1.1)
       actionview (>= 6.0)
@@ -236,6 +237,7 @@ GEM
     faraday-retry (2.2.1)
       faraday (~> 2.0)
     ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x86_64-linux-gnu)
     fiber-storage (1.0.0)
     file_validators (3.0.0)
       activemodel (>= 3.2)
@@ -259,6 +261,9 @@ GEM
     globalize-accessors (0.3.0)
       globalize (>= 5.0.0)
     google-protobuf (4.28.3-arm64-darwin)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.28.3-x86_64-linux)
       bigdecimal
       rake (>= 13)
     graphiql-rails (1.8.0)
@@ -397,6 +402,8 @@ GEM
     nio4r (2.7.4)
     nkf (0.2.0)
     nokogiri (1.18.4-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.18.4-x86_64-linux-gnu)
       racc (~> 1.4)
     nori (2.7.1)
       bigdecimal
@@ -607,6 +614,8 @@ GEM
     safely_block (0.4.1)
     sass-embedded (1.77.5-arm64-darwin)
       google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.77.5-x86_64-linux-gnu)
+      google-protobuf (>= 3.25, < 5.0)
     sassc (2.4.0)
       ffi (~> 1.9)
     sassc-embedded (1.77.5)
@@ -723,6 +732,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-24
+  x86_64-linux
 
 DEPENDENCIES
   acts-as-taggable-on (~> 11.0.0)

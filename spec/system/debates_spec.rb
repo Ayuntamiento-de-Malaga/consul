@@ -521,7 +521,7 @@ describe "Debates" do
           expect(page).to have_content("Medium")
           expect(page).to have_css(".recommendation", count: 3)
 
-          accept_confirm { click_link "Hide recommendations" }
+          accept_confirm { click_button "Hide recommendations" }
         end
 
         expect(page).not_to have_link("recommendations")
@@ -597,6 +597,9 @@ describe "Debates" do
       visit debates_path
       fill_in "search", with: "Show you got"
       click_button "Search"
+
+      expect(page).to have_content "Search results"
+
       click_link "newest"
       expect(page).to have_css "a.is-active", text: "newest"
 
@@ -621,6 +624,9 @@ describe "Debates" do
       visit debates_path
       fill_in "search", with: "Show you got"
       click_button "Search"
+
+      expect(page).to have_content "Search results"
+
       click_link "recommendations"
       expect(page).to have_css "a.is-active", text: "recommendations"
 
@@ -664,10 +670,11 @@ describe "Debates" do
     user.erase
 
     visit debates_path
-    expect(page).to have_content("User deleted")
+    expect(page).to have_content "User deleted"
 
     visit debate_path(debate)
-    expect(page).to have_content("User deleted")
+    expect(page).to have_css "h1", exact_text: debate.title
+    expect(page).to have_content "User deleted"
   end
 
   context "Suggesting debates" do
@@ -748,7 +755,7 @@ describe "Debates" do
     end
 
     click_link debate.title
-    accept_confirm("Are you sure? Featured") { click_link "Featured" }
+    accept_confirm("Are you sure? Featured") { click_button "Featured" }
 
     within("#debates") do
       expect(page).to have_content "FEATURED"
@@ -760,7 +767,7 @@ describe "Debates" do
       click_link debate.title
     end
 
-    accept_confirm("Are you sure? Unmark featured") { click_link "Unmark featured" }
+    accept_confirm("Are you sure? Unmark featured") { click_button "Unmark featured" }
 
     within("#debates") do
       expect(page).not_to have_content "FEATURED"

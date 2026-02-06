@@ -118,7 +118,6 @@ so:
         valuator_filter_all: Dhamaan qimeeyayasha
         tags_filter_all: Dhamaan Taagyada
         advanced_filters: Sifeyaysha Sare
-        placeholder: Mashariic raadin
         filters:
           all: Dhamaan
           without_admin: Anlahayn maamul
@@ -146,7 +145,6 @@ so:
           unfeasible: "An surtgak ahayn"
           undecided: "An go aasan"
         selected: "Ladoortay"
-        select: "Dorasho"
         list:
           id: Aqoonsi
           title: Ciwaan
@@ -808,17 +806,11 @@ so:
         table_title: "Ciwaan"
     questions:
       index:
-        title: "Sualo"
         create: "Saame sual"
-        no_questions: "Majiraan Suaalo."
-        filter_poll: Falanqee sorashada
         select_poll: Xuulo doorshada
-        questions_tab: "Sualo"
         successful_proposals_tab: "Soojedin guleysatay"
         create_question: "Saame sual"
         table_proposal: "Sojeedin"
-        table_question: "Sual"
-        table_poll: "Dorasho"
       edit:
         title: "Tafatiir Suasha"
       new:
@@ -834,7 +826,6 @@ so:
         edit_question: Tafatiir Suasha
         valid_answers: Jawaab Sax ah
         add_answer: Kudar Jawaab
-        video_url: Fidyoowga dibada
         answers:
           title: Jawaab
           description: Sharaxaad
@@ -956,7 +947,6 @@ so:
         title: Sojeedino
         id: Aqoonsi
         author: Qoraa
-        select: Dorasho
         selected: Ladoortay
         milestones: Dhib meel loga baxo oo an lahayn dhibato wayn
     hidden_proposals:

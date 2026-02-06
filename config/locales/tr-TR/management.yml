@@ -18,6 +18,7 @@ tr:
           reseted: Parola sıfırlandı
           random: Rastgele parola oluştur
           save: Parolayı kaydet
+          show: Parolayı görüntüle
           print: Parolayı yazdır
           print_help: Kaydedildiğinde parolayı yazdırabileceksiniz.
     account_info:
@@ -95,6 +96,8 @@ tr:
         unfeasible: Uygulanabilir bulunmayan yatırım
       print:
         print_button: Yazdır
+      search:
+        label: "Yatırım ara"
       search_results:
         one: " '%{search_term} terimi geçen"
         other: " '%{search_term} terimi geçen"

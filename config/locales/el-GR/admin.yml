@@ -178,7 +178,6 @@ el:
         valuator_filter_all: Όλοι οι εκτιμητές
         tags_filter_all: Όλες οι ετικέτες
         advanced_filters: Σύνθετα φίλτρα
-        placeholder: Αναζήτηση έργων
         filters:
           all: Όλα
           without_admin: Δεν έχει ανατεθεί διαχειριστής
@@ -207,7 +206,6 @@ el:
           unfeasible: "Δεν είναι έφικτο"
           undecided: "Δεν έχει συμφωνηθεί"
         selected: "Επιλεγμένο"
-        select: "Επιλέξτε"
         list:
           id: Ταυτότητα
           title: Τίτλος
@@ -995,18 +993,11 @@ el:
         unable_notice: "Δεν μπορείτε να διαγράψετε μια ψηφοφορία η οπόια περιέχει ψηφοφορίες"
     questions:
       index:
-        title: "Ερωτήσεις"
         create: "Δημιουργήστε ερώτηση"
-        no_questions: "Δεν υπάρχουν ερωτήσεις."
-        filter_poll: Φίλτρο βάσει της ψηφοφορίας
         select_poll: Επιλέξτε ψηφοφορία
-        questions_tab: "Ερωτήσεις"
         successful_proposals_tab: "Επιτυχείς προτάσεις"
         create_question: "Δημιουργήστε ερώτηση"
         table_proposal: "Πρόταση"
-        table_question: "Ερώτηση"
-        table_poll: "Δημοσκόπηση"
-        poll_not_assigned: "Η ψηφοφορία δεν ανατέθηκε"
       edit:
         title: "Επεξεργασία ερώτησης"
       new:
@@ -1023,7 +1014,6 @@ el:
         edit_question: Επεξεργασία ερώτησης
         valid_answers: Έγκυρες ερωτήσεις
         add_answer: Πρόσθεσε ερώτηση
-        video_url: Εξωτερικό βίντεο
         answers:
           title: Απάντηση
           description: Περιγραφή
@@ -1148,7 +1138,6 @@ el:
         title: Προτάσεις
         id: ID
         author: Συγγραφέας
-        select: Επιλογή
         selected: Επιλεγμένο
         milestones: Ορόσημα
         no_proposals: Δεν υπάρχουν προτάσεις.

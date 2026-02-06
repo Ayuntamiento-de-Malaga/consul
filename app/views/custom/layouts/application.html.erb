@@ -11,12 +11,13 @@
     <%= content_for :social_media_meta_tags %>
 
     <%= raw setting["html.per_page_code_head"] %>
+    <%= render Layout::CookiesConsent::Vendors::ScriptsComponent.new %>
   </head>
   <body class="<%= yield(:body_class) %> public">
     <%= raw setting["html.per_page_code_body"] %>
 
     <div class="wrapper <%= yield(:wrapper_class) %>">
-      <%= render "layouts/header", with_subnavigation: true %>
+      <%= render "layouts/header" %>
       <%= render "layouts/flash" %>
 
       <%= yield %>
@@ -25,6 +26,8 @@
     <div class="footer">
       <%= render Layout::FooterComponent.new %>
     </div>
+    <%= render Layout::CookiesConsent::BannerComponent.new %>
+    <%= render Layout::CookiesConsent::ManagementComponent.new %>
     <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
     <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-251052083165045']", "https://form.jotform.com/")</script>
   </body>

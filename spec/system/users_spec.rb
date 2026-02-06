@@ -131,12 +131,12 @@ describe "Users" do
       expect(page).to have_link budget_investment.title
 
       within("#budget_investment_#{budget_investment.id}") do
-        dismiss_confirm { click_link "Delete" }
+        dismiss_confirm { click_button "Delete" }
       end
       expect(page).to have_link budget_investment.title
 
       within("#budget_investment_#{budget_investment.id}") do
-        accept_confirm { click_link "Delete" }
+        accept_confirm { click_button "Delete" }
       end
       expect(page).not_to have_link budget_investment.title
     end
@@ -159,10 +159,12 @@ describe "Users" do
       uncheck "account_public_activity"
       click_button "Save changes"
 
-      logout
+      expect(page).to have_content "Changes saved"
 
+      logout
       visit user_path(user)
-      expect(page).to have_content("activity list private")
+
+      expect(page).to have_content "activity list private"
     end
 
     scenario "is always visible for the owner" do
@@ -172,41 +174,47 @@ describe "Users" do
       uncheck "account_public_activity"
       click_button "Save changes"
 
+      expect(page).to have_content "Changes saved"
+
       visit user_path(user)
       expect(page).not_to have_content("activity list private")
     end
 
     scenario "is always visible for admins" do
+      admin = create(:administrator).user
       login_as(user)
       visit account_path
 
       uncheck "account_public_activity"
       click_button "Save changes"
 
-      logout
+      expect(page).to have_content "Changes saved"
 
-      login_as(create(:administrator).user)
+      logout
+      login_as(admin)
       visit user_path(user)
-      expect(page).not_to have_content("activity list private")
+
+      expect(page).not_to have_content "activity list private"
     end
 
     scenario "is always visible for moderators" do
+      moderator = create(:moderator).user
       login_as(user)
       visit account_path
 
       uncheck "account_public_activity"
       click_button "Save changes"
 
-      logout
+      expect(page).to have_content "Changes saved"
 
-      login_as(create(:moderator).user)
+      logout
+      login_as(moderator)
       visit user_path(user)
-      expect(page).not_to have_content("activity list private")
+
+      expect(page).not_to have_content "activity list private"
     end
 
     describe "User email" do
-      let(:user) { create(:user) }
-
       scenario "is not shown if no user logged in" do
         visit user_path(user)
         expect(page).not_to have_content(user.email)
@@ -461,8 +469,9 @@ describe "Users" do
       check "account_public_interests"
       click_button "Save changes"
 
-      logout
+      expect(page).to have_content "Changes saved"
 
+      logout
       visit user_path(user, filter: "follows")
 
       expect(page).to have_css "#public_interests"
@@ -479,10 +488,12 @@ describe "Users" do
       check "account_public_interests"
       click_button "Save changes"
 
-      logout
+      expect(page).to have_content "Changes saved"
 
+      logout
       visit user_path(user)
-      expect(page).not_to have_content("Sport")
+
+      expect(page).not_to have_content "Sport"
     end
   end
 end

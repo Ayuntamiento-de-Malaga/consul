@@ -160,7 +160,6 @@ ca:
         valuator_filter_all: Tots els avaluadors
         tags_filter_all: Totes les etiquetes
         advanced_filters: Filtres avançats
-        placeholder: Cerca de projectes
         filters:
           all: tots
           without_admin: Sense administrador
@@ -190,7 +189,6 @@ ca:
           unfeasible: "No viables"
           undecided: "sense decidir"
         selected: "seleccionada"
-        select: "Seleccionar"
         list:
           id: ID
           title: Títol
@@ -1000,18 +998,11 @@ ca:
         unable_notice: "No podeu suprimir una enquesta amb vots"
     questions:
       index:
-        title: "Preguntes ciutadanes"
         create: "Crear pregunta per a votació"
-        no_questions: "No hi ha ninguna pregunta ciutadana."
-        filter_poll: Filtrar per votació
         select_poll: Seleccionar votació
-        questions_tab: "Preguntes ciutadanes"
         successful_proposals_tab: "Propostes que han superat el umbral"
         create_question: "Crear pregunta per a votació"
         table_proposal: "la proposta"
-        table_question: "pregunta"
-        table_poll: "votació"
-        poll_not_assigned: "Enquesta no assignada"
       edit:
         title: "Editar pregunta ciutadana"
       new:
@@ -1028,7 +1019,6 @@ ca:
         edit_question: Edita la pregunta
         valid_answers: Respostes válidas
         add_answer: Afegiu resposta
-        video_url: Vídeo extern
         answers:
           title: Resposta
           description: Descripció detallada
@@ -1153,7 +1143,6 @@ ca:
         title: Propostes ciutadanes
         id: ID
         author: Autor
-        select: Selecciona
         selected: Seleccionat
         milestones: Fites
         no_proposals: No hi ha propostes.

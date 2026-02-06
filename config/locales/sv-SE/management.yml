@@ -18,6 +18,7 @@ sv:
           reseted: Lösenordet har återställts
           random: Skapa ett slumpmässigt lösenord
           save: Spara lösenord
+          show: Visa lösenord
           print: Visa lösenord
           print_help: Du kommer kunna skriva ut lösenordet när det har sparats.
     account_info:
@@ -95,6 +96,8 @@ sv:
         unfeasible: Ej genomförbar investering
       print:
         print_button: Skriv ut
+      search:
+        label: "Sök i investeringar"
       search_results:
         one: " som innehåller ordet '%{search_term}'"
         other: " som innehåller '%{search_term}'"

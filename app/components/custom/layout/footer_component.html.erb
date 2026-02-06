@@ -95,6 +95,13 @@
       <li class="inline-block"><%= link_to t("layouts.footer.map"), 'https://www.malaga.eu/informacion-general/mapa-web/', target: "blank" %>&nbsp;|</li>
       <li class="inline-block"><%= link_to t("layouts.footer.themes"), 'https://www.malaga.eu/webs-tematicas/', target: "blank" %>&nbsp;|</li>
       <li class="inline-block"><%= link_to t("layouts.footer.conditions"), '/conditions', target: "blank" %></li>
+      <% if feature?(:cookies_consent) %>
+          <li class="cookies-consent-management-footer-content">
+            <a href="#cookies_consent_management" data-open="cookies_consent_management">
+              <%= t("layouts.footer.cookies_consent_management") %>
+            </a>
+          </li>
+        <% end %>
     </ul>
     </div>
     <div class="row">

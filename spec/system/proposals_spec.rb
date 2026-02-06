@@ -435,7 +435,7 @@ describe "Proposals" do
     expect(page).to have_field "Full name of the person submitting the proposal", with: "Isabel Garcia"
   end
 
-  scenario "Responsible name field is not shown for verified users" do
+  scenario "Responsible name field is not shown anywhere" do
     author = create(:user, :level_two)
     login_as(author)
 
@@ -453,7 +453,8 @@ describe "Proposals" do
     click_link "No, I want to publish the proposal"
     click_link "Not now, go to my proposal"
 
-    expect(Proposal.last.responsible_name).to eq(author.document_number)
+    expect(page).to have_css "h1", exact_text: "Help refugees"
+    expect(page).not_to have_content author.document_number
   end
 
   scenario "Errors on create" do
@@ -937,7 +938,7 @@ describe "Proposals" do
           expect(page).to have_content("Medium")
           expect(page).to have_css(".recommendation", count: 3)
 
-          accept_confirm { click_link "Hide recommendations" }
+          accept_confirm { click_button "Hide recommendations" }
         end
 
         expect(page).not_to have_link("recommendations")
@@ -1249,6 +1250,9 @@ describe "Proposals" do
       visit proposals_path
       fill_in "search", with: "Show you got"
       click_button "Search"
+
+      expect(page).to have_content "Search results"
+
       click_link "recommendations"
       expect(page).to have_css "a.is-active", text: "recommendations"
 
@@ -1290,22 +1294,6 @@ describe "Proposals" do
   it_behaves_like "followable", "proposal", "proposal_path", { id: "id" }
 
   it_behaves_like "imageable", "proposal", "proposal_path", { id: "id" }
-
-  it_behaves_like "nested imageable",
-                  "proposal",
-                  "new_proposal_path",
-                  {},
-                  "imageable_fill_new_valid_proposal",
-                  "Create proposal",
-                  "Proposal created successfully"
-
-  it_behaves_like "nested imageable",
-                  "proposal",
-                  "edit_proposal_path",
-                  { id: "id" },
-                  nil,
-                  "Save changes",
-                  "Proposal updated successfully"
 
   it_behaves_like "documentable", "proposal", "proposal_path", { id: "id" }
 

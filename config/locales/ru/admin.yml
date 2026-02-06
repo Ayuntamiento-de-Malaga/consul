@@ -149,7 +149,6 @@ ru:
         valuator_filter_all: Все оценщики
         tags_filter_all: Все метки
         advanced_filters: Расширенные фильтры
-        placeholder: Искать в проектах
         filters:
           all: Все
           without_admin: Без назначенного администратора
@@ -178,7 +177,6 @@ ru:
           unfeasible: "Неприемлемая"
           undecided: "Нерешенная"
         selected: "Выбранная"
-        select: "Выбрать"
         list:
           id: ID
           title: Название
@@ -978,18 +976,11 @@ ru:
         unable_notice: "Вы не можете удалить голосование, для которого есть голоса"
     questions:
       index:
-        title: "Вопросы"
         create: "Создать вопрос"
-        no_questions: "Нет вопросов."
-        filter_poll: Фильтр по голосованию
         select_poll: Выбрать голосование
-        questions_tab: "Вопросы"
         successful_proposals_tab: "Успешные предложения"
         create_question: "Создать вопрос"
         table_proposal: "Заявка"
-        table_question: "Вопрос"
-        table_poll: "Опрос"
-        poll_not_assigned: "Опрос не назначен"
       edit:
         title: "Редактировать вопрос"
       new:
@@ -1006,7 +997,6 @@ ru:
         edit_question: Редактировать вопрос
         valid_answers: Правильные ответы
         add_answer: Добавить ответ
-        video_url: Внешнее видео
         answers:
           title: Ответ
           description: Описание
@@ -1133,7 +1123,6 @@ ru:
         title: Заявки
         id: ID
         author: Автор
-        select: Выбрать
         selected: Выбрано
         milestones: Основные этапы
         no_proposals: Предложений нет.

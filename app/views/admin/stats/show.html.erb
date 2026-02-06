@@ -1,6 +1,4 @@
-<% content_for :head do %>
-  <%= javascript_include_tag "stat_graphs", "data-turbolinks-track" => "reload" %>
-<% end %>
+<% include_stat_graphs_javascript %>
 
 <div id="stats" class="stats">
   <div class="row">
@@ -58,7 +56,9 @@
         <div class="small-12 medium-3 column">
           <p class="featured">
             <%= t "admin.stats.show.summary.proposal_votes" %> <br>
-            <span class="number"><%= number_with_delimiter(@proposal_votes) %> <br></span>
+            <span class="number">
+              <%= number_with_delimiter(@proposal_votes) %> <br>
+            </span>
           </p>
           <p>
             <%= t "admin.stats.show.summary.debate_votes" %> <br>

@@ -113,7 +113,6 @@ fa:
         valuator_filter_all: همه ارزیابان
         tags_filter_all: همه برچسب ها
         advanced_filters: فیلترهای پیشرفته
-        placeholder: جستجو در پروژه ها
         filters:
           all: همه
           without_admin: بدون تعیین مدیر
@@ -140,7 +139,6 @@ fa:
           unfeasible: "غیر قابل پیش بینی"
           undecided: "بلاتکلیف"
         selected: "انتخاب شده"
-        select: "انتخاب"
         list:
           id: شناسه
           title: عنوان
@@ -729,17 +727,11 @@ fa:
         table_title: "عنوان"
     questions:
       index:
-        title: "سوالات"
         create: "ایجاد سوال"
-        no_questions: "هیچ سوالی وجود ندارد"
-        filter_poll: فیلتر توسط نظرسنجی
         select_poll: انتخاب نظرسنجي
-        questions_tab: "سوالات"
         successful_proposals_tab: "طرح های موفق"
         create_question: "ایجاد سوال"
         table_proposal: "طرح های پیشنهادی"
-        table_question: "سوال"
-        table_poll: "نظرسنجی"
       edit:
         title: "ویرایش پرسش"
       new:
@@ -755,7 +747,6 @@ fa:
         edit_question: ویرایش پرسش
         valid_answers: پاسخ های معتبر
         add_answer: اضافه کردن پاسخ
-        video_url: ویدیوهای خارجی
         answers:
           title: پاسخ
           description: توضیحات
@@ -875,7 +866,6 @@ fa:
         title: طرح های پیشنهادی
         id: شناسه
         author: نویسنده
-        select: انتخاب
         selected: انتخاب شده
         milestones: نقطه عطف
     hidden_proposals:

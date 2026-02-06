@@ -1,4 +1,4 @@
-require_dependency Rails.root.join("app", "models", "verification", "management", "document").to_s
+load Rails.root.join("app", "models", "verification", "management", "document.rb")
 
 class Verification::Management::Document
   include ActiveModel::Model

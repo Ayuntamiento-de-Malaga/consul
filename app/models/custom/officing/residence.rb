@@ -1,4 +1,4 @@
-require_dependency Rails.root.join("app", "models", "officing", "residence").to_s
+load Rails.root.join("app", "models", "officing", "residence.rb")
 
 class Officing::Residence
 

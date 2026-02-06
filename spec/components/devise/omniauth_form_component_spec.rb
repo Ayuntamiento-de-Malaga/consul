@@ -9,6 +9,8 @@ describe Devise::OmniauthFormComponent do
       Setting["feature.twitter_login"] = false
       Setting["feature.google_login"] = false
       Setting["feature.wordpress_login"] = false
+      Setting["feature.saml_login"] = false
+      Setting["feature.oidc_login"] = false
     end
 
     it "is not rendered when all authentications are disabled" do
@@ -22,8 +24,8 @@ describe Devise::OmniauthFormComponent do
 
       render_inline component
 
-      expect(page).to have_link "Twitter"
-      expect(page).to have_link count: 1
+      expect(page).to have_button "Twitter"
+      expect(page).to have_button count: 1
     end
 
     it "renders the facebook link when the feature is enabled" do
@@ -31,8 +33,8 @@ describe Devise::OmniauthFormComponent do
 
       render_inline component
 
-      expect(page).to have_link "Facebook"
-      expect(page).to have_link count: 1
+      expect(page).to have_button "Facebook"
+      expect(page).to have_button count: 1
     end
 
     it "renders the google link when the feature is enabled" do
@@ -40,8 +42,8 @@ describe Devise::OmniauthFormComponent do
 
       render_inline component
 
-      expect(page).to have_link "Google"
-      expect(page).to have_link count: 1
+      expect(page).to have_button "Google"
+      expect(page).to have_button count: 1
     end
 
     it "renders the wordpress link when the feature is enabled" do
@@ -49,8 +51,26 @@ describe Devise::OmniauthFormComponent do
 
       render_inline component
 
-      expect(page).to have_link "Wordpress"
-      expect(page).to have_link count: 1
+      expect(page).to have_button "Wordpress"
+      expect(page).to have_button count: 1
+    end
+
+    it "renders the SAML link when the feature is enabled" do
+      Setting["feature.saml_login"] = true
+
+      render_inline component
+
+      expect(page).to have_button "SAML"
+      expect(page).to have_button count: 1
+    end
+
+    it "renders the OIDC link when the feature is enabled" do
+      Setting["feature.oidc_login"] = true
+
+      render_inline component
+
+      expect(page).to have_button "OIDC"
+      expect(page).to have_button count: 1
     end
   end
 end

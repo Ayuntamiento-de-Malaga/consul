@@ -91,6 +91,10 @@ en:
       google_login_description: "Allow users to sign up with their Google Account"
       wordpress_login: "Wordpress login"
       wordpress_login_description: "Allow users to sign up with their Wordpress Account"
+      oidc_login: "OpenID Connect login"
+      oidc_login_description: "Allow users to sign up with OpenID Connect (OIDC)"
+      saml_login: "SAML login"
+      saml_login_description: "Allow users to sign up with SAML"
       featured_proposals: "Featured proposals"
       featured_proposals_description: "Shows featured proposals on index proposals page"
       signature_sheets: "Signature sheets"
@@ -136,6 +140,9 @@ en:
       sdg_description: Enable Sustainable Development Goals sections in the administration menu and in the Global Settings.
       cookies_consent: Cookies consent banner
       cookies_consent_description: Enable the cookies consent banner to inform users about the cookies the application uses.
+      gdpr:
+        require_consent_for_notifications: Explicit consent for notifications
+        require_consent_for_notifications_description: Require explicit user consent in order to send them newsletters and similar information as required by the General Data Protection Regulation (GDPR).
     remote_census:
       general:
         endpoint: "Endpoint"

@@ -88,7 +88,6 @@ es:
         confidence_score: Mejor valorados
         created_at: Nuevos
         hot_score: Más activos
-        most_commented: Más comentados
         relevance: Más relevantes
         recommendations: Recomendaciones
       recommendations:
@@ -275,6 +274,14 @@ es:
       sign_in: Entra con Twitter
       sign_up: Regístrate con Twitter
       name: Twitter
+    saml:
+      sign_in: Entra con SAML
+      sign_up: Regístrate con SAML
+      name: SAML
+    oidc:
+      sign_in: Entra con OIDC
+      sign_up: Regístrate con OIDC
+      name: OIDC
     info:
       sign_in: "Entra con:"
       sign_up: "Regístrate con:"
@@ -321,6 +328,7 @@ es:
       tags_placeholder: "Escribe las etiquetas que desees separadas por coma (',')"
       map_location: "Ubicación en el mapa"
       map_location_instructions: "Navega por el mapa hasta la ubicación y coloca el marcador."
+      map_marker_coordinates: "Latitud: %{latitude}. Longitud: %{longitude}"
       map_remove_marker: "Eliminar el marcador"
     index:
       featured_proposals: Destacadas
@@ -573,6 +581,9 @@ es:
   polls:
     dates: "Desde el %{open_at} hasta el %{closed_at}"
     final_date: "Recuento final/Resultados"
+    form:
+      vote: "Votar"
+      maximum_exceeded: "has seleccionado %{given} respuestas, pero el máximo que puedes seleccionar es %{maximum}"
     index:
       filters:
         current: "Abiertas"
@@ -598,6 +609,7 @@ es:
     show:
       already_voted_in_booth: "Ya has participado en esta votación en urnas presenciales, no puedes volver a participar."
       already_voted_in_web: "Ya has participado en esta votación. Si vuelves a votar se sobreescribirá tu resultado anterior."
+      already_voted_blank_in_web: "Ya has participado en esta votación mediante un voto en blanco. Si vuelves a votar se sobreescribirá tu resultado anterior."
       back: Volver a votaciones
       cant_answer_not_logged_in: "Necesitas %{signin} o %{signup} para participar."
       comments_tab: Comentarios
@@ -627,14 +639,13 @@ es:
       results:
         title: "Preguntas"
         most_voted_answer: "Respuesta más votada: "
+        open_ended:
+          valid: Válidos
+          blank: En blanco
     poll_header:
       back_to_proposal: Volver a la propuesta
   poll_questions:
-    show:
-      vote_answer: "Votar %{answer}"
-      voted: "Has votado %{answer}"
     description:
-      unique: "Puedes seleccionar un máximo de 1 respuesta."
       multiple: "Puedes seleccionar un máximo de %{maximum} respuestas."
     read_more_about: "Leer más:"
   proposal_notifications:

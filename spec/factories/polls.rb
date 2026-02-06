@@ -60,6 +60,7 @@ FactoryBot.define do
 
     trait :yes_no do
       after(:create) do |question|
+        create(:votation_type_unique, questionable: question)
         create(:poll_question_option, question: question, title: "Yes")
         create(:poll_question_option, question: question, title: "No")
       end
@@ -92,6 +93,12 @@ FactoryBot.define do
 
       after(:create) do |question, evaluator|
         create(:votation_type_multiple, questionable: question, max_votes: evaluator.max_votes)
+      end
+    end
+
+    factory :poll_question_open do
+      after(:create) do |question|
+        create(:votation_type_open, questionable: question)
       end
     end
   end
@@ -212,15 +219,28 @@ FactoryBot.define do
   factory :poll_answer, class: "Poll::Answer" do
     question factory: [:poll_question, :yes_no]
     author factory: [:user, :level_two]
-    answer { question.question_options.sample.title }
-    option { question.question_options.find_by(title: answer) }
+    option do
+      if answer
+        question.question_options.find_by(title: answer)
+      else
+        question.question_options.sample
+      end
+    end
+    after(:build) { |poll_answer| poll_answer.answer ||= poll_answer.option&.title }
   end
 
   factory :poll_partial_result, class: "Poll::PartialResult" do
     question factory: [:poll_question, :yes_no]
     author factory: :user
     origin { "web" }
-    answer { question.question_options.sample.title }
+    option do
+      if answer
+        question.question_options.find_by(title: answer)
+      else
+        question.question_options.sample
+      end
+    end
+    after(:build) { |poll_partial_result| poll_partial_result.answer ||= poll_partial_result.option&.title }
   end
 
   factory :poll_recount, class: "Poll::Recount" do

@@ -14,7 +14,6 @@ Citizen Participation and Open Government Application
 [![Accessibility conformance](https://img.shields.io/badge/accessibility-WAI:AA-green.svg)](https://www.w3.org/WAI/eval/Overview)
 
 ![Build status](https://github.com/consuldemocracy/consuldemocracy/workflows/tests/badge.svg)
-[![Code Climate](https://codeclimate.com/github/consuldemocracy/consuldemocracy/badges/gpa.svg)](https://codeclimate.com/github/consuldemocracy/consuldemocracy)
 [![Coverage Status](https://coveralls.io/repos/github/consuldemocracy/consuldemocracy/badge.svg)](https://coveralls.io/github/consuldemocracy/consuldemocracy?branch=master)
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/consul/localized.svg)](https://translate.consuldemocracy.org/)
 [![Knapsack Pro Parallel CI builds for RSpec tests](https://img.shields.io/badge/Knapsack%20Pro-Parallel%20/%20RSpec%20tests-%230074ff)](https://knapsackpro.com/dashboard/organizations/176/projects/202/test_suites/318/builds?utm_campaign=organization-id-176&utm_content=test-suite-id-318&utm_medium=readme&utm_source=knapsack-pro-badge&utm_term=project-id-202)
@@ -33,9 +32,10 @@ You can access the main website of the project at [http://consuldemocracy.org](h
 
 ## Configuration for development and test environments
 
-**NOTE**: For more detailed instructions, check the [local installation docs](docs/en/installation/local_installation.md).
+**NOTE**:
+The installation process will vary depending on your operating system. Please make sure to follow the [Local Installation Guide](docs/en/installation/local_installation.md) appropriate for your OS.
 
-Prerequisites: install git, Ruby 3.2.8, CMake, pkg-config, Node.js 18.20.3, ImageMagick and PostgreSQL (>=9.5).
+Prerequisites: install git, Ruby 3.3.10, CMake, pkg-config, Node.js 20.19.5, ImageMagick and PostgreSQL (>=13).
 
 **Note**: The `bin/setup` command below might fail if you've configured a username and password for PostgreSQL. If that's the case, edit the lines containing `username:` and `password:` (adding your credentials) in the `config/database.yml` file and run `bin/setup` again.
 

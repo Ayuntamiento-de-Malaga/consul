@@ -27,6 +27,10 @@
 # the default action for `/proposals` will not be used and the one you
 # define will be used instead.
 
+namespace :admin do
+  resources :debates_tags, only: [:index, :create, :update, :destroy]
+end
+
 constraints lambda { |request| !Rails.application.multitenancy_management_mode? } do
   # The routes defined within this block will not be accessible if multitenancy
   # management mode is enabled. If you need these routes to be accessible when

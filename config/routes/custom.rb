@@ -28,7 +28,15 @@
 # define will be used instead.
 
 namespace :admin do
+  resources :proposals_tags, only: [:index, :create, :update, :destroy]
   resources :debates_tags, only: [:index, :create, :update, :destroy]
+
+  namespace :legislation do
+    resources :files, only: [:show]
+    resources :processes do
+      get :predownload, on: :member
+    end
+  end
 end
 
 constraints lambda { |request| !Rails.application.multitenancy_management_mode? } do

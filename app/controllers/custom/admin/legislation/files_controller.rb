@@ -5,16 +5,16 @@ class Admin::Legislation::FilesController < Admin::Legislation::BaseController
     @area = params[:area]
     @type = params[:type]
 
-    WickedPdf.new.pdf_from_string(
-      render :pdf => 'my_pdf_name',
-      :template => "admin/legislation/files/content.pdf.erb",
+    render :pdf => 'my_pdf_name',
+      :disposition => 'attachment',
+      :template => "admin/legislation/files/content",
+      :formats => [:pdf],
       :header => {
-        :content => render_to_string(:template => 'admin/legislation/files/header.pdf.erb', :layout => false)
+        :content => render_to_string(:template => 'admin/legislation/files/header', :layout => false, :formats => [:pdf])
       },
       :footer => {
-        :content => render_to_string(:template => 'admin/legislation/files/footer.pdf.erb', :layout => false)
+        :content => render_to_string(:template => 'admin/legislation/files/footer', :layout => false, :formats => [:pdf])
       },
       :margin => {top: 33, bottom: 40, left: 20, right: 20}
-    )
   end
 end

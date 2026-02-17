@@ -4,7 +4,7 @@
 
 <h2 class="inline-block">Paso Previo a la Descarga</h2>
 
-<%= form_with url: admin_legislation_file_path(@process), method: :get do |form| %>
+<%= form_with url: admin_legislation_file_path(@process), method: :get, local: true do |form| %>
   <%= form.label :conclusions, "Exponga las conclusiones finales que aparecerán en el documento:" %>
   <%= form.text_area :conclusions, rows: 5, label: false %>
   <% select_options = [

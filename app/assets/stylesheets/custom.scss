@@ -31,7 +31,8 @@ header {
       margin-right: 20px;
     }
     .account-menu {
-      a {
+      a,
+      button {
         color: $brand;
       }
       .button {
